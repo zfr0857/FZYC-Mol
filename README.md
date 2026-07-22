@@ -114,7 +114,10 @@ checkout.
   modern CPU after installation.
 - Generated split manifests: `splits/generated/`.
 - Full-study results: `results/reproduced_full_study/`.
-- Figure and table source data: `source_data/` and `reproduced_outputs/`.
+- Figure and table source data: `source_data/` and `reproduced_outputs/`. Final
+  PDF/SVG/600-dpi PNG assets for Figures 1–7 and their checked source-data index
+  are included under `reproduced_outputs/main_figures/` and
+  `source_data/main_figures/`.
 
 Full training can require hours to days depending on hardware, dataset cache,
 and optional neural-model availability. Recorded downstream audit times exclude
@@ -129,7 +132,8 @@ as stated in the manuscript.
 - `src/`: reusable package implementation.
 - `scripts/`: portable download, analysis, training and validation entry points.
 - `results/`: machine-readable reference results used by tests and audits.
-- `source_data/`: manuscript figure/table source-data index and Figure 7 data.
+- `source_data/`: manuscript figure/table source-data index, checked inputs for
+  Figures 2–7 and the Figure 7 panel data; Figure 1 is a schematic.
 - `tests/`: leakage, ranking, stability and reproduction regression tests.
 - `docs/`: scope, audit trail and computational-exposure documentation.
 - `paper31_expanded_intervention/experiment_exports/`: candidate-, fold- and
