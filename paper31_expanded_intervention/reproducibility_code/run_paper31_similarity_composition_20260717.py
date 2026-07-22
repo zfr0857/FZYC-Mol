@@ -5,7 +5,7 @@ import sys
 from pathlib import Path
 
 
-ROOT = Path(r"D:\fzyc")
+ROOT = Path(__file__).resolve().parents[2]
 RESULTS = ROOT / "results" / "paper31_expanded_intervention_20260717" / "similarity_composition"
 TASKS = ["clintox", "bace", "esol"]
 SEEDS = [11, 23, 37, 53, 71]

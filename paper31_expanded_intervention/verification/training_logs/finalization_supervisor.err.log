@@ -1,7 +1,6 @@
 python.exe : Traceback (most recent call last):
-ËùÔÚÎ»ÖÃ D:\fzyc\scripts\continue_paper31_finalize_pipeline_20260717.ps1:13 ×Ö·û: 5
+At <PROJECT_ROOT>\scripts\continue_paper31_finalize_pipeline_20260717.ps1: line 13, character 5
 +     & $python $Script 1> "$logs\$Name.out.log" 2> "$logs\$Name.err.lo ...
 +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
     + FullyQualifiedErrorId : NativeCommandError
- 

@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checked": {
+    "composition_endpoints": 6,
+    "candidate_pool_sizes": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "cross_fitted_directions": {
+      "positive": 6,
+      "negative": 3
+    },
+    "modern_K32_positive": 6,
+    "primary_outer_units": 1080,
+    "matched_subsets": 220
+  }
+}

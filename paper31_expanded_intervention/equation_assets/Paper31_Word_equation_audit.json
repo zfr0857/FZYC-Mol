@@ -3,7 +3,7 @@
     "equation_count_expected":  27,
     "manuscripts":  [
                         {
-                            "manuscript":  "D:\\fzyc\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).docx",
+                            "manuscript":  "<PROJECT_ROOT>\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).docx",
                             "omath_before":  0,
                             "omath_after":  27,
                             "native_equations_added":  27,
@@ -13,7 +13,7 @@
                             "equation_editor":  "Microsoft Word OMath"
                         },
                         {
-                            "manuscript":  "D:\\fzyc\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).docx",
+                            "manuscript":  "<PROJECT_ROOT>\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).docx",
                             "omath_before":  0,
                             "omath_after":  27,
                             "native_equations_added":  27,

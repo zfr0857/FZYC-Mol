@@ -1,4 +1,4 @@
-chemprop-inner bbbp seed=11 outer=1/3 inner=1/3
+﻿chemprop-inner bbbp seed=11 outer=1/3 inner=1/3
 chemprop-inner bbbp seed=11 outer=1/3 inner=2/3
 chemprop-inner bbbp seed=11 outer=1/3 inner=3/3
 chemprop-inner bbbp seed=11 outer=2/3 inner=1/3
@@ -133,4 +133,4 @@ chemprop-inner tdc_caco2_wang seed=71 outer=2/3 inner=3/3
 chemprop-inner tdc_caco2_wang seed=71 outer=3/3 inner=1/3
 chemprop-inner tdc_caco2_wang seed=71 outer=3/3 inner=2/3
 chemprop-inner tdc_caco2_wang seed=71 outer=3/3 inner=3/3
-D:\fzyc\results\paper31_expanded_intervention_20260717\chemprop\chemprop_inner_summary.csv
+<PROJECT_ROOT>\results\paper31_expanded_intervention_20260717\chemprop\chemprop_inner_summary.csv
