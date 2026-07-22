@@ -301,7 +301,7 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.legend(handles=k_handles, ncol=4, frameon=False, mode="expand",
               loc="upper left", bbox_to_anchor=(0.0, -0.24, 1.0, 0.05),
               borderaxespad=0.0, handlelength=0.55,
-              columnspacing=0.70, handletextpad=0.18, fontsize=7.0)
+              columnspacing=0.70, handletextpad=0.18, fontsize=7.5)
     label(ax, "D")
 
 

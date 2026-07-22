@@ -9623,9 +9623,9 @@ L 395.071516 346.65257
    </g>
    <g id="legend_4">
     <g id="line2d_281">
-     <path d="M 246.305992 546.332157
-L 248.230992 546.332157
-L 250.155992 546.332157
+     <path d="M 246.505992 546.707157
+L 248.568492 546.707157
+L 250.630992 546.707157
 " style="fill: none"/>
      <defs>
       <path id="m1690b2f53c" d="M 0 2.44949
@@ -9641,21 +9641,21 @@ z
 " style="stroke: #666666"/>
      </defs>
      <g>
-      <use xlink:href="#m1690b2f53c" x="248.230992" y="546.332157" style="fill: #888888; stroke: #666666"/>
+      <use xlink:href="#m1690b2f53c" x="248.568492" y="546.707157" style="fill: #888888; stroke: #666666"/>
      </g>
     </g>
     <g id="text_171">
      <!-- K=4 -->
-     <g transform="translate(251.415992 548.782157) scale(0.07 -0.07)">
+     <g transform="translate(251.980992 549.332157) scale(0.075 -0.075)">
       <use xlink:href="#TimesNewRomanPSMT-4b"/>
       <use xlink:href="#TimesNewRomanPSMT-3d" transform="translate(72.216797 0)"/>
       <use xlink:href="#TimesNewRomanPSMT-34" transform="translate(128.613281 0)"/>
      </g>
     </g>
     <g id="line2d_282">
-     <path d="M 280.365643 546.332157
-L 282.290643 546.332157
-L 284.215643 546.332157
+     <path d="M 279.846294 546.707157
+L 281.908794 546.707157
+L 283.971294 546.707157
 " style="fill: none"/>
      <defs>
       <path id="m9f35680325" d="M 0 2.915476
@@ -9671,21 +9671,21 @@ z
 " style="stroke: #666666"/>
      </defs>
      <g>
-      <use xlink:href="#m9f35680325" x="282.290643" y="546.332157" style="fill: #888888; stroke: #666666"/>
+      <use xlink:href="#m9f35680325" x="281.908794" y="546.707157" style="fill: #888888; stroke: #666666"/>
      </g>
     </g>
     <g id="text_172">
      <!-- K=8 -->
-     <g transform="translate(285.475643 548.782157) scale(0.07 -0.07)">
+     <g transform="translate(285.321294 549.332157) scale(0.075 -0.075)">
       <use xlink:href="#TimesNewRomanPSMT-4b"/>
       <use xlink:href="#TimesNewRomanPSMT-3d" transform="translate(72.216797 0)"/>
       <use xlink:href="#TimesNewRomanPSMT-38" transform="translate(128.613281 0)"/>
      </g>
     </g>
     <g id="line2d_283">
-     <path d="M 314.425293 546.332157
-L 316.350293 546.332157
-L 318.275293 546.332157
+     <path d="M 313.186595 546.707157
+L 315.249095 546.707157
+L 317.311595 546.707157
 " style="fill: none"/>
      <defs>
       <path id="mfc1ccb2b9b" d="M 0 3.391165
@@ -9701,12 +9701,12 @@ z
 " style="stroke: #666666"/>
      </defs>
      <g>
-      <use xlink:href="#mfc1ccb2b9b" x="316.350293" y="546.332157" style="fill: #888888; stroke: #666666"/>
+      <use xlink:href="#mfc1ccb2b9b" x="315.249095" y="546.707157" style="fill: #888888; stroke: #666666"/>
      </g>
     </g>
     <g id="text_173">
      <!-- K=16 -->
-     <g transform="translate(319.535293 548.782157) scale(0.07 -0.07)">
+     <g transform="translate(318.661595 549.332157) scale(0.075 -0.075)">
       <use xlink:href="#TimesNewRomanPSMT-4b"/>
       <use xlink:href="#TimesNewRomanPSMT-3d" transform="translate(72.216797 0)"/>
       <use xlink:href="#TimesNewRomanPSMT-31" transform="translate(128.613281 0)"/>
@@ -9714,9 +9714,9 @@ z
      </g>
     </g>
     <g id="line2d_284">
-     <path d="M 351.984944 546.332157
-L 353.909944 546.332157
-L 355.834944 546.332157
+     <path d="M 350.276897 546.707157
+L 352.339397 546.707157
+L 354.401897 546.707157
 " style="fill: none"/>
      <defs>
       <path id="m0c3358d029" d="M 0 3.872983
@@ -9732,12 +9732,12 @@ z
 " style="stroke: #666666"/>
      </defs>
      <g>
-      <use xlink:href="#m0c3358d029" x="353.909944" y="546.332157" style="fill: #888888; stroke: #666666"/>
+      <use xlink:href="#m0c3358d029" x="352.339397" y="546.707157" style="fill: #888888; stroke: #666666"/>
      </g>
     </g>
     <g id="text_174">
      <!-- K=32 -->
-     <g transform="translate(357.094944 548.782157) scale(0.07 -0.07)">
+     <g transform="translate(355.751897 549.332157) scale(0.075 -0.075)">
       <use xlink:href="#TimesNewRomanPSMT-4b"/>
       <use xlink:href="#TimesNewRomanPSMT-3d" transform="translate(72.216797 0)"/>
       <use xlink:href="#TimesNewRomanPSMT-33" transform="translate(128.613281 0)"/>
