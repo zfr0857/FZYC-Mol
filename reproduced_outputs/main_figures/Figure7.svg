@@ -5077,9 +5077,9 @@ z
    </g>
    <g id="legend_3">
     <g id="line2d_273">
-     <path d="M 384.871516 380.448206
-L 389.971516 380.448206
-L 395.071516 380.448206
+     <path d="M 384.871516 336.520112
+L 389.971516 336.520112
+L 395.071516 336.520112
 " style="fill: none; stroke: #333333; stroke-width: 1.1; stroke-linecap: square"/>
      <defs>
       <path id="m440968a578" d="M 0 3
@@ -5095,16 +5095,16 @@ z
 " style="stroke: #333333"/>
      </defs>
      <g>
-      <use xlink:href="#m440968a578" x="389.971516" y="380.448206" style="fill: #777777; stroke: #333333"/>
+      <use xlink:href="#m440968a578" x="389.971516" y="336.520112" style="fill: #777777; stroke: #333333"/>
      </g>
     </g>
     <g id="text_167">
-     <text style="font-size: 8.5px; font-family: 'Times New Roman'; text-anchor: start" x="397.621516" y="383.423206" transform="rotate(-0 397.621516 383.423206)">Equal K</text>
+     <text style="font-size: 8.5px; font-family: 'Times New Roman'; text-anchor: start" x="397.621516" y="339.495112" transform="rotate(-0 397.621516 339.495112)">Equal K</text>
     </g>
     <g id="line2d_274">
-     <path d="M 384.871516 390.341409
-L 389.971516 390.341409
-L 395.071516 390.341409
+     <path d="M 384.871516 346.413315
+L 389.971516 346.413315
+L 395.071516 346.413315
 " style="fill: none; stroke-dasharray: 4.07,1.76; stroke-dashoffset: 0; stroke: #333333; stroke-width: 1.1"/>
      <defs>
       <path id="m9370b5a6de" d="M 0 4.242641
@@ -5115,22 +5115,22 @@ z
 " style="stroke: #333333; stroke-linejoin: miter"/>
      </defs>
      <g>
-      <use xlink:href="#m9370b5a6de" x="389.971516" y="390.341409" style="fill: #ffffff; stroke: #333333; stroke-linejoin: miter"/>
+      <use xlink:href="#m9370b5a6de" x="389.971516" y="346.413315" style="fill: #ffffff; stroke: #333333; stroke-linejoin: miter"/>
      </g>
     </g>
     <g id="text_168">
-     <text style="font-size: 8.5px; font-family: 'Times New Roman'; text-anchor: start" x="397.621516" y="393.316409" transform="rotate(-0 397.621516 393.316409)">Equal budget</text>
+     <text style="font-size: 8.5px; font-family: 'Times New Roman'; text-anchor: start" x="397.621516" y="349.388315" transform="rotate(-0 397.621516 349.388315)">Equal budget</text>
     </g>
     <g id="line2d_275">
-     <path d="M 384.871516 400.25055
-L 389.971516 400.25055
-L 389.971516 400.25055
-L 395.071516 400.25055
-L 395.071516 400.25055
+     <path d="M 384.871516 356.322456
+L 389.971516 356.322456
+L 389.971516 356.322456
+L 395.071516 356.322456
+L 395.071516 356.322456
 " style="fill: none; stroke: #202632; stroke-linecap: square"/>
     </g>
     <g id="text_169">
-     <text style="font-size: 8.5px; font-family: 'Times New Roman'; text-anchor: start" x="397.621516" y="403.22555" transform="rotate(-0 397.621516 403.22555)">Pareto frontier</text>
+     <text style="font-size: 8.5px; font-family: 'Times New Roman'; text-anchor: start" x="397.621516" y="359.297456" transform="rotate(-0 397.621516 359.297456)">Pareto frontier</text>
     </g>
    </g>
    <g id="legend_4">
