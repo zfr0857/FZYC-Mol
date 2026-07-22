@@ -9,15 +9,16 @@ ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_PARTS = {".git", ".mypy_cache", ".pytest_cache", ".ruff_cache", "__pycache__"}
 EXCLUDED_FILES = {"CODE_AND_DATA_CONTENTS.csv", "SHA256SUMS.txt"}
 TEXT_SUFFIXES = {
-    ".cff", ".csv", ".ini", ".json", ".md", ".py", ".toml", ".tsv",
+    ".cff", ".csv", ".ini", ".json", ".md", ".ps1", ".py", ".toml", ".tsv",
     ".txt", ".yaml", ".yml",
 }
+TEXT_NAMES = {".dockerignore", ".gitignore", "Dockerfile", "LICENSE", "PKG-INFO", "VERSION", "wslconfig.autogluon"}
 
 
 def digest(path: Path) -> str:
     value = hashlib.sha256()
     data = path.read_bytes()
-    if path.suffix.lower() in TEXT_SUFFIXES or path.name in {"Dockerfile", "LICENSE", "VERSION"}:
+    if path.suffix.lower() in TEXT_SUFFIXES or path.name in TEXT_NAMES:
         data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
     value.update(data)
     return value.hexdigest()
