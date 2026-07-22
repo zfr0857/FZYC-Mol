@@ -1,0 +1,17 @@
+{
+  "datasets": ["esol"],
+  "models": ["rf_morgan", "gin", "fzyc_mol"],
+  "split": "scaffold",
+  "seeds": [13],
+  "epochs": 2,
+  "batch_size": 32,
+  "hidden_dim": 64,
+  "layers": 3,
+  "lr": 0.001,
+  "weight_decay": 0.00001,
+  "contrastive_weight": 0.05,
+  "max_rows": 96,
+  "num_workers": 0,
+  "output_dir": "reports/smoke"
+}
+

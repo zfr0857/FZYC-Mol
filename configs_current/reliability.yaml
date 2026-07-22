@@ -1,0 +1,14 @@
+risk_coverage:
+  classification_risk: error_rate
+  regression_risk: rmse
+  oracle_name: oracle_lower_bound
+  coverage_start: 0.10
+  coverage_stop: 1.00
+  coverage_points: 19
+conformal:
+  target_coverages: [0.80, 0.90, 0.95]
+  classification: label_conditional
+  minimum_class_calibration_count: 5
+  low_count_fallback: pooled
+  regression_width_normalization: [training_sd, training_iqr]
+  interval_score: true

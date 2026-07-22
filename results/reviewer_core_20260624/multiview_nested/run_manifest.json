@@ -1,0 +1,40 @@
+{
+  "tasks": [
+    "bbbp",
+    "bace",
+    "clintox",
+    "esol",
+    "freesolv",
+    "lipo",
+    "tdc_caco2_wang",
+    "tdc_hia_hou",
+    "tdc_pgp_broccatelli"
+  ],
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "outer_folds": 3,
+  "inner_folds": 3,
+  "representations": [
+    "morgan512",
+    "maccs",
+    "rdkit2d",
+    "multiview"
+  ],
+  "model_families": [
+    "linear",
+    "random_forest",
+    "lightgbm"
+  ],
+  "candidate_count": 12,
+  "split_compatibility": "same split generator and repeat seeds as the confirmatory Morgan-512 experiment",
+  "scope": "shared-split lightweight representation families; does not include retrained graph neural networks or chemical language models",
+  "python": "3.13.7",
+  "sklearn": "1.6.1",
+  "lightgbm": "4.6.0",
+  "rdkit": "2026.03.1"
+}

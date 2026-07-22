@@ -1,0 +1,4 @@
+diversity_measure,outcome,spearman_rho,p_value_descriptive,n_endpoint_pool_k_cells,inference_unit_note
+relative_entropy_rank,same_unit_selection_gap_mean,0.008070179977100094,0.9463585101157561,72,descriptive cell-level association; not used as confirmatory endpoint inference
+relative_entropy_rank,cross_fitted_selection_gap_mean,0.01044220940711339,0.9306264315419063,72,descriptive cell-level association; not used as confirmatory endpoint inference
+relative_entropy_rank,oracle_opportunity_gain_mean,-0.1804499190058912,0.12930393872650645,72,descriptive cell-level association; not used as confirmatory endpoint inference

@@ -1,0 +1,33 @@
+{
+  "datasets": [
+    "tdc_caco2_wang",
+    "tdc_hia_hou",
+    "tdc_pgp_broccatelli",
+    "tdc_bioavailability_ma",
+    "tdc_bbb_martins",
+    "tdc_cyp2c9_veith",
+    "tdc_cyp2d6_veith",
+    "tdc_cyp3a4_veith"
+  ],
+  "models": [
+    "rf_multifp",
+    "xgb_multifp",
+    "lgbm_multifp",
+    "extratrees_multifp"
+  ],
+  "split": "scaffold",
+  "seeds": [13, 17, 23, 29, 31],
+  "epochs": 1,
+  "batch_size": 128,
+  "hidden_dim": 128,
+  "layers": 3,
+  "lr": 0.001,
+  "weight_decay": 0.00001,
+  "contrastive_weight": 0.05,
+  "patience": 6,
+  "max_rows": null,
+  "num_workers": 0,
+  "resume": true,
+  "cache_graphs": false,
+  "output_dir": "reports/tdc_admet_multifp"
+}

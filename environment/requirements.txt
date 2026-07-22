@@ -1,0 +1,14 @@
+numpy>=2.0
+pandas>=2.0
+scipy>=1.13
+scikit-learn>=1.5
+torch>=2.4
+torch-geometric>=2.6
+rdkit>=2024.9
+matplotlib>=3.8
+tqdm>=4.66
+xgboost>=3.2
+lightgbm>=4.6
+chemprop>=2.2
+PyTDC>=1.1
+seaborn>=0.13

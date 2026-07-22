@@ -1,0 +1,221 @@
+{
+  "esol": {
+    "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/delaney-processed.csv",
+    "filename": "delaney-processed.csv",
+    "task_type": "regression",
+    "smiles_candidates": [
+      "smiles",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "measured log solubility in mols per litre",
+      "logS",
+      "y"
+    ]
+  },
+  "freesolv": {
+    "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/SAMPL.csv",
+    "filename": "SAMPL.csv",
+    "task_type": "regression",
+    "smiles_candidates": [
+      "smiles",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "expt",
+      "y"
+    ]
+  },
+  "lipo": {
+    "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/Lipophilicity.csv",
+    "filename": "Lipophilicity.csv",
+    "task_type": "regression",
+    "smiles_candidates": [
+      "smiles",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "exp",
+      "y"
+    ]
+  },
+  "bbbp": {
+    "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/BBBP.csv",
+    "filename": "BBBP.csv",
+    "task_type": "classification",
+    "smiles_candidates": [
+      "smiles",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "p_np",
+      "Class",
+      "label",
+      "y"
+    ]
+  },
+  "bace": {
+    "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/bace.csv",
+    "filename": "bace.csv",
+    "task_type": "classification",
+    "smiles_candidates": [
+      "mol",
+      "smiles",
+      "SMILES"
+    ],
+    "target_candidates": [
+      "Class",
+      "class",
+      "label",
+      "y"
+    ]
+  },
+  "clintox": {
+    "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/clintox.csv.gz",
+    "filename": "clintox.csv.gz",
+    "task_type": "classification",
+    "smiles_candidates": [
+      "smiles",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "CT_TOX",
+      "FDA_APPROVED",
+      "label",
+      "y"
+    ]
+  },
+  "tdc_caco2_wang": {
+    "url": "tdc:ADME/Caco2_Wang",
+    "filename": "tdc_caco2_wang.csv",
+    "task_type": "regression",
+    "smiles_candidates": [
+      "smiles",
+      "Drug",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "y",
+      "Y",
+      "label"
+    ]
+  },
+  "tdc_hia_hou": {
+    "url": "tdc:ADME/HIA_Hou",
+    "filename": "tdc_hia_hou.csv",
+    "task_type": "classification",
+    "smiles_candidates": [
+      "smiles",
+      "Drug",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "y",
+      "Y",
+      "label"
+    ]
+  },
+  "tdc_pgp_broccatelli": {
+    "url": "tdc:ADME/Pgp_Broccatelli",
+    "filename": "tdc_pgp_broccatelli.csv",
+    "task_type": "classification",
+    "smiles_candidates": [
+      "smiles",
+      "Drug",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "y",
+      "Y",
+      "label"
+    ]
+  },
+  "tdc_bioavailability_ma": {
+    "url": "tdc:ADME/Bioavailability_Ma",
+    "filename": "tdc_bioavailability_ma.csv",
+    "task_type": "classification",
+    "smiles_candidates": [
+      "smiles",
+      "Drug",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "y",
+      "Y",
+      "label"
+    ]
+  },
+  "tdc_bbb_martins": {
+    "url": "tdc:ADME/BBB_Martins",
+    "filename": "tdc_bbb_martins.csv",
+    "task_type": "classification",
+    "smiles_candidates": [
+      "smiles",
+      "Drug",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "y",
+      "Y",
+      "label"
+    ]
+  },
+  "tdc_cyp2c9_veith": {
+    "url": "tdc:ADME/CYP2C9_Veith",
+    "filename": "tdc_cyp2c9_veith.csv",
+    "task_type": "classification",
+    "smiles_candidates": [
+      "smiles",
+      "Drug",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "y",
+      "Y",
+      "label"
+    ]
+  },
+  "tdc_cyp2d6_veith": {
+    "url": "tdc:ADME/CYP2D6_Veith",
+    "filename": "tdc_cyp2d6_veith.csv",
+    "task_type": "classification",
+    "smiles_candidates": [
+      "smiles",
+      "Drug",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "y",
+      "Y",
+      "label"
+    ]
+  },
+  "tdc_cyp3a4_veith": {
+    "url": "tdc:ADME/CYP3A4_Veith",
+    "filename": "tdc_cyp3a4_veith.csv",
+    "task_type": "classification",
+    "smiles_candidates": [
+      "smiles",
+      "Drug",
+      "SMILES",
+      "mol"
+    ],
+    "target_candidates": [
+      "y",
+      "Y",
+      "label"
+    ]
+  }
+}

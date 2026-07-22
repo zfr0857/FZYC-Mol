@@ -1,0 +1,13 @@
+task,task_type,seed,outer_fold,variant,candidate_count,oracle_validation_rank,top3_hit,chance_adjusted_hit,mrr,spearman
+bbbp,classification,11,1,full_multiview,12,3,1.0,1.0,0.3333333333333333,0.8881118881118882
+bbbp,classification,11,1,morgan_only,3,1,1.0,0.0,1.0,1.0
+bbbp,classification,11,1,fingerprints_only,6,1,1.0,1.0,1.0,0.942857142857143
+bbbp,classification,11,1,no_multiview_concat,9,2,1.0,1.0,0.5,0.9666666666666667
+bbbp,classification,11,2,full_multiview,12,3,1.0,1.0,0.3333333333333333,0.8461538461538463
+bbbp,classification,11,2,morgan_only,3,1,1.0,0.0,1.0,1.0
+bbbp,classification,11,2,fingerprints_only,6,3,1.0,1.0,0.3333333333333333,0.7714285714285715
+bbbp,classification,11,2,no_multiview_concat,9,2,1.0,1.0,0.5,0.7833333333333333
+bbbp,classification,11,3,full_multiview,12,2,1.0,1.0,0.5,0.8881118881118882
+bbbp,classification,11,3,morgan_only,3,1,1.0,0.0,1.0,1.0
+bbbp,classification,11,3,fingerprints_only,6,1,1.0,1.0,1.0,0.8285714285714287
+bbbp,classification,11,3,no_multiview_concat,9,3,1.0,1.0,0.3333333333333333,0.9

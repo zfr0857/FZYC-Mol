@@ -1,0 +1,9 @@
+outer_folds: 3
+inner_folds: 3
+nested_repeats: 5
+split_type: scaffold_group
+split_seeds: [11, 23, 37, 53, 71]
+primary_cluster_unit: endpoint
+bootstrap_replicates: 5000
+pool_sizes: [4, 8, 16, 32]
+test_labels_allowed_for_selection: false

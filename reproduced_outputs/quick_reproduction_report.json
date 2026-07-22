@@ -1,0 +1,13 @@
+{
+  "package_version": "paper35-final-minor-revision-20260718",
+  "source_rows": {
+    "Paper31_endpoint_pool_K_summary.csv": 216,
+    "Paper31_selection_units.csv": 3240,
+    "Paper31_selection_stability.csv": 72,
+    "Paper31_equal_budget_units.csv": 540
+  },
+  "composition_endpoints": 6,
+  "modern_K32_positive_endpoints": 6,
+  "figure7_svg_sha256": "a4553e56ba459af2ef4d9ec5414e2a98811e052625867b22d692f4ba5511fa4f",
+  "status": "pass"
+}

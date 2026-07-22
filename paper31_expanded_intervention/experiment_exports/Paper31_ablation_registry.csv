@@ -1,0 +1,161 @@
+candidate,representation,family,pool,pool_order
+morgan512__linear,morgan512,linear,Classical multiview,1
+morgan512__random_forest,morgan512,random_forest,Classical multiview,5
+morgan512__lightgbm,morgan512,lightgbm,Classical multiview,9
+maccs__linear,maccs,linear,Classical multiview,2
+maccs__random_forest,maccs,random_forest,Classical multiview,6
+maccs__lightgbm,maccs,lightgbm,Classical multiview,10
+rdkit2d__linear,rdkit2d,linear,Classical multiview,3
+rdkit2d__random_forest,rdkit2d,random_forest,Classical multiview,7
+rdkit2d__lightgbm,rdkit2d,lightgbm,Classical multiview,11
+multiview__linear,multiview,linear,Classical multiview,4
+multiview__random_forest,multiview,random_forest,Classical multiview,8
+multiview__lightgbm,multiview,lightgbm,Classical multiview,12
+morgan512__extra_trees,morgan512,extra_trees,Classical multiview,13
+morgan512__linear_alt,morgan512,linear_alt,Classical multiview,17
+morgan512__random_forest_alt,morgan512,random_forest_alt,Classical multiview,21
+morgan512__lightgbm_alt,morgan512,lightgbm_alt,Classical multiview,25
+morgan512__xgboost,morgan512,xgboost,Classical multiview,29
+maccs__extra_trees,maccs,extra_trees,Classical multiview,14
+maccs__linear_alt,maccs,linear_alt,Classical multiview,18
+maccs__random_forest_alt,maccs,random_forest_alt,Classical multiview,22
+maccs__lightgbm_alt,maccs,lightgbm_alt,Classical multiview,26
+maccs__xgboost,maccs,xgboost,Classical multiview,30
+rdkit2d__extra_trees,rdkit2d,extra_trees,Classical multiview,15
+rdkit2d__linear_alt,rdkit2d,linear_alt,Classical multiview,19
+rdkit2d__random_forest_alt,rdkit2d,random_forest_alt,Classical multiview,23
+rdkit2d__lightgbm_alt,rdkit2d,lightgbm_alt,Classical multiview,27
+rdkit2d__xgboost,rdkit2d,xgboost,Classical multiview,31
+multiview__extra_trees,multiview,extra_trees,Classical multiview,16
+multiview__linear_alt,multiview,linear_alt,Classical multiview,20
+multiview__random_forest_alt,multiview,random_forest_alt,Classical multiview,24
+multiview__lightgbm_alt,multiview,lightgbm_alt,Classical multiview,28
+multiview__xgboost,multiview,xgboost,Classical multiview,32
+morgan512__linear,morgan512,linear,+ChemBERTa,1
+morgan512__random_forest,morgan512,random_forest,+ChemBERTa,8
+morgan512__lightgbm,morgan512,lightgbm,+ChemBERTa,16
+maccs__linear,maccs,linear,+ChemBERTa,2
+maccs__random_forest,maccs,random_forest,+ChemBERTa,10
+maccs__lightgbm,maccs,lightgbm,+ChemBERTa,18
+rdkit2d__linear,rdkit2d,linear,+ChemBERTa,4
+rdkit2d__random_forest,rdkit2d,random_forest,+ChemBERTa,12
+rdkit2d__lightgbm,rdkit2d,lightgbm,+ChemBERTa,20
+multiview__linear,multiview,linear,+ChemBERTa,6
+multiview__random_forest,multiview,random_forest,+ChemBERTa,14
+multiview__lightgbm,multiview,lightgbm,+ChemBERTa,22
+morgan512__extra_trees,morgan512,extra_trees,+ChemBERTa,23
+morgan512__linear_alt,morgan512,linear_alt,+ChemBERTa,27
+morgan512__random_forest_alt,morgan512,random_forest_alt,+ChemBERTa,31
+maccs__extra_trees,maccs,extra_trees,+ChemBERTa,24
+maccs__linear_alt,maccs,linear_alt,+ChemBERTa,28
+maccs__random_forest_alt,maccs,random_forest_alt,+ChemBERTa,32
+rdkit2d__extra_trees,rdkit2d,extra_trees,+ChemBERTa,25
+rdkit2d__linear_alt,rdkit2d,linear_alt,+ChemBERTa,29
+multiview__extra_trees,multiview,extra_trees,+ChemBERTa,26
+multiview__linear_alt,multiview,linear_alt,+ChemBERTa,30
+chemberta_mtr__linear,chemberta_mtr,linear,+ChemBERTa,3
+chemberta_mtr__linear_alt,chemberta_mtr,linear_alt,+ChemBERTa,7
+chemberta_mtr__linear_strong,chemberta_mtr,linear_strong,+ChemBERTa,11
+chemberta_mtr__linear_sparse,chemberta_mtr,linear_sparse,+ChemBERTa,15
+chemberta_mtr__lightgbm,chemberta_mtr,lightgbm,+ChemBERTa,19
+chemberta_mlm__linear,chemberta_mlm,linear,+ChemBERTa,5
+chemberta_mlm__linear_alt,chemberta_mlm,linear_alt,+ChemBERTa,9
+chemberta_mlm__linear_strong,chemberta_mlm,linear_strong,+ChemBERTa,13
+chemberta_mlm__linear_sparse,chemberta_mlm,linear_sparse,+ChemBERTa,17
+chemberta_mlm__lightgbm,chemberta_mlm,lightgbm,+ChemBERTa,21
+morgan512__linear,morgan512,linear,+MoLFormer,1
+morgan512__random_forest,morgan512,random_forest,+MoLFormer,8
+morgan512__lightgbm,morgan512,lightgbm,+MoLFormer,14
+maccs__linear,maccs,linear,+MoLFormer,2
+maccs__random_forest,maccs,random_forest,+MoLFormer,10
+maccs__lightgbm,maccs,lightgbm,+MoLFormer,15
+rdkit2d__linear,rdkit2d,linear,+MoLFormer,4
+rdkit2d__random_forest,rdkit2d,random_forest,+MoLFormer,12
+rdkit2d__lightgbm,rdkit2d,lightgbm,+MoLFormer,16
+multiview__linear,multiview,linear,+MoLFormer,6
+multiview__random_forest,multiview,random_forest,+MoLFormer,13
+multiview__lightgbm,multiview,lightgbm,+MoLFormer,17
+morgan512__extra_trees,morgan512,extra_trees,+MoLFormer,18
+morgan512__linear_alt,morgan512,linear_alt,+MoLFormer,22
+morgan512__random_forest_alt,morgan512,random_forest_alt,+MoLFormer,26
+morgan512__lightgbm_alt,morgan512,lightgbm_alt,+MoLFormer,30
+maccs__extra_trees,maccs,extra_trees,+MoLFormer,19
+maccs__linear_alt,maccs,linear_alt,+MoLFormer,23
+maccs__random_forest_alt,maccs,random_forest_alt,+MoLFormer,27
+maccs__lightgbm_alt,maccs,lightgbm_alt,+MoLFormer,31
+rdkit2d__extra_trees,rdkit2d,extra_trees,+MoLFormer,20
+rdkit2d__linear_alt,rdkit2d,linear_alt,+MoLFormer,24
+rdkit2d__random_forest_alt,rdkit2d,random_forest_alt,+MoLFormer,28
+rdkit2d__lightgbm_alt,rdkit2d,lightgbm_alt,+MoLFormer,32
+multiview__extra_trees,multiview,extra_trees,+MoLFormer,21
+multiview__linear_alt,multiview,linear_alt,+MoLFormer,25
+multiview__random_forest_alt,multiview,random_forest_alt,+MoLFormer,29
+molformer__linear,molformer,linear,+MoLFormer,3
+molformer__linear_alt,molformer,linear_alt,+MoLFormer,5
+molformer__linear_strong,molformer,linear_strong,+MoLFormer,7
+molformer__linear_sparse,molformer,linear_sparse,+MoLFormer,9
+molformer__lightgbm,molformer,lightgbm,+MoLFormer,11
+morgan512__linear,morgan512,linear,+D-MPNN,1
+morgan512__random_forest,morgan512,random_forest,+D-MPNN,6
+morgan512__lightgbm,morgan512,lightgbm,+D-MPNN,10
+maccs__linear,maccs,linear,+D-MPNN,2
+maccs__random_forest,maccs,random_forest,+D-MPNN,7
+maccs__lightgbm,maccs,lightgbm,+D-MPNN,11
+rdkit2d__linear,rdkit2d,linear,+D-MPNN,4
+rdkit2d__random_forest,rdkit2d,random_forest,+D-MPNN,8
+rdkit2d__lightgbm,rdkit2d,lightgbm,+D-MPNN,12
+multiview__linear,multiview,linear,+D-MPNN,5
+multiview__random_forest,multiview,random_forest,+D-MPNN,9
+multiview__lightgbm,multiview,lightgbm,+D-MPNN,13
+morgan512__extra_trees,morgan512,extra_trees,+D-MPNN,14
+morgan512__linear_alt,morgan512,linear_alt,+D-MPNN,18
+morgan512__random_forest_alt,morgan512,random_forest_alt,+D-MPNN,22
+morgan512__lightgbm_alt,morgan512,lightgbm_alt,+D-MPNN,26
+morgan512__xgboost,morgan512,xgboost,+D-MPNN,30
+maccs__extra_trees,maccs,extra_trees,+D-MPNN,15
+maccs__linear_alt,maccs,linear_alt,+D-MPNN,19
+maccs__random_forest_alt,maccs,random_forest_alt,+D-MPNN,23
+maccs__lightgbm_alt,maccs,lightgbm_alt,+D-MPNN,27
+maccs__xgboost,maccs,xgboost,+D-MPNN,31
+rdkit2d__extra_trees,rdkit2d,extra_trees,+D-MPNN,16
+rdkit2d__linear_alt,rdkit2d,linear_alt,+D-MPNN,20
+rdkit2d__random_forest_alt,rdkit2d,random_forest_alt,+D-MPNN,24
+rdkit2d__lightgbm_alt,rdkit2d,lightgbm_alt,+D-MPNN,28
+rdkit2d__xgboost,rdkit2d,xgboost,+D-MPNN,32
+multiview__extra_trees,multiview,extra_trees,+D-MPNN,17
+multiview__linear_alt,multiview,linear_alt,+D-MPNN,21
+multiview__random_forest_alt,multiview,random_forest_alt,+D-MPNN,25
+multiview__lightgbm_alt,multiview,lightgbm_alt,+D-MPNN,29
+chemprop_dmpnn,dmpnn_graph,chemprop_dmpnn,+D-MPNN,3
+morgan512__linear,morgan512,linear,Full modern-augmented,1
+morgan512__random_forest,morgan512,random_forest,Full modern-augmented,9
+morgan512__lightgbm,morgan512,lightgbm,Full modern-augmented,17
+maccs__linear,maccs,linear,Full modern-augmented,3
+maccs__random_forest,maccs,random_forest,Full modern-augmented,11
+maccs__lightgbm,maccs,lightgbm,Full modern-augmented,19
+rdkit2d__linear,rdkit2d,linear,Full modern-augmented,5
+rdkit2d__random_forest,rdkit2d,random_forest,Full modern-augmented,13
+rdkit2d__lightgbm,rdkit2d,lightgbm,Full modern-augmented,21
+multiview__linear,multiview,linear,Full modern-augmented,7
+multiview__random_forest,multiview,random_forest,Full modern-augmented,15
+multiview__lightgbm,multiview,lightgbm,Full modern-augmented,23
+morgan512__extra_trees,morgan512,extra_trees,Full modern-augmented,25
+maccs__extra_trees,maccs,extra_trees,Full modern-augmented,27
+rdkit2d__extra_trees,rdkit2d,extra_trees,Full modern-augmented,29
+multiview__extra_trees,multiview,extra_trees,Full modern-augmented,31
+chemberta_mtr__linear,chemberta_mtr,linear,Full modern-augmented,4
+chemberta_mtr__linear_alt,chemberta_mtr,linear_alt,Full modern-augmented,10
+chemberta_mtr__linear_strong,chemberta_mtr,linear_strong,Full modern-augmented,16
+chemberta_mtr__linear_sparse,chemberta_mtr,linear_sparse,Full modern-augmented,22
+chemberta_mtr__lightgbm,chemberta_mtr,lightgbm,Full modern-augmented,28
+chemberta_mlm__linear,chemberta_mlm,linear,Full modern-augmented,6
+chemberta_mlm__linear_alt,chemberta_mlm,linear_alt,Full modern-augmented,12
+chemberta_mlm__linear_strong,chemberta_mlm,linear_strong,Full modern-augmented,18
+chemberta_mlm__linear_sparse,chemberta_mlm,linear_sparse,Full modern-augmented,24
+chemberta_mlm__lightgbm,chemberta_mlm,lightgbm,Full modern-augmented,30
+molformer__linear,molformer,linear,Full modern-augmented,8
+molformer__linear_alt,molformer,linear_alt,Full modern-augmented,14
+molformer__linear_strong,molformer,linear_strong,Full modern-augmented,20
+molformer__linear_sparse,molformer,linear_sparse,Full modern-augmented,26
+molformer__lightgbm,molformer,lightgbm,Full modern-augmented,32
+chemprop_dmpnn,dmpnn_graph,chemprop_dmpnn,Full modern-augmented,2

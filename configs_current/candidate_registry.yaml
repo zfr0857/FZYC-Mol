@@ -1,0 +1,27 @@
+schema_version: 1
+source_table: reports/draft10_core_experiments_20260621/expanded_nested/candidate_registry.csv
+representation: Morgan-512
+candidate_count_per_task_type: 32
+required_fields:
+  - candidate_id
+  - family
+  - representation
+  - hyperparameters
+  - complexity_level
+  - eligible
+  - status
+  - rejection_reason
+  - registry_order
+  - code_commit
+  - data_version
+  - compute_budget
+historical_mapping:
+  candidate_id_column: candidate
+  hyperparameters_column: params
+  registry_order_column: candidate_order
+defaults:
+  eligible: true
+  status: eligible
+  rejection_reason: not_applicable
+  code_commit: unavailable_invalid_git_metadata
+  compute_budget: {device: cpu, representation_bits: 512}

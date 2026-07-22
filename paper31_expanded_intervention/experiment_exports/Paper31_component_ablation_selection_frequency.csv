@@ -1,0 +1,184 @@
+pool,task,task_type,candidate_count,selected_representation,selected_family,selected_count,selected_proportion
++ChemBERTa,bace,classification,16,morgan512,random_forest,3,0.2
++ChemBERTa,bace,classification,16,multiview,random_forest,10,0.6666666666666666
++ChemBERTa,bace,classification,16,rdkit2d,random_forest,2,0.13333333333333333
++ChemBERTa,bace,classification,32,morgan512,extra_trees,1,0.06666666666666667
++ChemBERTa,bace,classification,32,multiview,extra_trees,10,0.6666666666666666
++ChemBERTa,bace,classification,32,multiview,random_forest,3,0.2
++ChemBERTa,bace,classification,32,rdkit2d,extra_trees,1,0.06666666666666667
++ChemBERTa,bbbp,classification,16,multiview,random_forest,12,0.8
++ChemBERTa,bbbp,classification,16,rdkit2d,random_forest,3,0.2
++ChemBERTa,bbbp,classification,32,multiview,extra_trees,9,0.6
++ChemBERTa,bbbp,classification,32,multiview,random_forest,1,0.06666666666666667
++ChemBERTa,bbbp,classification,32,rdkit2d,extra_trees,5,0.3333333333333333
++ChemBERTa,clintox,classification,16,maccs,random_forest,7,0.4666666666666667
++ChemBERTa,clintox,classification,16,multiview,random_forest,5,0.3333333333333333
++ChemBERTa,clintox,classification,16,rdkit2d,random_forest,3,0.2
++ChemBERTa,clintox,classification,32,maccs,lightgbm,2,0.13333333333333333
++ChemBERTa,clintox,classification,32,multiview,lightgbm,13,0.8666666666666667
++ChemBERTa,esol,regression,16,chemberta_mtr,linear_sparse,1,0.06666666666666667
++ChemBERTa,esol,regression,16,rdkit2d,random_forest,14,0.9333333333333333
++ChemBERTa,esol,regression,32,multiview,lightgbm,5,0.3333333333333333
++ChemBERTa,esol,regression,32,rdkit2d,lightgbm,9,0.6
++ChemBERTa,esol,regression,32,rdkit2d,linear_alt,1,0.06666666666666667
++ChemBERTa,lipo,regression,16,rdkit2d,linear,5,0.3333333333333333
++ChemBERTa,lipo,regression,16,rdkit2d,random_forest,10,0.6666666666666666
++ChemBERTa,lipo,regression,32,multiview,lightgbm,15,1.0
++ChemBERTa,tdc_caco2_wang,regression,16,multiview,random_forest,4,0.26666666666666666
++ChemBERTa,tdc_caco2_wang,regression,16,rdkit2d,linear,4,0.26666666666666666
++ChemBERTa,tdc_caco2_wang,regression,16,rdkit2d,random_forest,7,0.4666666666666667
++ChemBERTa,tdc_caco2_wang,regression,32,multiview,extra_trees,1,0.06666666666666667
++ChemBERTa,tdc_caco2_wang,regression,32,multiview,lightgbm,3,0.2
++ChemBERTa,tdc_caco2_wang,regression,32,rdkit2d,extra_trees,1,0.06666666666666667
++ChemBERTa,tdc_caco2_wang,regression,32,rdkit2d,lightgbm,8,0.5333333333333333
++ChemBERTa,tdc_caco2_wang,regression,32,rdkit2d,linear_alt,2,0.13333333333333333
++D-MPNN,bace,classification,16,morgan512,extra_trees,4,0.26666666666666666
++D-MPNN,bace,classification,16,morgan512,random_forest,1,0.06666666666666667
++D-MPNN,bace,classification,16,multiview,random_forest,4,0.26666666666666666
++D-MPNN,bace,classification,16,rdkit2d,extra_trees,6,0.4
++D-MPNN,bace,classification,32,morgan512,extra_trees,1,0.06666666666666667
++D-MPNN,bace,classification,32,multiview,extra_trees,9,0.6
++D-MPNN,bace,classification,32,multiview,random_forest,2,0.13333333333333333
++D-MPNN,bace,classification,32,multiview,random_forest_alt,2,0.13333333333333333
++D-MPNN,bace,classification,32,rdkit2d,random_forest_alt,1,0.06666666666666667
++D-MPNN,bbbp,classification,16,maccs,extra_trees,1,0.06666666666666667
++D-MPNN,bbbp,classification,16,multiview,random_forest,2,0.13333333333333333
++D-MPNN,bbbp,classification,16,rdkit2d,extra_trees,12,0.8
++D-MPNN,bbbp,classification,32,multiview,extra_trees,9,0.6
++D-MPNN,bbbp,classification,32,multiview,lightgbm_alt,1,0.06666666666666667
++D-MPNN,bbbp,classification,32,multiview,random_forest,1,0.06666666666666667
++D-MPNN,bbbp,classification,32,rdkit2d,extra_trees,4,0.26666666666666666
++D-MPNN,clintox,classification,16,maccs,lightgbm,2,0.13333333333333333
++D-MPNN,clintox,classification,16,multiview,lightgbm,13,0.8666666666666667
++D-MPNN,clintox,classification,32,maccs,lightgbm,2,0.13333333333333333
++D-MPNN,clintox,classification,32,maccs,xgboost,5,0.3333333333333333
++D-MPNN,clintox,classification,32,multiview,lightgbm,6,0.4
++D-MPNN,clintox,classification,32,multiview,lightgbm_alt,2,0.13333333333333333
++D-MPNN,esol,regression,16,multiview,lightgbm,5,0.3333333333333333
++D-MPNN,esol,regression,16,rdkit2d,lightgbm,10,0.6666666666666666
++D-MPNN,esol,regression,32,multiview,lightgbm,5,0.3333333333333333
++D-MPNN,esol,regression,32,multiview,lightgbm_alt,1,0.06666666666666667
++D-MPNN,esol,regression,32,rdkit2d,lightgbm,4,0.26666666666666666
++D-MPNN,esol,regression,32,rdkit2d,lightgbm_alt,2,0.13333333333333333
++D-MPNN,esol,regression,32,rdkit2d,linear_alt,1,0.06666666666666667
++D-MPNN,esol,regression,32,rdkit2d,xgboost,2,0.13333333333333333
++D-MPNN,lipo,regression,16,multiview,lightgbm,15,1.0
++D-MPNN,lipo,regression,32,multiview,lightgbm,13,0.8666666666666667
++D-MPNN,lipo,regression,32,multiview,lightgbm_alt,2,0.13333333333333333
++D-MPNN,tdc_caco2_wang,regression,16,multiview,lightgbm,3,0.2
++D-MPNN,tdc_caco2_wang,regression,16,rdkit2d,extra_trees,2,0.13333333333333333
++D-MPNN,tdc_caco2_wang,regression,16,rdkit2d,lightgbm,10,0.6666666666666666
++D-MPNN,tdc_caco2_wang,regression,32,multiview,extra_trees,1,0.06666666666666667
++D-MPNN,tdc_caco2_wang,regression,32,multiview,lightgbm,2,0.13333333333333333
++D-MPNN,tdc_caco2_wang,regression,32,multiview,lightgbm_alt,4,0.26666666666666666
++D-MPNN,tdc_caco2_wang,regression,32,rdkit2d,lightgbm,5,0.3333333333333333
++D-MPNN,tdc_caco2_wang,regression,32,rdkit2d,linear_alt,1,0.06666666666666667
++D-MPNN,tdc_caco2_wang,regression,32,rdkit2d,xgboost,2,0.13333333333333333
++MoLFormer,bace,classification,16,morgan512,random_forest,3,0.2
++MoLFormer,bace,classification,16,multiview,random_forest,10,0.6666666666666666
++MoLFormer,bace,classification,16,rdkit2d,random_forest,2,0.13333333333333333
++MoLFormer,bace,classification,32,morgan512,extra_trees,1,0.06666666666666667
++MoLFormer,bace,classification,32,multiview,extra_trees,9,0.6
++MoLFormer,bace,classification,32,multiview,random_forest,2,0.13333333333333333
++MoLFormer,bace,classification,32,multiview,random_forest_alt,2,0.13333333333333333
++MoLFormer,bace,classification,32,rdkit2d,random_forest_alt,1,0.06666666666666667
++MoLFormer,bbbp,classification,16,maccs,lightgbm,1,0.06666666666666667
++MoLFormer,bbbp,classification,16,multiview,random_forest,11,0.7333333333333333
++MoLFormer,bbbp,classification,16,rdkit2d,random_forest,3,0.2
++MoLFormer,bbbp,classification,32,multiview,extra_trees,9,0.6
++MoLFormer,bbbp,classification,32,multiview,random_forest,1,0.06666666666666667
++MoLFormer,bbbp,classification,32,rdkit2d,extra_trees,5,0.3333333333333333
++MoLFormer,clintox,classification,16,maccs,lightgbm,13,0.8666666666666667
++MoLFormer,clintox,classification,16,rdkit2d,lightgbm,2,0.13333333333333333
++MoLFormer,clintox,classification,32,maccs,lightgbm,2,0.13333333333333333
++MoLFormer,clintox,classification,32,maccs,lightgbm_alt,1,0.06666666666666667
++MoLFormer,clintox,classification,32,multiview,lightgbm,12,0.8
++MoLFormer,esol,regression,16,rdkit2d,lightgbm,15,1.0
++MoLFormer,esol,regression,32,multiview,lightgbm,5,0.3333333333333333
++MoLFormer,esol,regression,32,rdkit2d,lightgbm,5,0.3333333333333333
++MoLFormer,esol,regression,32,rdkit2d,lightgbm_alt,4,0.26666666666666666
++MoLFormer,esol,regression,32,rdkit2d,linear_alt,1,0.06666666666666667
++MoLFormer,lipo,regression,16,rdkit2d,lightgbm,15,1.0
++MoLFormer,lipo,regression,32,multiview,lightgbm,15,1.0
++MoLFormer,tdc_caco2_wang,regression,16,rdkit2d,lightgbm,12,0.8
++MoLFormer,tdc_caco2_wang,regression,16,rdkit2d,random_forest,3,0.2
++MoLFormer,tdc_caco2_wang,regression,32,multiview,extra_trees,1,0.06666666666666667
++MoLFormer,tdc_caco2_wang,regression,32,multiview,lightgbm,3,0.2
++MoLFormer,tdc_caco2_wang,regression,32,rdkit2d,lightgbm,7,0.4666666666666667
++MoLFormer,tdc_caco2_wang,regression,32,rdkit2d,lightgbm_alt,2,0.13333333333333333
++MoLFormer,tdc_caco2_wang,regression,32,rdkit2d,linear_alt,2,0.13333333333333333
+Classical multiview,bace,classification,16,morgan512,extra_trees,1,0.06666666666666667
+Classical multiview,bace,classification,16,multiview,extra_trees,10,0.6666666666666666
+Classical multiview,bace,classification,16,multiview,random_forest,3,0.2
+Classical multiview,bace,classification,16,rdkit2d,extra_trees,1,0.06666666666666667
+Classical multiview,bace,classification,32,morgan512,extra_trees,1,0.06666666666666667
+Classical multiview,bace,classification,32,multiview,extra_trees,9,0.6
+Classical multiview,bace,classification,32,multiview,random_forest,2,0.13333333333333333
+Classical multiview,bace,classification,32,multiview,random_forest_alt,2,0.13333333333333333
+Classical multiview,bace,classification,32,rdkit2d,random_forest_alt,1,0.06666666666666667
+Classical multiview,bbbp,classification,16,multiview,extra_trees,9,0.6
+Classical multiview,bbbp,classification,16,multiview,random_forest,1,0.06666666666666667
+Classical multiview,bbbp,classification,16,rdkit2d,extra_trees,5,0.3333333333333333
+Classical multiview,bbbp,classification,32,multiview,extra_trees,9,0.6
+Classical multiview,bbbp,classification,32,multiview,lightgbm_alt,1,0.06666666666666667
+Classical multiview,bbbp,classification,32,multiview,random_forest,1,0.06666666666666667
+Classical multiview,bbbp,classification,32,rdkit2d,extra_trees,4,0.26666666666666666
+Classical multiview,clintox,classification,16,maccs,lightgbm,2,0.13333333333333333
+Classical multiview,clintox,classification,16,multiview,lightgbm,13,0.8666666666666667
+Classical multiview,clintox,classification,32,maccs,lightgbm,2,0.13333333333333333
+Classical multiview,clintox,classification,32,maccs,xgboost,3,0.2
+Classical multiview,clintox,classification,32,multiview,lightgbm,6,0.4
+Classical multiview,clintox,classification,32,multiview,lightgbm_alt,1,0.06666666666666667
+Classical multiview,clintox,classification,32,multiview,xgboost,3,0.2
+Classical multiview,esol,regression,16,multiview,lightgbm,5,0.3333333333333333
+Classical multiview,esol,regression,16,rdkit2d,lightgbm,10,0.6666666666666666
+Classical multiview,esol,regression,32,multiview,lightgbm,5,0.3333333333333333
+Classical multiview,esol,regression,32,multiview,lightgbm_alt,1,0.06666666666666667
+Classical multiview,esol,regression,32,rdkit2d,lightgbm,4,0.26666666666666666
+Classical multiview,esol,regression,32,rdkit2d,lightgbm_alt,2,0.13333333333333333
+Classical multiview,esol,regression,32,rdkit2d,linear_alt,1,0.06666666666666667
+Classical multiview,esol,regression,32,rdkit2d,xgboost,2,0.13333333333333333
+Classical multiview,lipo,regression,16,multiview,lightgbm,15,1.0
+Classical multiview,lipo,regression,32,multiview,lightgbm,13,0.8666666666666667
+Classical multiview,lipo,regression,32,multiview,lightgbm_alt,2,0.13333333333333333
+Classical multiview,tdc_caco2_wang,regression,16,multiview,extra_trees,1,0.06666666666666667
+Classical multiview,tdc_caco2_wang,regression,16,multiview,lightgbm,3,0.2
+Classical multiview,tdc_caco2_wang,regression,16,rdkit2d,extra_trees,1,0.06666666666666667
+Classical multiview,tdc_caco2_wang,regression,16,rdkit2d,lightgbm,10,0.6666666666666666
+Classical multiview,tdc_caco2_wang,regression,32,multiview,extra_trees,1,0.06666666666666667
+Classical multiview,tdc_caco2_wang,regression,32,multiview,lightgbm,1,0.06666666666666667
+Classical multiview,tdc_caco2_wang,regression,32,multiview,lightgbm_alt,1,0.06666666666666667
+Classical multiview,tdc_caco2_wang,regression,32,multiview,xgboost,6,0.4
+Classical multiview,tdc_caco2_wang,regression,32,rdkit2d,lightgbm,5,0.3333333333333333
+Classical multiview,tdc_caco2_wang,regression,32,rdkit2d,linear_alt,1,0.06666666666666667
+Full modern-augmented,bace,classification,16,morgan512,random_forest,3,0.2
+Full modern-augmented,bace,classification,16,multiview,random_forest,10,0.6666666666666666
+Full modern-augmented,bace,classification,16,rdkit2d,random_forest,2,0.13333333333333333
+Full modern-augmented,bace,classification,32,morgan512,extra_trees,1,0.06666666666666667
+Full modern-augmented,bace,classification,32,multiview,extra_trees,10,0.6666666666666666
+Full modern-augmented,bace,classification,32,multiview,random_forest,3,0.2
+Full modern-augmented,bace,classification,32,rdkit2d,extra_trees,1,0.06666666666666667
+Full modern-augmented,bbbp,classification,16,multiview,random_forest,12,0.8
+Full modern-augmented,bbbp,classification,16,rdkit2d,random_forest,3,0.2
+Full modern-augmented,bbbp,classification,32,multiview,extra_trees,9,0.6
+Full modern-augmented,bbbp,classification,32,multiview,random_forest,1,0.06666666666666667
+Full modern-augmented,bbbp,classification,32,rdkit2d,extra_trees,5,0.3333333333333333
+Full modern-augmented,clintox,classification,16,maccs,random_forest,7,0.4666666666666667
+Full modern-augmented,clintox,classification,16,multiview,random_forest,5,0.3333333333333333
+Full modern-augmented,clintox,classification,16,rdkit2d,random_forest,3,0.2
+Full modern-augmented,clintox,classification,32,maccs,lightgbm,2,0.13333333333333333
+Full modern-augmented,clintox,classification,32,multiview,lightgbm,13,0.8666666666666667
+Full modern-augmented,esol,regression,16,chemberta_mtr,linear_alt,1,0.06666666666666667
+Full modern-augmented,esol,regression,16,rdkit2d,random_forest,14,0.9333333333333333
+Full modern-augmented,esol,regression,32,multiview,lightgbm,5,0.3333333333333333
+Full modern-augmented,esol,regression,32,rdkit2d,lightgbm,10,0.6666666666666666
+Full modern-augmented,lipo,regression,16,rdkit2d,linear,5,0.3333333333333333
+Full modern-augmented,lipo,regression,16,rdkit2d,random_forest,10,0.6666666666666666
+Full modern-augmented,lipo,regression,32,multiview,lightgbm,15,1.0
+Full modern-augmented,tdc_caco2_wang,regression,16,multiview,random_forest,4,0.26666666666666666
+Full modern-augmented,tdc_caco2_wang,regression,16,rdkit2d,linear,4,0.26666666666666666
+Full modern-augmented,tdc_caco2_wang,regression,16,rdkit2d,random_forest,7,0.4666666666666667
+Full modern-augmented,tdc_caco2_wang,regression,32,multiview,extra_trees,1,0.06666666666666667
+Full modern-augmented,tdc_caco2_wang,regression,32,multiview,lightgbm,3,0.2
+Full modern-augmented,tdc_caco2_wang,regression,32,rdkit2d,extra_trees,1,0.06666666666666667
+Full modern-augmented,tdc_caco2_wang,regression,32,rdkit2d,lightgbm,10,0.6666666666666666

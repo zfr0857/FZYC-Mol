@@ -1,0 +1,64 @@
+{
+  "seeds": [13, 17, 23, 29, 31],
+  "data_dir": "data",
+  "reports_dir": "reports/experiment_update",
+  "manuscript_tables_dir": "reports/manuscript_tables/experiment_update",
+  "datasets": {
+    "moleculenet": ["esol", "freesolv", "lipo", "bbbp", "bace", "clintox"],
+    "tdc_admet": [
+      "tdc_bioavailability_ma",
+      "tdc_caco2_wang",
+      "tdc_hia_hou",
+      "tdc_bbb_martins",
+      "tdc_pgp_broccatelli",
+      "tdc_cyp2c9_veith",
+      "tdc_cyp2d6_veith",
+      "tdc_cyp3a4_veith"
+    ],
+    "imbalance": [
+      "clintox",
+      "tdc_cyp2c9_veith",
+      "tdc_cyp2d6_veith",
+      "tdc_pgp_broccatelli"
+    ],
+    "ood_gradient": [
+      "bbbp",
+      "tdc_cyp2c9_veith",
+      "tdc_cyp2d6_veith",
+      "tdc_bioavailability_ma",
+      "tdc_caco2_wang",
+      "tdc_hia_hou",
+      "tdc_bbb_martins",
+      "tdc_pgp_broccatelli"
+    ],
+    "bro5": ["cycpept_pampa", "linpept_nonfouling", "linpept_cellpen"]
+  },
+  "splits": ["random", "scaffold", "perimeter"],
+  "strong_baselines": [
+    "xgboost_rdkit",
+    "xgboost_morgan",
+    "xgboost_morgancount",
+    "randomforest_morgan",
+    "extratrees_morgan",
+    "lightgbm_morgan",
+    "catboost_morgan",
+    "chemprop",
+    "tabpfn_rdkit",
+    "autogluon_rdkit",
+    "kpgt_representation"
+  ],
+  "imbalance_strategies": [
+    "class_weight",
+    "oversampling",
+    "downsampling",
+    "downsampling_ensemble",
+    "threshold_moving"
+  ],
+  "primary_metric": {
+    "classification": "roc_auc",
+    "regression": "rmse"
+  },
+  "perimeter_test_fraction": 0.10,
+  "valid_fraction": 0.10,
+  "n_estimators": 300
+}

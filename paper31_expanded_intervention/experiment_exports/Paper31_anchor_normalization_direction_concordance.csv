@@ -1,0 +1,19 @@
+anchor_scheme,normalization,same_direction_cells,total_cells,direction_concordance,invalid_summary_cells,reference
+fixed_morgan_rf,endpoint_MAD,54,72,0.75,0,shared Morgan linear anchor on raw endpoint scale
+fixed_morgan_rf,homogeneous_audit_best,53,72,0.7361111111111112,0,shared Morgan linear anchor on raw endpoint scale
+fixed_morgan_rf,raw,54,72,0.75,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_16,endpoint_MAD,15,18,0.8333333333333334,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_16,homogeneous_audit_best,15,18,0.8333333333333334,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_16,raw,15,18,0.8333333333333334,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_2,endpoint_MAD,14,18,0.7777777777777778,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_2,homogeneous_audit_best,11,18,0.6111111111111112,6,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_2,raw,14,18,0.7777777777777778,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_4,endpoint_MAD,15,18,0.8333333333333334,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_4,homogeneous_audit_best,15,18,0.8333333333333334,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_4,raw,15,18,0.8333333333333334,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_8,endpoint_MAD,18,18,1.0,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_8,homogeneous_audit_best,16,18,0.8888888888888888,0,shared Morgan linear anchor on raw endpoint scale
+registry_median_order_8,raw,18,18,1.0,0,shared Morgan linear anchor on raw endpoint scale
+shared_morgan_linear,endpoint_MAD,72,72,1.0,0,shared Morgan linear anchor on raw endpoint scale
+shared_morgan_linear,homogeneous_audit_best,72,72,1.0,0,shared Morgan linear anchor on raw endpoint scale
+shared_morgan_linear,raw,72,72,1.0,0,shared Morgan linear anchor on raw endpoint scale

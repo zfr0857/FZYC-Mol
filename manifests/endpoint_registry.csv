@@ -1,0 +1,10 @@
+﻿endpoint,task_type,primary_metric,metric_direction,outer_split,evidence_role,seeds,outer_folds,inner_folds
+esol,regression,RMSE,lower,scaffold_group,confirmatory pressure; multiview; strong baseline,11;23;37;53;71,3,3
+freesolv,regression,RMSE,lower,scaffold_group,confirmatory pressure; multiview; strong baseline,11;23;37;53;71,3,3
+lipo,regression,RMSE,lower,scaffold_group,confirmatory pressure; multiview; strong baseline,11;23;37;53;71,3,3
+bbbp,classification,ROC-AUC,higher,stratified_scaffold_group,confirmatory pressure; multiview; strong baseline,11;23;37;53;71,3,3
+bace,classification,ROC-AUC,higher,stratified_scaffold_group,confirmatory pressure; multiview; strong baseline,11;23;37;53;71,3,3
+clintox,classification,ROC-AUC,higher,stratified_scaffold_group,confirmatory pressure; minority-class negative result,11;23;37;53;71,3,3
+tdc_caco2_wang,regression,RMSE,lower,scaffold_group,confirmatory pressure; multiview,11;23;37;53;71,3,3
+tdc_hia_hou,classification,ROC-AUC,higher,stratified_scaffold_group,confirmatory pressure; multiview,11;23;37;53;71,3,3
+tdc_pgp_broccatelli,classification,ROC-AUC,higher,stratified_scaffold_group,confirmatory pressure; multiview,11;23;37;53;71,3,3

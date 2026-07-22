@@ -1,0 +1,23 @@
+{
+  "datasets": ["esol"],
+  "models": [
+    "fzyc_mol_static",
+    "fzyc_mol_no_contrast",
+    "fzyc_mol_no_fp",
+    "fzyc_mol_no_desc",
+    "fzyc_mol"
+  ],
+  "split": "scaffold",
+  "seeds": [13],
+  "epochs": 1,
+  "batch_size": 32,
+  "hidden_dim": 32,
+  "layers": 2,
+  "lr": 0.001,
+  "weight_decay": 0.00001,
+  "contrastive_weight": 0.01,
+  "max_rows": 64,
+  "num_workers": 0,
+  "output_dir": "reports/smoke_ablation"
+}
+

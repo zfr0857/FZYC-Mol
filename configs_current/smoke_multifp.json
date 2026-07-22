@@ -1,0 +1,19 @@
+{
+  "datasets": ["esol"],
+  "models": ["rf_multifp", "xgb_multifp", "lgbm_multifp", "extratrees_multifp"],
+  "split": "scaffold",
+  "seeds": [13],
+  "epochs": 1,
+  "batch_size": 64,
+  "hidden_dim": 64,
+  "layers": 2,
+  "lr": 0.001,
+  "weight_decay": 0.00001,
+  "contrastive_weight": 0.05,
+  "patience": 2,
+  "max_rows": 120,
+  "num_workers": 0,
+  "resume": true,
+  "cache_graphs": false,
+  "output_dir": "reports/smoke_multifp"
+}

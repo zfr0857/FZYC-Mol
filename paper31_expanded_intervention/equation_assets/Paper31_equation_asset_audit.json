@@ -1,0 +1,9 @@
+{
+  "status": "complete",
+  "equation_count": 27,
+  "notation_count": 20,
+  "epsilon": 1e-12,
+  "equations_22_24": "paired outer-unit normalization before fold-to-seed-to-endpoint aggregation",
+  "analysis_script": "D:\\fzyc\\scripts\\analyze_paper31_expanded_intervention_20260717.py",
+  "analysis_script_sha256": "1887cfcc0341cecb648197b41a7fd3c2e5bfb196aff3e0563c15e4d763270683"
+}

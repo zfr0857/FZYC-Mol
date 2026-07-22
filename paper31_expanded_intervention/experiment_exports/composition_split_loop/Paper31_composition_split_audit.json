@@ -1,0 +1,96 @@
+{
+  "status": "complete",
+  "tasks": [
+    "clintox",
+    "bace",
+    "esol"
+  ],
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "regimes": [
+    "scaffold",
+    "similarity_cluster"
+  ],
+  "candidate_counts": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "pools": [
+    "Homogeneous Morgan",
+    "Classical multiview",
+    "Modern-augmented"
+  ],
+  "similarity_split_integrity": {
+    "manifest_rows": 135,
+    "all_no_group_overlap": true,
+    "max_cross_fold_tanimoto": 0.6987951993942261,
+    "threshold": 0.7
+  },
+  "balance_checks": {
+    "Homogeneous Morgan_K4_inner_rows": true,
+    "Homogeneous Morgan_K4_outer_rows": true,
+    "Homogeneous Morgan_K4_inner_exact": true,
+    "Homogeneous Morgan_K4_outer_exact": true,
+    "Homogeneous Morgan_K8_inner_rows": true,
+    "Homogeneous Morgan_K8_outer_rows": true,
+    "Homogeneous Morgan_K8_inner_exact": true,
+    "Homogeneous Morgan_K8_outer_exact": true,
+    "Homogeneous Morgan_K16_inner_rows": true,
+    "Homogeneous Morgan_K16_outer_rows": true,
+    "Homogeneous Morgan_K16_inner_exact": true,
+    "Homogeneous Morgan_K16_outer_exact": true,
+    "Homogeneous Morgan_K32_inner_rows": true,
+    "Homogeneous Morgan_K32_outer_rows": true,
+    "Homogeneous Morgan_K32_inner_exact": true,
+    "Homogeneous Morgan_K32_outer_exact": true,
+    "Classical multiview_K4_inner_rows": true,
+    "Classical multiview_K4_outer_rows": true,
+    "Classical multiview_K4_inner_exact": true,
+    "Classical multiview_K4_outer_exact": true,
+    "Classical multiview_K8_inner_rows": true,
+    "Classical multiview_K8_outer_rows": true,
+    "Classical multiview_K8_inner_exact": true,
+    "Classical multiview_K8_outer_exact": true,
+    "Classical multiview_K16_inner_rows": true,
+    "Classical multiview_K16_outer_rows": true,
+    "Classical multiview_K16_inner_exact": true,
+    "Classical multiview_K16_outer_exact": true,
+    "Classical multiview_K32_inner_rows": true,
+    "Classical multiview_K32_outer_rows": true,
+    "Classical multiview_K32_inner_exact": true,
+    "Classical multiview_K32_outer_exact": true,
+    "Modern-augmented_K4_inner_rows": true,
+    "Modern-augmented_K4_outer_rows": true,
+    "Modern-augmented_K4_inner_exact": true,
+    "Modern-augmented_K4_outer_exact": true,
+    "Modern-augmented_K8_inner_rows": true,
+    "Modern-augmented_K8_outer_rows": true,
+    "Modern-augmented_K8_inner_exact": true,
+    "Modern-augmented_K8_outer_exact": true,
+    "Modern-augmented_K16_inner_rows": true,
+    "Modern-augmented_K16_outer_rows": true,
+    "Modern-augmented_K16_inner_exact": true,
+    "Modern-augmented_K16_outer_exact": true,
+    "Modern-augmented_K32_inner_rows": true,
+    "Modern-augmented_K32_outer_rows": true,
+    "Modern-augmented_K32_inner_exact": true,
+    "Modern-augmented_K32_outer_exact": true
+  },
+  "inference_unit": "outer folds averaged within seed; seed is the bootstrap block",
+  "rows": {
+    "Paper31_composition_split_units.csv": 1080,
+    "Paper31_composition_split_summary.csv": 72,
+    "Paper31_composition_split_diversity.csv": 432,
+    "Paper31_composition_split_stability.csv": 72,
+    "Paper31_composition_split_direction_concordance.csv": 72,
+    "Paper31_similarity_candidate_registry.csv": 96,
+    "Paper31_similarity_split_manifest.csv": 135
+  }
+}

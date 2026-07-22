@@ -1,0 +1,13 @@
+task,task_type,candidate_count,budget_seconds
+bace,classification,16,12.242586399719583
+bace,classification,32,40.462236399180256
+bbbp,classification,16,12.227592300332613
+bbbp,classification,32,29.535682900284883
+clintox,classification,16,12.265518199419601
+clintox,classification,32,39.779335000377614
+esol,regression,16,6.424677600210995
+esol,regression,32,18.520464200002603
+lipo,regression,16,16.326005600451026
+lipo,regression,32,45.88698139972985
+tdc_caco2_wang,regression,16,6.044995799835303
+tdc_caco2_wang,regression,32,17.929737199912772

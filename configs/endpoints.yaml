@@ -1,0 +1,13 @@
+confirmation_endpoints:
+  - {id: bbbp, task_type: classification}
+  - {id: bace, task_type: classification}
+  - {id: clintox, task_type: classification}
+  - {id: esol, task_type: regression}
+  - {id: freesolv, task_type: regression}
+  - {id: lipo, task_type: regression}
+  - {id: tdc_caco2_wang, task_type: regression}
+  - {id: tdc_hia_hou, task_type: classification}
+  - {id: tdc_pgp_broccatelli, task_type: classification}
+external_panels:
+  tdc_endpoints: 22
+  moleculeace_available_tasks: 17

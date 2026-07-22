@@ -1,0 +1,19 @@
+{
+  "datasets": ["esol"],
+  "models": ["xgb_morgan", "lgbm_morgan", "dmpnn"],
+  "split": "scaffold",
+  "seeds": [13],
+  "epochs": 2,
+  "batch_size": 16,
+  "hidden_dim": 64,
+  "layers": 2,
+  "lr": 0.001,
+  "weight_decay": 0.00001,
+  "contrastive_weight": 0.0,
+  "patience": 2,
+  "max_rows": 120,
+  "num_workers": 0,
+  "resume": false,
+  "cache_graphs": true,
+  "output_dir": "reports/smoke_strict_core"
+}

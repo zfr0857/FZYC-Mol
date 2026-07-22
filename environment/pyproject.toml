@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools==80.9.0", "wheel==0.45.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fzyc-mol"
+version = "0.1.0"
+description = "Auditable candidate-selection governance for molecular property prediction"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+dependencies = [
+  "numpy==2.3.3",
+  "pandas==2.3.3",
+  "scipy==1.17.1",
+  "scikit-learn==1.6.1",
+  "rdkit==2026.3.1",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.0.2"]
+models = ["catboost==1.2.8", "lightgbm==4.6.0", "xgboost==3.2.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120

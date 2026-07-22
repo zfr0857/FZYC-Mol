@@ -1,0 +1,11 @@
+{
+  "n_predictions": 540,
+  "loeo_mae": 0.11963672768108566,
+  "constant_baseline_mae": 0.122683469811651,
+  "loeo_spearman": 0.09906006771570934,
+  "mean_high_regret_auc": 0.5141089930163887,
+  "risk_gate_mean_delta": -0.008664215025733535,
+  "risk_gate_endpoint_bootstrap_ci95_low": -0.037508923996936554,
+  "risk_gate_endpoint_bootstrap_ci95_high": 0.019977132857628237,
+  "endpoints_with_lower_retained_regret": 5
+}

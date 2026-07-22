@@ -1,0 +1,10 @@
+{
+  "task": "freesolv",
+  "task_type": "regression",
+  "seed": 11,
+  "n": 642,
+  "outer_split_type": "scaffold_group",
+  "outer_folds": 3,
+  "inner_folds": 3,
+  "candidate_count": 12
+}

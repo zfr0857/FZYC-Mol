@@ -1,0 +1,10 @@
+{
+  "task": "tdc_pgp_broccatelli",
+  "task_type": "classification",
+  "seed": 37,
+  "n": 1212,
+  "outer_split_type": "stratified_scaffold_group",
+  "outer_folds": 3,
+  "inner_folds": 3,
+  "candidate_count": 12
+}

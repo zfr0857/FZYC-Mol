@@ -1,0 +1,8 @@
+modes: [random_order, random_subset, family_balanced]
+pool_sizes: [4, 8, 16, 32]
+subset_seeds:
+  start: 0
+  stop_exclusive: 100
+force_include_registry_order: [1]
+store_candidate_lists: true
+store_family_counts: true

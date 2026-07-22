@@ -1,0 +1,8 @@
+name: fzyc-mol
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13.7
+  - pip
+  - pip:
+      - -r requirements.lock
