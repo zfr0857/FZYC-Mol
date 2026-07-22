@@ -121,7 +121,7 @@ def panel_a(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.set_yticks(range(6), [base.TASK_LABEL[t] for t in base.TASKS[::-1]])
     ax.set_ylim(-0.55, 5.55)
     ax.set_xlim(0.62, 2.78)
-    ax.set_xlabel("Paired homogeneous-normalised gain")
+    ax.set_xlabel("Paired homogeneous-audit-best normalized gain")
     ax.set_title("Opportunity and realised gain", loc="left", fontweight="bold", pad=30)
     clean(ax, "x")
     outcome = [
@@ -280,7 +280,7 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.axhline(0, color="#7A8393", lw=0.7)
     ax.set_ylim(-0.36, 2.15)
     ax.set_xlabel("Downstream audit time per outer unit (s, log scale)")
-    ax.set_ylabel("Normalised selected gain")
+    ax.set_ylabel("Normalized selected gain")
     ax.set_title("Downstream budget-benefit", loc="left", fontweight="bold", pad=30)
     ax.text(0.0, 1.005, "Downstream fitting only", transform=ax.transAxes,
             ha="left", va="bottom", fontsize=8.0, color="#555D68")

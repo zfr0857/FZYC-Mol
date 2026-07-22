@@ -74,7 +74,7 @@ L 138.170606 68.031496
      </g>
     </g>
     <g id="text_3">
-     <text style="font-size: 9.2px; font-family: 'Times New Roman'; text-anchor: middle" x="121.752996" y="271.419739" transform="rotate(-0 121.752996 271.419739)">Paired homogeneous-normalised gain</text>
+     <text style="font-size: 9.2px; font-family: 'Times New Roman'; text-anchor: middle" x="121.752996" y="271.419739" transform="rotate(-0 121.752996 271.419739)">Paired homogeneous-audit-best normalized gain</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
@@ -4692,7 +4692,7 @@ L 375.8976 333.834308
      </g>
     </g>
     <g id="text_157">
-     <text style="font-size: 9.2px; font-family: 'Times New Roman'; text-anchor: middle" x="219.895805" y="421.738226" transform="rotate(-90 219.895805 421.738226)">Normalised selected gain</text>
+     <text style="font-size: 9.2px; font-family: 'Times New Roman'; text-anchor: middle" x="219.895805" y="421.738226" transform="rotate(-90 219.895805 421.738226)">Normalized selected gain</text>
     </g>
    </g>
    <g id="line2d_265">
