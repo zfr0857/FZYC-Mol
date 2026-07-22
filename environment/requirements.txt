@@ -12,3 +12,4 @@ lightgbm>=4.6
 chemprop>=2.2
 PyTDC>=1.1
 seaborn>=0.13
+openpyxl>=3.1
