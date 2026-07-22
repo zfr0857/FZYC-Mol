@@ -106,14 +106,14 @@ def panel_a(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
                 selected, y,
                 xerr=[[selected - row.homogeneous_normalized_selected_gain_low],
                       [row.homogeneous_normalized_selected_gain_high - selected]],
-                fmt="s", ms=5.9, color=base.COLORS[pool], ecolor=base.COLORS[pool],
+                fmt="s", ms=6.3, color=base.COLORS[pool], ecolor=base.COLORS[pool],
                 elinewidth=0.7, capsize=1.6, zorder=3,
             )
             ax.errorbar(
                 opportunity, y,
                 xerr=[[opportunity - row.homogeneous_normalized_oracle_opportunity_low],
                       [row.homogeneous_normalized_oracle_opportunity_high - opportunity]],
-                fmt="o", ms=5.9, mfc="white", mec=base.COLORS[pool], mew=1.0,
+                fmt="o", ms=6.3, mfc="white", mec=base.COLORS[pool], mew=1.0,
                 ecolor=base.COLORS[pool], elinewidth=0.7, capsize=1.6, zorder=3,
             )
     ax.axvline(1, color="#7A8393", lw=0.8, ls="--")
@@ -121,7 +121,7 @@ def panel_a(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.set_yticks(range(6), [base.TASK_LABEL[t] for t in base.TASKS[::-1]])
     ax.set_ylim(-0.55, 5.55)
     ax.set_xlim(0.62, 2.78)
-    ax.set_xlabel("Paired homogeneous-audit-best normalized gain")
+    ax.set_xlabel("Homogeneous-audit-best-normalized gain")
     ax.set_title("Opportunity and realised gain", loc="left", fontweight="bold", pad=30)
     clean(ax, "x")
     outcome = [
@@ -208,7 +208,7 @@ def panel_c(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     for i, (_, pool) in enumerate(index):
         row_pos = rows[i]
         ax.plot([-0.63, -0.63], [row_pos + 0.18, row_pos + 0.82],
-                color=base.COLORS[pool], lw=1.1, solid_capstyle="butt",
+                color=base.COLORS[pool], lw=1.7, solid_capstyle="butt",
                 clip_on=False)
         ax.text(-0.25, row_pos + 0.5,
                 {"Homogeneous Morgan": "H", "Classical multiview": "MV", "Modern-augmented": "M"}[pool],
@@ -275,14 +275,14 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     if len(front):
         ax.step(front.time, front.gain, where="post", color="#202632", lw=1.0, alpha=0.8)
     ax.set_xscale("log")
-    ax.set_xlim(points.time.min() * 0.75, points.time.max() * 1.8)
+    ax.set_xlim(points.time.min() * 0.55, points.time.max() * 1.8)
     ax.set_xticks([1, 10, 100], ["1", "10", "100"])
     ax.axhline(0, color="#7A8393", lw=0.7)
     ax.set_ylim(-0.36, 2.15)
     ax.set_xlabel("Downstream audit time per outer unit (s, log scale)")
     ax.set_ylabel("Normalized selected gain")
     ax.set_title("Downstream budget-benefit", loc="left", fontweight="bold", pad=30)
-    ax.text(0.0, 1.005, "Downstream fitting only", transform=ax.transAxes,
+    ax.text(0.0, 0.995, "Downstream fitting only", transform=ax.transAxes,
             ha="left", va="bottom", fontsize=8.0, color="#555D68")
     clean(ax, "both")
     design_handles = [
@@ -297,7 +297,7 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
                               labelspacing=0.25, handletextpad=0.3)
     ax.add_artist(design_legend)
     ax.legend(handles=k_handles, ncol=4, frameon=False, mode="expand",
-              loc="lower left", bbox_to_anchor=(0.0, 1.035, 1.0, 0.05),
+              loc="lower left", bbox_to_anchor=(0.0, 1.055, 1.0, 0.05),
               borderaxespad=0.0, handlelength=0.55,
               columnspacing=0.70, handletextpad=0.18, fontsize=7.0)
     label(ax, "D")

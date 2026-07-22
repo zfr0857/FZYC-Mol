@@ -1,5 +1,5 @@
 {
-  "package_version": "paper-release-2026-07",
+  "package_version": "paper-release-2026-07-r2",
   "source_rows": {
     "Paper31_endpoint_pool_K_summary.csv": 216,
     "Paper31_selection_units.csv": 3240,
@@ -8,6 +8,6 @@
   },
   "composition_endpoints": 6,
   "modern_K32_positive_endpoints": 6,
-  "figure7_svg_sha256": "a8bc7252b1fbf22362c38e7b3da09a731a33847bc4acad62ce0234b80cbd78c2",
+  "figure7_svg_sha256": "b213557bbd43ea8bbaa71aff3a27254f90248ea797cbf1913a7b266ac0dfd722",
   "status": "pass"
 }
