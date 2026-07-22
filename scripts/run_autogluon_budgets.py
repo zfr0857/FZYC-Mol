@@ -16,6 +16,8 @@ REPEAT_STATUS = ROOT / "results" / "nested_selection" / "repeated_nested" / "run
 
 def _wsl_path(path: Path) -> str:
     resolved = path.resolve()
+    if not resolved.drive:
+        return resolved.as_posix()
     drive = resolved.drive.rstrip(":").lower()
     tail = resolved.as_posix().split(":", 1)[1]
     return f"/mnt/{drive}{tail}"
