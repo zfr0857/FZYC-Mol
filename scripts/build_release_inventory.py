@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import subprocess
 from pathlib import Path
 
 
@@ -25,12 +26,13 @@ def digest(path: Path) -> str:
 
 
 def main() -> None:
+    tracked = subprocess.check_output(["git", "ls-files", "-z"], cwd=ROOT).decode("utf-8").split("\0")
     files = [
-        path for path in ROOT.rglob("*")
-        if path.is_file()
-        and not EXCLUDED_PARTS.intersection(path.relative_to(ROOT).parts)
-        and path.name not in EXCLUDED_FILES
-        and path.suffix.lower() != ".pyc"
+        ROOT / relative for relative in tracked
+        if relative
+        and Path(relative).name not in EXCLUDED_FILES
+        and not EXCLUDED_PARTS.intersection(Path(relative).parts)
+        and Path(relative).suffix.lower() != ".pyc"
     ]
     rows = [
         {
