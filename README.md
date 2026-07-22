@@ -10,7 +10,7 @@ environment files, data acquisition and cleaning scripts, candidate
 registries, split manifests, fold/seed/candidate exports, figure and table
 source data, timing and failure logs, and portable quick and training-level
 entry points. The maintained source repository is
-<https://github.com/zfr0857-source/FZYC-Mol>. No Zenodo record or DOI is
+<https://github.com/zfr0857/FZYC-Mol>. No Zenodo record or DOI is
 claimed unless one is added to a later archived release.
 
 ## Contents
@@ -52,7 +52,7 @@ py -3.13 -m venv .venv
 Alternatively, clone the maintained repository first:
 
 ```text
-git clone https://github.com/zfr0857-source/FZYC-Mol.git
+git clone https://github.com/zfr0857/FZYC-Mol.git
 cd FZYC-Mol
 ```
 
