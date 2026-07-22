@@ -2,13 +2,19 @@ from __future__ import annotations
 
 import math
 from functools import lru_cache
+from typing import Any
 
 import numpy as np
-import torch
 from rdkit import Chem, DataStructs, RDLogger
 from rdkit.Chem import AllChem, Crippen, Descriptors, Lipinski, MACCSkeys, rdFingerprintGenerator, rdMolDescriptors
 from rdkit.Chem.Scaffolds import MurckoScaffold
-from torch_geometric.data import Data
+
+try:
+    import torch
+    from torch_geometric.data import Data
+except ImportError:
+    torch = None
+    Data = Any
 
 
 RDLogger.DisableLog("rdApp.*")
@@ -224,6 +230,8 @@ def smiles_to_graph(
     include_3d: bool = True,
     n_bits: int = 2048,
 ) -> Data:
+    if torch is None:
+        raise ImportError("Graph features require torch and torch-geometric; install the graph optional dependencies.")
     mol = mol_from_smiles(smiles)
     if mol is None:
         raise ValueError(f"Invalid SMILES: {smiles}")

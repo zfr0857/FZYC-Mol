@@ -20,6 +20,7 @@ dependencies = [
 [project.optional-dependencies]
 test = ["pytest==9.0.2"]
 models = ["catboost==1.2.8", "lightgbm==4.6.0", "xgboost==3.2.0"]
+graph = ["torch>=2.4", "torch-geometric>=2.6"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
