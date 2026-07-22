@@ -1,0 +1,30 @@
+release: paper-release-2026-07
+seeds: [11, 23, 37, 53, 71]
+outer_folds: 3
+inner_folds: 3
+candidate_pool_sizes: [4, 8, 16, 32]
+primary_endpoints:
+  - clintox
+  - bace
+  - bbbp
+  - esol
+  - lipo
+  - freesolv
+  - hia_hou
+  - pgp_broccatelli
+  - tdc_caco2_wang
+composition_endpoints:
+  - clintox
+  - bace
+  - bbbp
+  - esol
+  - lipo
+  - tdc_caco2_wang
+outputs:
+  quick: reproduced_outputs
+  full: results/reproduced_full_study
+  splits: splits/generated
+locked_claims:
+  positive_cross_fitted_endpoints: 6
+  negative_cross_fitted_endpoints: 3
+  matched_subsets: 220

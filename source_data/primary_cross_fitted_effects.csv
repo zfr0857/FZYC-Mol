@@ -1,0 +1,10 @@
+task,task_type,cross_fitted_effect,split_seed_bootstrap95_low_cross_fitted,split_seed_bootstrap95_high_cross_fitted,interval_excludes_zero,interpretation
+bace,classification,0.0008827971177789,-0.0046103779563714,0.0047911120767179,0.0,"Uncertain, point estimate positive"
+bbbp,classification,-0.0005106486570254,-0.0017341867295281,0.0008260055546054,0.0,"Uncertain, point estimate negative"
+clintox,classification,0.009753094773146,0.0046297589413598,0.013785590556945,1.0,Greater loss at K = 32
+esol,regression,0.0573353525449337,0.0411411422013895,0.0751116761865885,1.0,Greater loss at K = 32
+freesolv,regression,-0.0640673786285341,-0.1095321693820022,-0.0156675982417317,1.0,Lower loss at K = 32
+lipo,regression,0.0084624737430633,0.0068532358892897,0.0101971033632428,1.0,Greater loss at K = 32
+tdc_caco2_wang,regression,0.0061815162124961,-0.0038208157073397,0.016183848132332,0.0,"Uncertain, point estimate positive"
+tdc_hia_hou,classification,0.017622999970807,0.010705756853125,0.0245402430884889,1.0,Greater loss at K = 32
+tdc_pgp_broccatelli,classification,-0.0008717029143564,-0.0052401412607546,0.0025611443291404,0.0,"Uncertain, point estimate negative"

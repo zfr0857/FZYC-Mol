@@ -1,8 +1,8 @@
-{
+﻿{
   "status": "text_updated_equation_placeholders_pending_native_OMath_insertion",
   "baseline_note": "requested manuscript(6)(2).docx was not present; Paper30 manuscript(6).docx was the latest discoverable English source",
-  "english": "D:\\fzyc\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).docx",
-  "chinese": "D:\\fzyc\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).docx",
+  "english": "<PROJECT_ROOT>\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).docx",
+  "chinese": "<PROJECT_ROOT>\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).docx",
   "metrics": {
     "cahit_negative_cells": 14,
     "gap_positive_cells": 10,

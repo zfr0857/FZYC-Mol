@@ -1,7 +1,7 @@
-{
+﻿{
   "built_at_utc": "2026-07-12T10:49:32.051177+00:00",
-  "stage": "D:\\fzyc\\output\\小论文-19_代码包",
-  "archive": "D:\\fzyc\\output\\小论文-19_代码包.zip",
+  "stage": "<PROJECT_ROOT>\\output\\小论文-19_代码包",
+  "archive": "<PROJECT_ROOT>\\output\\小论文-19_代码包.zip",
   "file_count_excluding_manifest_files": 910,
   "total_bytes_excluding_manifest_files": 62313743,
   "raw_data_redistributed": false,

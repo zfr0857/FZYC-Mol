@@ -24,3 +24,5 @@ jobs:
         run: python -m pytest -q
       - name: Reproduce bundled analysis
         run: python entrypoints/quick_reproduce.py
+      - name: Validate manuscript-facing values
+        run: python scripts/validate_manuscript_numbers.py

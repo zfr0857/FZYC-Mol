@@ -4,16 +4,16 @@
     "rasterized_before_insertion":  false,
     "manuscripts":  [
                         {
-                            "manuscript":  "D:\\fzyc\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).docx",
-                            "source_svg":  "D:\\fzyc\\output\\paper31_expanded_intervention_20260717\\figures\\Figure_7_expanded_equal_size_intervention.svg",
+                            "manuscript":  "<PROJECT_ROOT>\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).docx",
+                            "source_svg":  "<PROJECT_ROOT>\\output\\paper31_expanded_intervention_20260717\\figures\\Figure_7_expanded_equal_size_intervention.svg",
                             "inline_shape_type":  17,
                             "width_points":  462.10000610351563,
                             "height_points":  290.04998779296875,
                             "placeholder_remaining":  false
                         },
                         {
-                            "manuscript":  "D:\\fzyc\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).docx",
-                            "source_svg":  "D:\\fzyc\\output\\paper31_expanded_intervention_20260717\\figures\\Figure_7_expanded_equal_size_intervention.svg",
+                            "manuscript":  "<PROJECT_ROOT>\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).docx",
+                            "source_svg":  "<PROJECT_ROOT>\\output\\paper31_expanded_intervention_20260717\\figures\\Figure_7_expanded_equal_size_intervention.svg",
                             "inline_shape_type":  17,
                             "width_points":  468,
                             "height_points":  293.75,

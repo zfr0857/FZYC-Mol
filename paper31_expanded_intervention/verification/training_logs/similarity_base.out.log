@@ -1,4 +1,4 @@
-clintox seed=11: outer 1/3
+﻿clintox seed=11: outer 1/3
 clintox seed=11: outer 2/3
 clintox seed=11: outer 3/3
 clintox seed=23: outer 1/3
@@ -43,4 +43,4 @@ esol seed=53: outer 3/3
 esol seed=71: outer 1/3
 esol seed=71: outer 2/3
 esol seed=71: outer 3/3
-D:\fzyc\results\paper31_expanded_intervention_20260717\similarity_composition\base
+<PROJECT_ROOT>\results\paper31_expanded_intervention_20260717\similarity_composition\base

@@ -1,121 +1,156 @@
-# Candidate-pool expansion audit: code and reproducibility package
+# Candidate-pool expansion audit
 
-Package version: `paper35-final-minor-revision-20260718`
+This repository accompanies **Candidate-pool expansion, validation-ranking
+distortion and model-selection loss in molecular property prediction: a
+retrospective nested audit**.
 
-License: MIT (software). Public molecular datasets are not redistributed;
-their original licences and access conditions continue to apply.
+Release: `paper-release-2026-07`
 
-This is the manuscript's Additional file 4. It contains source code, locked
-environment files, data acquisition and cleaning scripts, candidate
-registries, split manifests, fold/seed/candidate exports, figure and table
-source data, timing and failure logs, and portable quick and training-level
-entry points. The maintained source repository is
-<https://github.com/zfr0857/FZYC-Mol>. No Zenodo record or DOI is
-claimed unless one is added to a later archived release.
+License: MIT for software. Public molecular datasets retain their original
+licences and access conditions.
 
-## Contents
+## Data sources
 
-- `entrypoints/quick_reproduce.py`: verifies the machine-readable Figure 7
-  inputs, recalculates the six-endpoint modern-augmentation direction check,
-  and regenerates the final Figure 7 assets.
-- `entrypoints/full_training_entry.py`: stages the checked-in scripts and
-  invokes the locked Paper 31 training stages in a user-selected workspace.
-- `environment/`: Python/conda environment files with pinned versions,
-  including Python 3.13.7, RDKit 2026.3.1 and the main analysis libraries.
-- `Dockerfile`: equivalent container entry point for the bundled quick
-  reproduction, built from the same locked Python requirements.
-- `scripts_current/`, `src_current/`, `configs_current/`: source snapshot used
-  for the final audit.
-- `paper31_expanded_intervention/experiment_exports/`: per-fold, per-seed and
-  per-candidate exports, registry files, split-loop outputs and timing data.
-- `paper31_expanded_intervention/verification/training_logs/`: captured stdout
-  and stderr logs for new-candidate and similarity-split stages.
-- `paper34_audit_sources/`: final Figure 7 source tables, split manifests,
-  source hashes and computational-exposure records.
-- `data/raw/delaney-processed.csv`: the public ESOL input used by the bundled
-  cold-start regression test.
-- `results/reviewer_core_20260624/`: retained reviewer-facing result tables,
-  manifests, and shared-split multiview outputs used by the regression tests.
-- `manuscript_finalization/`: the final Figure 7 and manuscript assembly code.
-- `CODE_AND_DATA_CONTENTS.csv`, `SHA256SUMS.txt`: machine-readable inventory
-  and integrity hashes.
+Dataset provenance, identifiers and source URLs are recorded in
+`manifests/dataset_registry.json`, `manifests/data_manifest.csv` and Table S1
+of Additional file 2. Dataset download and cleaning code is included; source
+licences should be reviewed before downloading. The small public ESOL input
+used by the cold-start test is included at
+`data/raw/delaney-processed.csv`.
 
-## Environment
+## Environment and hardware
 
-From the package root in PowerShell:
+- Python 3.13.7
+- RDKit 2026.3.1
+- Exact Python packages: `requirements-lock.txt`
+- Conda environment: `environment.yml`
+- CPU is sufficient for the statistical reproduction and classical models.
+- A CUDA-capable GPU is recommended, but not required, for neural and
+  pretrained-representation stages. Hardware-specific Torch packages are not
+  installed silently.
 
-```powershell
-py -3.13 -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r environment\requirements.lock
-```
-
-Alternatively, clone the maintained repository first:
+Install with conda:
 
 ```text
-git clone https://github.com/zfr0857/FZYC-Mol.git
-cd FZYC-Mol
+conda env create -f environment.yml
+conda activate fzyc-mol
 ```
 
-The pretrained-candidate stages may require the additional packages listed in
-`environment/requirements-pretrained.txt`. Hardware-specific runtimes are not
-silently installed by the entry points.
-
-The Chemprop stages call `chemprop` from `PATH` by default. If the executable
-is installed elsewhere, set `CHEMPROP_EXECUTABLE` to its full path before
-running `chemprop-inner` or `chemprop-outer`.
-
-Equivalent Docker quick reproduction:
+or with a virtual environment:
 
 ```text
-docker build -t candidate-pool-audit:paper35 .
-docker run --rm candidate-pool-audit:paper35
+python -m venv .venv
+python -m pip install -r requirements-lock.txt
+python -m pip install -e .
 ```
 
-## Quick reproduction of statistics and Figure 7
+The optional pretrained-candidate requirements are listed in
+`environment/requirements-pretrained.txt`. An equivalent quick-reproduction
+container can be built with `docker build -t fzyc-mol:paper-release-2026-07 .`.
 
-```powershell
-.\.venv\Scripts\python.exe entrypoints\quick_reproduce.py
+## Reproduction entry points
+
+All commands below are run from the repository root.
+
+Quick statistical reproduction and Figure 7 regeneration (no model refit):
+
+```text
+python scripts/reproduce_analysis.py --config configs/paper.yaml
 ```
 
-Outputs are written to `reproduced_outputs/`. The script reads only the bundled
-machine-readable exports; it does not refit molecular models.
+Validate manuscript-facing values against machine-readable source tables:
 
-## Training-level reproduction
-
-First obtain the public datasets with the checked-in acquisition scripts and
-review each source licence:
-
-```powershell
-.\.venv\Scripts\python.exe scripts_current\download_open_data.py
-.\.venv\Scripts\python.exe scripts_current\download_tdc_admet.py
-.\.venv\Scripts\python.exe scripts_current\build_data_cleaning_audit.py
+```text
+python scripts/validate_manuscript_numbers.py
 ```
 
-Then run the locked expansion stages in a workspace containing the downloaded
-and cleaned data:
+Rebuild public data and cleaning audit:
 
-```powershell
-.\.venv\Scripts\python.exe entrypoints\full_training_entry.py --workspace D:\audit_reproduction new-candidates
-.\.venv\Scripts\python.exe entrypoints\full_training_entry.py --workspace D:\audit_reproduction chemprop-inner
-.\.venv\Scripts\python.exe entrypoints\full_training_entry.py --workspace D:\audit_reproduction chemprop-outer
+```text
+python scripts/download_open_data.py
+python scripts/download_tdc_admet.py
+python scripts/build_data_cleaning_audit.py
 ```
 
-The one-epoch D-MPNN configuration is intentionally preserved because it is
-the evaluated locked configuration, not a claim of fully optimized modern
-architecture performance. Downstream timing excludes pretrained-encoder
-acquisition, pretraining and cached embedding extraction.
+Generate the registered split manifests:
 
-## Scope and integrity
+```text
+python scripts/reproduce_full_study.py --config configs/paper.yaml --stage splits
+```
 
-The package supports a retrospective audit within the evaluated endpoints,
-registries and split mechanisms. Endpoint–pool–K cells and overlapping
-candidate subsets are not independent experiments. Missing or unavailable
-cells, negative results and captured error logs are retained rather than
-imputed. Run `entrypoints/quick_reproduce.py` and verify `SHA256SUMS.txt` before
-using the exports.
+Run the primary nested audit and the expanded composition intervention:
 
-The supported portable interfaces are the two scripts in `entrypoints/`.
-Run-specific utilities retained in `scripts/`, `scripts_current/`, and the
-audit-source directories document the complete analysis history; some expect
-the directory layout recorded for the original run and are not independent
-command-line interfaces.
+```text
+python scripts/reproduce_full_study.py --config configs/paper.yaml --stage main-audit
+python scripts/reproduce_full_study.py --config configs/paper.yaml --stage composition
+```
+
+Run all available training stages:
+
+```text
+python scripts/reproduce_full_study.py --config configs/paper.yaml
+```
+
+Rebuild manuscript figures and tables from checked machine-readable exports:
+
+```text
+python scripts/reproduce_analysis.py --config configs/paper.yaml --figures all --tables all
+```
+
+The Chemprop stages use the `chemprop` executable on `PATH`, or the path in
+`CHEMPROP_EXECUTABLE`. The evaluated one-epoch D-MPNN configuration is locked
+as reported in the manuscript; it is not presented as a fully optimized deep
+learning benchmark.
+
+## Expected outputs and runtime
+
+- Quick reproduction: `reproduced_outputs/`; approximately 1–3 minutes on a
+  modern CPU after installation.
+- Generated split manifests: `splits/generated/`.
+- Full-study results: `results/reproduced_full_study/`.
+- Figure and table source data: `source_data/` and `reproduced_outputs/`.
+
+Full training can require hours to days depending on hardware, dataset cache,
+and optional neural-model availability. Recorded downstream audit times exclude
+model acquisition, encoder pretraining and cached embedding extraction, exactly
+as stated in the manuscript.
+
+## Repository map
+
+- `configs/`: locked endpoint, candidate and paper reproduction settings.
+- `data/`: licensed or redistributable example inputs and data documentation.
+- `splits/`: checked split manifests and generation notes.
+- `src/`: reusable package implementation.
+- `scripts/`: portable download, analysis, training and validation entry points.
+- `results/`: machine-readable reference results used by tests and audits.
+- `source_data/`: manuscript figure/table source-data index and Figure 7 data.
+- `tests/`: leakage, ranking, stability and reproduction regression tests.
+- `docs/`: scope, audit trail and computational-exposure documentation.
+- `paper31_expanded_intervention/experiment_exports/`: candidate-, fold- and
+  seed-level intervention exports.
+- `paper34_audit_sources/`: split, source-hash, Figure 7 and exposure records.
+
+## Scope and limitations
+
+This is a retrospective audit of the reported public endpoints, candidate
+registries and split mechanisms, not prospective external validation.
+Endpoint–pool–K cells and overlapping candidate subsets are not independent.
+The modern panel contains frozen representation probes and a separately locked
+one-epoch D-MPNN. Equal-budget findings concern downstream fit/predict exposure
+and depend on registry order and evaluated hardware; they are not end-to-end
+architecture-efficiency claims. Negative, missing and failed cells are retained.
+
+## Integrity and citation
+
+Run `python scripts/validate_manuscript_numbers.py` and verify `SHA256SUMS.txt`
+before reusing the checked exports. The manuscript version is fixed by release
+`paper-release-2026-07`; its immutable commit is recorded in the GitHub release
+and `docs/release-and-commit.md`.
+
+Please cite the associated article and the software release described in
+`CITATION.cff`:
+
+> FZYC-Mol Authors. FZYC-Mol: candidate-pool expansion audit, release
+> paper-release-2026-07. GitHub. 2026.
+
+Repository: <https://github.com/zfr0857/FZYC-Mol>

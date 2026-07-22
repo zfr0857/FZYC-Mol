@@ -9,14 +9,12 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 from matplotlib.lines import Line2D
-from matplotlib.colors import LinearSegmentedColormap, Normalize
-from matplotlib.cm import ScalarMappable
 from matplotlib.transforms import ScaledTranslation
 
 
-ROOT = Path(r"D:\fzyc")
-BASE_SCRIPT = ROOT / "scripts" / "build_paper31_figures_20260717.py"
-OUT = ROOT / "output" / "paper35_submission_ready_20260718" / "main_figures"
+ROOT = Path(__file__).resolve().parents[1]
+BASE_SCRIPT = ROOT / "paper31_expanded_intervention" / "reproducibility_code" / "build_paper31_figures_20260717.py"
+OUT = ROOT / "reproduced_outputs" / "main_figures"
 
 
 def load_base():
@@ -52,9 +50,6 @@ def clean(ax: plt.Axes, axis: str = "y") -> None:
 
 
 def label(ax: plt.Axes, letter: str) -> None:
-    # Use the title's own transform and baseline.  A fixed point offset keeps
-    # panel letters aligned even when an axis is shortened by a colour bar or
-    # split into stacked subplots.
     title = ax.title
     transform = title.get_transform() + ScaledTranslation(
         -18 / 72, 0, ax.figure.dpi_scale_trans
@@ -77,6 +72,9 @@ def save(fig: plt.Figure) -> None:
             name = f"Figure7.{suffix}"
         target = OUT / name
         fig.savefig(target, facecolor="white", **kwargs)
+        if suffix == "svg":
+            content = target.read_text(encoding="utf-8")
+            target.write_text("\n".join(line.rstrip() for line in content.splitlines()) + "\n", encoding="utf-8")
         if suffix in {"png", "png1200"}:
             dpi = 600 if suffix == "png" else 1200
             with Image.open(target) as rendered:
@@ -108,14 +106,14 @@ def panel_a(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
                 selected, y,
                 xerr=[[selected - row.homogeneous_normalized_selected_gain_low],
                       [row.homogeneous_normalized_selected_gain_high - selected]],
-                fmt="s", ms=5.4, color=base.COLORS[pool], ecolor=base.COLORS[pool],
+                fmt="s", ms=5.9, color=base.COLORS[pool], ecolor=base.COLORS[pool],
                 elinewidth=0.7, capsize=1.6, zorder=3,
             )
             ax.errorbar(
                 opportunity, y,
                 xerr=[[opportunity - row.homogeneous_normalized_oracle_opportunity_low],
                       [row.homogeneous_normalized_oracle_opportunity_high - opportunity]],
-                fmt="o", ms=5.4, mfc="white", mec=base.COLORS[pool], mew=1.0,
+                fmt="o", ms=5.9, mfc="white", mec=base.COLORS[pool], mew=1.0,
                 ecolor=base.COLORS[pool], elinewidth=0.7, capsize=1.6, zorder=3,
             )
     ax.axvline(1, color="#7A8393", lw=0.8, ls="--")
@@ -161,9 +159,9 @@ def panel_b(cell, base, data: dict[str, pd.DataFrame]) -> None:
     axes[0].set_title("Composition-by-K effects", loc="left", fontweight="bold", pad=30)
     band = dict(facecolor="#EEF1F4", edgecolor="none", boxstyle="round,pad=0.22")
     axes[0].text(1.5, 0.96, "Classification", transform=axes[0].get_xaxis_transform(),
-                 ha="center", va="top", fontweight="bold", bbox=band)
+                 ha="center", va="top", fontsize=9.5, fontweight="bold", bbox=band)
     axes[0].text(6.5, 0.96, "Regression", transform=axes[0].get_xaxis_transform(),
-                 ha="center", va="top", fontweight="bold", bbox=band)
+                 ha="center", va="top", fontsize=9.5, fontweight="bold", bbox=band)
     axes[0].tick_params(labelbottom=False)
     axes[1].set_xticks(np.r_[xpos["classification"], xpos["regression"]], [str(k) for k in base.KS] * 2)
     axes[1].set_xlabel("Candidate-pool size, K")
@@ -220,14 +218,13 @@ def panel_c(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
         ax.axhline(boundary, color="white", lw=1.4)
     ax.set_xticks(np.arange(4) + 0.5, ["4", "8", "16", "32"])
     ax.tick_params(axis="x", rotation=0, labelsize=8.5)
-    ax.text(0.50, 1.005, "CAHit@3", transform=ax.transAxes, ha="center", va="bottom",
-            fontsize=8.5, fontweight="bold", clip_on=False)
     ax.set_xlabel("Candidate-pool size, K", labelpad=4)
     ax.set_title("Ranking fidelity", loc="left", fontweight="bold", pad=30)
     cbar = plt.colorbar(mesh, ax=ax, fraction=0.035, pad=0.025)
     if cbar.solids is not None:
         cbar.solids.set_rasterized(False)
     cbar.ax.tick_params(labelsize=8.5)
+    cbar.ax.set_title("CAHit@3", fontsize=7.5, pad=4, loc="left")
     label(ax, "C")
 
 
@@ -286,7 +283,7 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.set_ylabel("Normalised selected gain")
     ax.set_title("Downstream budget-benefit", loc="left", fontweight="bold", pad=30)
     ax.text(0.0, 1.005, "Downstream fitting only", transform=ax.transAxes,
-            ha="left", va="bottom", fontsize=8.5, color="#555D68")
+            ha="left", va="bottom", fontsize=8.0, color="#555D68")
     clean(ax, "both")
     design_handles = [
         Line2D([0], [0], color="#333", marker="o", mfc="#777", lw=1.1, label="Equal K"),
@@ -299,16 +296,15 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
                               bbox_to_anchor=(1.01, 0.76), handlelength=1.2,
                               labelspacing=0.25, handletextpad=0.3)
     ax.add_artist(design_legend)
-    ax.legend(handles=k_handles, ncol=1, frameon=False, loc="lower left",
-              bbox_to_anchor=(1.01, 0.12), handlelength=1.0,
-              labelspacing=0.22, handletextpad=0.3)
+    ax.legend(handles=k_handles, ncol=4, frameon=False, loc="lower right",
+              bbox_to_anchor=(1.0, 1.045), handlelength=0.60,
+              columnspacing=0.28, handletextpad=0.12, fontsize=7.0)
     label(ax, "D")
 
 
 def main() -> None:
     setup()
     base = load_base()
-    # Colour-blind-safe ordering with distinct luminance for greyscale inspection.
     base.COLORS = {
         "Homogeneous Morgan": "#3B5B92",
         "Classical multiview": "#2A9D8F",

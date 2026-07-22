@@ -1,0 +1,13 @@
+numpy==2.3.3
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.6.1
+rdkit==2026.3.1
+matplotlib==3.10.8
+pytest==9.0.2
+PyYAML==6.0.3
+catboost==1.2.8
+lightgbm==4.6.0
+xgboost==3.2.0
+python-docx==1.2.0
+openpyxl==3.1.5

@@ -1,12 +1,12 @@
 ﻿[
     {
-        "docx":  "D:\\fzyc\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).docx",
-        "pdf":  "D:\\fzyc\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).pdf",
+        "docx":  "<PROJECT_ROOT>\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).docx",
+        "pdf":  "<PROJECT_ROOT>\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).pdf",
         "pages":  34
     },
     {
-        "docx":  "D:\\fzyc\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).docx",
-        "pdf":  "D:\\fzyc\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).pdf",
+        "docx":  "<PROJECT_ROOT>\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).docx",
+        "pdf":  "<PROJECT_ROOT>\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).pdf",
         "pages":  25
     }
 ]
