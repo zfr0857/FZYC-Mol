@@ -1,0 +1,13 @@
+task,task_type,seed,outer_fold,variant,candidate_count,oracle_validation_rank,top3_hit,chance_adjusted_hit,mrr,spearman
+tdc_pgp_broccatelli,classification,71,1,full_multiview,12,1,1.0,1.0,1.0,0.8881118881118882
+tdc_pgp_broccatelli,classification,71,1,morgan_only,3,1,1.0,0.0,1.0,1.0
+tdc_pgp_broccatelli,classification,71,1,fingerprints_only,6,1,1.0,1.0,1.0,0.8285714285714287
+tdc_pgp_broccatelli,classification,71,1,no_multiview_concat,9,1,1.0,1.0,1.0,0.7833333333333333
+tdc_pgp_broccatelli,classification,71,2,full_multiview,12,3,1.0,1.0,0.3333333333333333,0.8461538461538463
+tdc_pgp_broccatelli,classification,71,2,morgan_only,3,1,1.0,0.0,1.0,1.0
+tdc_pgp_broccatelli,classification,71,2,fingerprints_only,6,1,1.0,1.0,1.0,0.6
+tdc_pgp_broccatelli,classification,71,2,no_multiview_concat,9,2,1.0,1.0,0.5,0.7833333333333333
+tdc_pgp_broccatelli,classification,71,3,full_multiview,12,3,1.0,1.0,0.3333333333333333,0.8461538461538463
+tdc_pgp_broccatelli,classification,71,3,morgan_only,3,1,1.0,0.0,1.0,1.0
+tdc_pgp_broccatelli,classification,71,3,fingerprints_only,6,1,1.0,1.0,1.0,0.8285714285714287
+tdc_pgp_broccatelli,classification,71,3,no_multiview_concat,9,2,1.0,1.0,0.5,0.8666666666666667

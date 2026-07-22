@@ -1,0 +1,30 @@
+scope: confirmatory_nested_audit
+required_outer_split_seeds: [11, 23, 37, 53, 71]
+outer_folds: 3
+inner_folds: 3
+required_candidates:
+  - candidate_id: morgan_rf
+    family: tree
+    representation: morgan512
+  - candidate_id: rdkit_catboost
+    family: boosting
+    representation: rdkit_descriptors
+  - candidate_id: xgboost_morgan
+    family: boosting
+    representation: morgan512
+  - candidate_id: chemprop
+    family: graph
+    representation: message_passing
+  - candidate_id: graph_neural_network
+    family: graph
+    representation: molecular_graph
+  - candidate_id: chemberta_frozen_head
+    family: language
+    representation: ChemBERTa_frozen_embedding
+  - candidate_id: molformer_frozen_head
+    family: language
+    representation: MoLFormer_frozen_embedding
+  - candidate_id: topk_fusion
+    family: fusion
+    representation: prediction_fusion
+claim_if_incomplete: Confirmatory evidence is restricted to the frozen lightweight Morgan-512 candidate registry.

@@ -1,0 +1,62 @@
+{
+  "attainable multiview gain vs Morgan-only oracle": {
+    "paired_outer_units": 135,
+    "mean_normalized_utility_gain": 0.3473139985936302,
+    "endpoint_cluster_ci95_low": 0.22788833137345763,
+    "endpoint_cluster_ci95_high": 0.47216451357812783,
+    "endpoint_median_gain": 0.2869991608342464,
+    "endpoints_positive": 9,
+    "endpoints_negative": 0,
+    "exact_sign_flip_p": 0.00390625
+  },
+  "realized multiview validation-best gain vs Morgan-only": {
+    "paired_outer_units": 135,
+    "mean_normalized_utility_gain": 0.34342191755843937,
+    "endpoint_cluster_ci95_low": 0.2097628321115295,
+    "endpoint_cluster_ci95_high": 0.4828640913567762,
+    "endpoint_median_gain": 0.2644611548901113,
+    "endpoints_positive": 9,
+    "endpoints_negative": 0,
+    "exact_sign_flip_p": 0.00390625
+  },
+  "full-pool validation-best gain vs fixed Morgan RF": {
+    "paired_outer_units": 135,
+    "mean_normalized_utility_gain": 0.3520714079880999,
+    "endpoint_cluster_ci95_low": 0.21025248135365002,
+    "endpoint_cluster_ci95_high": 0.503749605018544,
+    "endpoint_median_gain": 0.2904764434939418,
+    "endpoints_positive": 9,
+    "endpoints_negative": 0,
+    "exact_sign_flip_p": 0.00390625
+  },
+  "validation-best gain vs one-SE in full pool": {
+    "paired_outer_units": 135,
+    "mean_normalized_utility_gain": 0.030478420941890183,
+    "endpoint_cluster_ci95_low": 0.014020891286026951,
+    "endpoint_cluster_ci95_high": 0.04807779232421769,
+    "endpoint_median_gain": 0.02408054737629326,
+    "endpoints_positive": 8,
+    "endpoints_negative": 1,
+    "exact_sign_flip_p": 0.01171875
+  },
+  "validation-best gain vs risk-adjusted in full pool": {
+    "paired_outer_units": 135,
+    "mean_normalized_utility_gain": 0.011440140552511392,
+    "endpoint_cluster_ci95_low": 0.002880311693928069,
+    "endpoint_cluster_ci95_high": 0.021076186096143396,
+    "endpoint_median_gain": 0.0008446844991796304,
+    "endpoints_positive": 5,
+    "endpoints_negative": 1,
+    "exact_sign_flip_p": 0.0625
+  },
+  "concatenated multiview gain vs separate-view pool": {
+    "paired_outer_units": 135,
+    "mean_normalized_utility_gain": 0.03466795646178353,
+    "endpoint_cluster_ci95_low": 0.017459367820767093,
+    "endpoint_cluster_ci95_high": 0.05328983038327305,
+    "endpoint_median_gain": 0.0292298791383931,
+    "endpoints_positive": 9,
+    "endpoints_negative": 0,
+    "exact_sign_flip_p": 0.00390625
+  }
+}

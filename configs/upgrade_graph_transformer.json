@@ -1,0 +1,20 @@
+{
+  "datasets": ["esol", "freesolv", "lipo", "bbbp", "bace", "clintox"],
+  "models": ["graph_transformer", "fzyc_mol_gt"],
+  "split": "scaffold",
+  "seeds": [13, 17, 23, 29, 31],
+  "epochs": 80,
+  "batch_size": 64,
+  "hidden_dim": 192,
+  "layers": 4,
+  "lr": 0.001,
+  "weight_decay": 0.00001,
+  "contrastive_weight": 0.1,
+  "patience": 15,
+  "max_rows": null,
+  "num_workers": 0,
+  "resume": true,
+  "cache_graphs": true,
+  "output_dir": "reports/upgrade_graph_transformer"
+}
+

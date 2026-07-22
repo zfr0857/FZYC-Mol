@@ -1,0 +1,11 @@
+variant,selected_representation,size
+fingerprints_only,maccs,106
+fingerprints_only,morgan512,29
+full_multiview,maccs,4
+full_multiview,morgan512,3
+full_multiview,multiview,84
+full_multiview,rdkit2d,44
+morgan_only,morgan512,135
+no_multiview_concat,maccs,24
+no_multiview_concat,morgan512,9
+no_multiview_concat,rdkit2d,102

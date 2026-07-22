@@ -1,0 +1,48 @@
+{
+  "status": "source audit complete",
+  "predefined_endpoints": [
+    "clintox",
+    "bace",
+    "bbbp",
+    "esol",
+    "lipo",
+    "tdc_caco2_wang"
+  ],
+  "endpoint_selection_basis": {
+    "clintox": "rare-class classification",
+    "bace": "moderately balanced classification",
+    "bbbp": "additional classification",
+    "esol": "small regression",
+    "lipo": "large regression",
+    "tdc_caco2_wang": "permeability regression"
+  },
+  "candidate_counts": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "outer_folds": 3,
+  "inner_folds": 3,
+  "primary_anchor": "shared Morgan linear anchor",
+  "sensitivity_anchors": [
+    "fixed Morgan-RF anchor",
+    "registry-order median candidate"
+  ],
+  "primary_normalization": "homogeneous-audit-best normalized gain",
+  "sensitivity_normalizations": [
+    "raw endpoint scale",
+    "endpoint-MAD normalized"
+  ],
+  "equal_budget_rule": "per endpoint and audit unit, truncate each registry in locked order at the classical-multiview median downstream time for the corresponding K; never use outer performance",
+  "statistical_unit": "fold effects averaged within seed; seed-level effects retained; endpoint summaries do not treat endpoint-pool-K cells as independent",
+  "requested_manuscript_6_2_found": false,
+  "baseline": "paper30_submission_package_20260717/Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(6).docx"
+}

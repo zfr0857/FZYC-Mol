@@ -1,0 +1,42 @@
+{
+  "status": "text_updated_equation_placeholders_pending_native_OMath_insertion",
+  "baseline_note": "requested manuscript(6)(2).docx was not present; Paper30 manuscript(6).docx was the latest discoverable English source",
+  "english": "D:\\fzyc\\output\\paper31_submission_package_20260717\\Candidate_pool_expansion_Journal_of_Cheminformatics_manuscript(7).docx",
+  "chinese": "D:\\fzyc\\output\\paper31_submission_package_20260717\\候选池扩张与模型选择损失_中文完整论文(7).docx",
+  "metrics": {
+    "cahit_negative_cells": 14,
+    "gap_positive_cells": 10,
+    "total_pool_endpoint_cells": 18,
+    "modern_vs_hom_positive": 6,
+    "classical_vs_hom_positive": 6,
+    "endpoint_count": 6,
+    "ablation_counts": {
+      "+ChemBERTa": 6,
+      "+MoLFormer": 4,
+      "+D-MPNN": 1,
+      "Full modern-augmented": 6
+    },
+    "ablation_total": 12,
+    "budget_nonnegative_cells": 17,
+    "budget_total_cells": 36,
+    "modern_budget_mean_candidates": 1.0,
+    "split_same_direction": 54,
+    "split_total": 72,
+    "median_entropy_k32": {
+      "Homogeneous Morgan": 0.25585197629963413,
+      "Classical multiview": 0.38371984917673996,
+      "Modern-augmented": 0.21492553971685
+    },
+    "median_seed_agreement_k32": {
+      "Homogeneous Morgan": 0.6,
+      "Classical multiview": 0.4666666666666667,
+      "Modern-augmented": 0.6666666666666666
+    },
+    "invalid_denominators_k32": 0,
+    "denominator_units_k32": 90,
+    "minimum_positive_denominator_k32": 0.052013762396276,
+    "anchor_direction_min": 0.6111111111111112,
+    "anchor_direction_max": 1.0,
+    "anchor_invalid_summary_cells": 6
+  }
+}

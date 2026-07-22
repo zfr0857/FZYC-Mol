@@ -1,0 +1,8 @@
+﻿{
+    "status":  "complete",
+    "mode":  "two affinity-isolated CPU lanes",
+    "core_outer":  true,
+    "similarity_inner":  true,
+    "similarity_outer":  true,
+    "completed_at":  "2026-07-17T21:01:16.6970184+08:00"
+}

@@ -1,0 +1,37 @@
+pool,task,task_type,candidate_count,candidate_selection_entropy,candidate_selection_entropy_normalized,entropy_denominator_candidate_count,representation_selection_entropy_normalized,family_selection_entropy_normalized,modal_candidate,modal_candidate_share,leave_one_seed_out_agreement,mean_adjacent_fold_switches_per_seed,max_adjacent_fold_switches
+Classical multiview,bace,classification,16,1.3397942802855758,0.4832286409948495,16,0.8443536850036222,0.8366407419411673,multiview__extra_trees,0.3333333333333333,0.13333333333333333,1.2,2
+Classical multiview,bace,classification,32,1.2048762065511598,0.3476537856152929,32,0.44155167050817345,0.7835807040488098,multiview__extra_trees,0.6,0.6,1.2,2
+Classical multiview,bbbp,classification,16,1.0775733728921972,0.3886524403163917,16,0.7766490138119515,0.5665095065529053,rdkit2d__extra_trees,0.6,0.6,1.6,2
+Classical multiview,bbbp,classification,32,1.020036958401841,0.2943204522819596,32,0.8366407419411673,0.44155167050817345,multiview__extra_trees,0.6,0.6,1.0,1
+Classical multiview,clintox,classification,16,0.39267446722755217,0.14162737663822633,16,0.5665095065529053,-0.0,multiview__lightgbm,0.8666666666666667,0.8666666666666667,0.6,2
+Classical multiview,clintox,classification,32,1.39539709232679,0.40262649303414777,32,0.8366407419411673,0.7766490138119515,multiview__lightgbm,0.4666666666666667,0.4666666666666667,1.0,2
+Classical multiview,esol,regression,16,0.6365141682948128,0.22957395851362236,16,0.9182958340544894,-0.0,rdkit2d__lightgbm,0.6666666666666666,0.6666666666666666,2.0,2
+Classical multiview,esol,regression,32,1.6170531525095537,0.46658291279587955,32,0.9709505944546688,0.7773048806327834,multiview__lightgbm,0.3333333333333333,0.3333333333333333,2.0,2
+Classical multiview,lipo,regression,16,-0.0,-0.0,16,-0.0,-0.0,multiview__lightgbm,1.0,1.0,0.0,0
+Classical multiview,lipo,regression,32,0.39267446722755217,0.11330190131058106,32,-0.0,0.5665095065529053,multiview__lightgbm,0.8666666666666667,0.8666666666666667,0.8,2
+Classical multiview,tdc_caco2_wang,regression,16,0.953271014705891,0.3438198413848448,16,0.8366407419411673,0.5665095065529053,rdkit2d__lightgbm,0.6666666666666666,0.6666666666666666,2.0,2
+Classical multiview,tdc_caco2_wang,regression,32,1.732125981490266,0.49978591273818707,32,0.9967916319816367,0.8710776902592273,rdkit2d__lightgbm,0.3333333333333333,0.2,1.8,2
+Homogeneous Morgan,bace,classification,16,1.7670091910745693,0.6695607447573627,14,-0.0,-0.0,hom::order11,0.3333333333333333,0.3333333333333333,1.6,2
+Homogeneous Morgan,bace,classification,32,1.7670091910745693,0.5098510794337,32,-0.0,0.3533593350214213,hom::order11,0.3333333333333333,0.3333333333333333,1.6,2
+Homogeneous Morgan,bbbp,classification,16,0.8033149761408755,0.3043946666584878,14,-0.0,-0.0,hom::order12,0.6666666666666666,0.6666666666666666,1.0,2
+Homogeneous Morgan,bbbp,classification,32,0.8033149761408755,0.23178770647005542,32,-0.0,-0.0,hom::order12,0.6666666666666666,0.6666666666666666,1.0,2
+Homogeneous Morgan,clintox,classification,16,1.9686932085049353,0.7269781068695302,15,-0.0,0.3533593350214213,hom::order06,0.26666666666666666,0.26666666666666666,2.0,2
+Homogeneous Morgan,clintox,classification,32,2.3034884952192693,0.6646462857595241,32,-0.0,0.9709505944546688,hom::order27,0.2,0.06666666666666667,2.0,2
+Homogeneous Morgan,esol,regression,16,0.8033149761408755,0.3131894100770455,13,-0.0,0.9182958340544894,hom::order03,0.6666666666666666,0.6666666666666666,1.0,1
+Homogeneous Morgan,esol,regression,32,0.6365141682948128,0.1836591668108979,32,-0.0,0.9182958340544894,hom::order03,0.6666666666666666,0.6666666666666666,1.0,1
+Homogeneous Morgan,lipo,regression,16,1.194453006323357,0.4308078571994052,16,-0.0,0.8366407419411673,hom::order14,0.5333333333333333,0.5333333333333333,1.0,2
+Homogeneous Morgan,lipo,regression,32,0.5799151714181009,0.16732814838823346,32,-0.0,-0.0,hom::order23,0.7333333333333333,0.7333333333333333,1.0,2
+Homogeneous Morgan,tdc_caco2_wang,regression,16,0.8033149761408755,0.3131894100770455,13,-0.0,0.9182958340544894,hom::order03,0.6666666666666666,0.6666666666666666,2.0,2
+Homogeneous Morgan,tdc_caco2_wang,regression,32,0.9701157839869381,0.2825041930033593,31,-0.0,0.9182958340544894,hom::order14,0.5333333333333333,0.5333333333333333,1.4,2
+Modern-augmented,bace,classification,16,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,bace,classification,32,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,bbbp,classification,16,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,bbbp,classification,32,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,clintox,classification,16,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,clintox,classification,32,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,esol,regression,16,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,esol,regression,32,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,lipo,regression,16,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,lipo,regression,32,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,tdc_caco2_wang,regression,16,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0
+Modern-augmented,tdc_caco2_wang,regression,32,-0.0,0.0,1,-0.0,-0.0,morgan512__linear,1.0,1.0,0.0,0

@@ -1,0 +1,97 @@
+candidate,representation,family,source,pool,pool_order
+morgan512__linear,morgan512,linear,similarity_base,Classical multiview,1
+maccs__linear,maccs,linear,similarity_base,Classical multiview,2
+rdkit2d__linear,rdkit2d,linear,similarity_base,Classical multiview,3
+multiview__linear,multiview,linear,similarity_base,Classical multiview,4
+morgan512__random_forest,morgan512,random_forest,similarity_base,Classical multiview,5
+maccs__random_forest,maccs,random_forest,similarity_base,Classical multiview,6
+rdkit2d__random_forest,rdkit2d,random_forest,similarity_base,Classical multiview,7
+multiview__random_forest,multiview,random_forest,similarity_base,Classical multiview,8
+morgan512__lightgbm,morgan512,lightgbm,similarity_base,Classical multiview,9
+maccs__lightgbm,maccs,lightgbm,similarity_base,Classical multiview,10
+rdkit2d__lightgbm,rdkit2d,lightgbm,similarity_base,Classical multiview,11
+multiview__lightgbm,multiview,lightgbm,similarity_base,Classical multiview,12
+morgan512__extra_trees,morgan512,extra_trees,similarity_new,Classical multiview,13
+maccs__extra_trees,maccs,extra_trees,similarity_new,Classical multiview,14
+rdkit2d__extra_trees,rdkit2d,extra_trees,similarity_new,Classical multiview,15
+multiview__extra_trees,multiview,extra_trees,similarity_new,Classical multiview,16
+morgan512__linear_alt,morgan512,linear_alt,similarity_new,Classical multiview,17
+maccs__linear_alt,maccs,linear_alt,similarity_new,Classical multiview,18
+rdkit2d__linear_alt,rdkit2d,linear_alt,similarity_new,Classical multiview,19
+multiview__linear_alt,multiview,linear_alt,similarity_new,Classical multiview,20
+morgan512__random_forest_alt,morgan512,random_forest_alt,similarity_new,Classical multiview,21
+maccs__random_forest_alt,maccs,random_forest_alt,similarity_new,Classical multiview,22
+rdkit2d__random_forest_alt,rdkit2d,random_forest_alt,similarity_new,Classical multiview,23
+multiview__random_forest_alt,multiview,random_forest_alt,similarity_new,Classical multiview,24
+morgan512__lightgbm_alt,morgan512,lightgbm_alt,similarity_new,Classical multiview,25
+maccs__lightgbm_alt,maccs,lightgbm_alt,similarity_new,Classical multiview,26
+rdkit2d__lightgbm_alt,rdkit2d,lightgbm_alt,similarity_new,Classical multiview,27
+multiview__lightgbm_alt,multiview,lightgbm_alt,similarity_new,Classical multiview,28
+morgan512__xgboost,morgan512,xgboost,similarity_new,Classical multiview,29
+maccs__xgboost,maccs,xgboost,similarity_new,Classical multiview,30
+rdkit2d__xgboost,rdkit2d,xgboost,similarity_new,Classical multiview,31
+multiview__xgboost,multiview,xgboost,similarity_new,Classical multiview,32
+morgan512__linear,morgan512,linear,similarity_base,Homogeneous Morgan,1
+hom::order01,morgan512,linear,similarity_homogeneous,Homogeneous Morgan,2
+hom::order02,morgan512,linear,similarity_homogeneous,Homogeneous Morgan,3
+hom::order03,morgan512,linear,similarity_homogeneous,Homogeneous Morgan,4
+hom::order04,morgan512,linear,similarity_homogeneous,Homogeneous Morgan,5
+hom::order05,morgan512,bagging,similarity_homogeneous,Homogeneous Morgan,6
+hom::order06,morgan512,bagging,similarity_homogeneous,Homogeneous Morgan,7
+hom::order07,morgan512,bagging,similarity_homogeneous,Homogeneous Morgan,8
+hom::order08,morgan512,bagging,similarity_homogeneous,Homogeneous Morgan,9
+hom::order09,morgan512,bagging,similarity_homogeneous,Homogeneous Morgan,10
+hom::order10,morgan512,bagging,similarity_homogeneous,Homogeneous Morgan,11
+hom::order11,morgan512,bagging,similarity_homogeneous,Homogeneous Morgan,12
+hom::order12,morgan512,bagging,similarity_homogeneous,Homogeneous Morgan,13
+hom::order13,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,14
+hom::order14,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,15
+hom::order15,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,16
+hom::order16,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,17
+hom::order17,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,18
+hom::order18,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,19
+hom::order19,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,20
+hom::order20,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,21
+hom::order21,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,22
+hom::order22,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,23
+hom::order23,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,24
+hom::order24,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,25
+hom::order25,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,26
+hom::order26,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,27
+hom::order27,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,28
+hom::order28,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,29
+hom::order29,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,30
+hom::order30,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,31
+hom::order31,morgan512,boosting,similarity_homogeneous,Homogeneous Morgan,32
+morgan512__linear,morgan512,linear,similarity_base,Modern-augmented,1
+chemprop_dmpnn,dmpnn_graph,chemprop_dmpnn,chemprop_dmpnn:chemprop,Modern-augmented,2
+maccs__linear,maccs,linear,similarity_base,Modern-augmented,3
+chemberta_mtr__linear,chemberta_mtr,linear,similarity_new,Modern-augmented,4
+rdkit2d__linear,rdkit2d,linear,similarity_base,Modern-augmented,5
+chemberta_mlm__linear,chemberta_mlm,linear,similarity_new,Modern-augmented,6
+multiview__linear,multiview,linear,similarity_base,Modern-augmented,7
+molformer__linear,molformer,linear,similarity_new,Modern-augmented,8
+morgan512__random_forest,morgan512,random_forest,similarity_base,Modern-augmented,9
+chemberta_mtr__linear_alt,chemberta_mtr,linear_alt,similarity_new,Modern-augmented,10
+maccs__random_forest,maccs,random_forest,similarity_base,Modern-augmented,11
+chemberta_mlm__linear_alt,chemberta_mlm,linear_alt,similarity_new,Modern-augmented,12
+rdkit2d__random_forest,rdkit2d,random_forest,similarity_base,Modern-augmented,13
+molformer__linear_alt,molformer,linear_alt,similarity_new,Modern-augmented,14
+multiview__random_forest,multiview,random_forest,similarity_base,Modern-augmented,15
+chemberta_mtr__linear_strong,chemberta_mtr,linear_strong,similarity_new,Modern-augmented,16
+morgan512__lightgbm,morgan512,lightgbm,similarity_base,Modern-augmented,17
+chemberta_mlm__linear_strong,chemberta_mlm,linear_strong,similarity_new,Modern-augmented,18
+maccs__lightgbm,maccs,lightgbm,similarity_base,Modern-augmented,19
+molformer__linear_strong,molformer,linear_strong,similarity_new,Modern-augmented,20
+rdkit2d__lightgbm,rdkit2d,lightgbm,similarity_base,Modern-augmented,21
+chemberta_mtr__linear_sparse,chemberta_mtr,linear_sparse,similarity_new,Modern-augmented,22
+multiview__lightgbm,multiview,lightgbm,similarity_base,Modern-augmented,23
+chemberta_mlm__linear_sparse,chemberta_mlm,linear_sparse,similarity_new,Modern-augmented,24
+morgan512__extra_trees,morgan512,extra_trees,similarity_new,Modern-augmented,25
+molformer__linear_sparse,molformer,linear_sparse,similarity_new,Modern-augmented,26
+maccs__extra_trees,maccs,extra_trees,similarity_new,Modern-augmented,27
+chemberta_mtr__lightgbm,chemberta_mtr,lightgbm,similarity_new,Modern-augmented,28
+rdkit2d__extra_trees,rdkit2d,extra_trees,similarity_new,Modern-augmented,29
+chemberta_mlm__lightgbm,chemberta_mlm,lightgbm,similarity_new,Modern-augmented,30
+multiview__extra_trees,multiview,extra_trees,similarity_new,Modern-augmented,31
+molformer__lightgbm,molformer,lightgbm,similarity_new,Modern-augmented,32

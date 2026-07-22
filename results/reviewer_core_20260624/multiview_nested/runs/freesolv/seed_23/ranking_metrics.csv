@@ -1,0 +1,13 @@
+task,task_type,seed,outer_fold,variant,candidate_count,oracle_validation_rank,top3_hit,chance_adjusted_hit,mrr,spearman
+freesolv,regression,23,1,full_multiview,12,2,1.0,1.0,0.5,0.7342657342657343
+freesolv,regression,23,1,morgan_only,3,1,1.0,0.0,1.0,1.0
+freesolv,regression,23,1,fingerprints_only,6,2,1.0,1.0,0.5,0.8285714285714287
+freesolv,regression,23,1,no_multiview_concat,9,3,1.0,1.0,0.3333333333333333,0.7333333333333334
+freesolv,regression,23,2,full_multiview,12,1,1.0,1.0,1.0,0.8251748251748254
+freesolv,regression,23,2,morgan_only,3,2,1.0,0.0,0.5,0.5
+freesolv,regression,23,2,fingerprints_only,6,1,1.0,1.0,1.0,0.942857142857143
+freesolv,regression,23,2,no_multiview_concat,9,1,1.0,1.0,1.0,0.7999999999999999
+freesolv,regression,23,3,full_multiview,12,6,0.0,-0.3333333333333333,0.16666666666666666,0.6573426573426573
+freesolv,regression,23,3,morgan_only,3,2,1.0,0.0,0.5,0.5
+freesolv,regression,23,3,fingerprints_only,6,2,1.0,1.0,0.5,0.8857142857142858
+freesolv,regression,23,3,no_multiview_concat,9,4,0.0,-0.49999999999999994,0.25,0.7666666666666667

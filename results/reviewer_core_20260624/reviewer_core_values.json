@@ -1,0 +1,144 @@
+{
+  "paired_pool_effects": {
+    "k32_vs_k4_fixed_regret": {
+      "metric": "fixed_normalized_regret",
+      "comparison": "K=32 vs K=4",
+      "paired_units": 135,
+      "endpoints": 9,
+      "mean_paired_effect": 0.12199289678530571,
+      "endpoint_cluster_ci95_low": 0.0724940886447559,
+      "endpoint_cluster_ci95_high": 0.17460949908648893,
+      "endpoint_median_effect": 0.11107208206467264,
+      "endpoints_in_expected_direction": 8,
+      "exact_sign_flip_p": 0.0078125,
+      "holm_p_across_9_tests": 0.0390625
+    },
+    "k32_vs_k4_chance_hit": {
+      "metric": "chance_adjusted_hit",
+      "comparison": "K=32 vs K=4",
+      "paired_units": 135,
+      "endpoints": 9,
+      "mean_paired_effect": -0.6416347381864624,
+      "endpoint_cluster_ci95_low": -0.7795657726692211,
+      "endpoint_cluster_ci95_high": -0.4424010217113666,
+      "endpoint_median_effect": -0.6620689655172414,
+      "endpoints_in_expected_direction": 8,
+      "exact_sign_flip_p": 0.0078125,
+      "holm_p_across_9_tests": 0.0390625
+    }
+  },
+  "risk_validation": {
+    "components": [
+      {
+        "component": "ambiguity_component",
+        "spearman": 0.2287661951819501,
+        "endpoint_bootstrap_ci95_low": 0.01302564634843953,
+        "endpoint_bootstrap_ci95_high": 0.35244444282008464,
+        "within_endpoint_pool_permutation_p_one_sided": 0.5476904619076185
+      },
+      {
+        "component": "instability_component",
+        "spearman": 0.36326229197906607,
+        "endpoint_bootstrap_ci95_low": 0.15217155364432539,
+        "endpoint_bootstrap_ci95_high": 0.5076545941626095,
+        "within_endpoint_pool_permutation_p_one_sided": 0.9490101979604079
+      },
+      {
+        "component": "variability_component",
+        "spearman": -0.05068244830430836,
+        "endpoint_bootstrap_ci95_low": -0.22048496143251167,
+        "endpoint_bootstrap_ci95_high": 0.10146106627092405,
+        "within_endpoint_pool_permutation_p_one_sided": 0.9202159568086383
+      },
+      {
+        "component": "selection_risk",
+        "spearman": 0.23514393659070387,
+        "endpoint_bootstrap_ci95_low": 0.019091067522874722,
+        "endpoint_bootstrap_ci95_high": 0.37836418008807293,
+        "within_endpoint_pool_permutation_p_one_sided": 0.9526094781043791
+      }
+    ],
+    "quartiles": [
+      {
+        "risk_quartile": "Q1 low",
+        "n": 160,
+        "mean_risk": 0.1864999359959037,
+        "mean_regret": 0.07598270526107014,
+        "median_regret": 0.01680054633522365
+      },
+      {
+        "risk_quartile": "Q2",
+        "n": 113,
+        "mean_risk": 0.37224057383920356,
+        "mean_regret": 0.12820978519685902,
+        "median_regret": 0.0729813664596215
+      },
+      {
+        "risk_quartile": "Q3",
+        "n": 134,
+        "mean_risk": 0.4923879068558895,
+        "mean_regret": 0.1280208634039575,
+        "median_regret": 0.07884114167864455
+      },
+      {
+        "risk_quartile": "Q4 high",
+        "n": 133,
+        "mean_risk": 0.675833978186634,
+        "mean_regret": 0.1690087964850229,
+        "median_regret": 0.1262798634812311
+      }
+    ],
+    "loeo": {
+      "n_predictions": 540,
+      "loeo_mae": 0.11963672768108566,
+      "constant_baseline_mae": 0.122683469811651,
+      "loeo_spearman": 0.09906006771570934,
+      "mean_high_regret_auc": 0.5141089930163887,
+      "risk_gate_mean_delta": -0.008664215025733535,
+      "risk_gate_endpoint_bootstrap_ci95_low": -0.037508923996936554,
+      "risk_gate_endpoint_bootstrap_ci95_high": 0.019977132857628237,
+      "endpoints_with_lower_retained_regret": 5
+    }
+  },
+  "cross_endpoint_meta_risk": {
+    "n_predictions": 540,
+    "loeo_mae": 0.11225515232154912,
+    "constant_baseline_mae": 0.122683469811651,
+    "loeo_spearman": 0.3130247268596892,
+    "mean_high_regret_auc": 0.6480632285444016,
+    "risk_gate_mean_delta": -0.034145460495238956,
+    "risk_gate_endpoint_bootstrap_ci95_low": -0.046678219869516355,
+    "risk_gate_endpoint_bootstrap_ci95_high": -0.020484556835113056,
+    "endpoints_with_lower_retained_regret": 8,
+    "selected_model_counts": {
+      "ridge": 6,
+      "random_forest": 3
+    }
+  },
+  "signal_recovery": {
+    "monotonicity": {
+      "4": {
+        "chance_adjusted_hit_non_decreasing": true,
+        "mrr_non_decreasing": true,
+        "regret_non_increasing": true
+      },
+      "8": {
+        "chance_adjusted_hit_non_decreasing": true,
+        "mrr_non_decreasing": true,
+        "regret_non_increasing": true
+      },
+      "16": {
+        "chance_adjusted_hit_non_decreasing": true,
+        "mrr_non_decreasing": true,
+        "regret_non_increasing": true
+      },
+      "32": {
+        "chance_adjusted_hit_non_decreasing": true,
+        "mrr_non_decreasing": true,
+        "regret_non_increasing": true
+      }
+    },
+    "null_max_abs_chance_adjusted_hit": 0.0036740740740740757,
+    "full_signal_max_regret": 0.0
+  }
+}

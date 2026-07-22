@@ -1,0 +1,20 @@
+standardization:
+  parser: RDKit
+  cleanup: rdMolStandardize.Cleanup
+  fragment_policy: largest_fragment
+  charge_policy: uncharge_when_possible
+  canonical_smiles: canonical_isomeric
+classification_duplicates:
+  same_label: keep_one
+  conflicting_labels: exclude_all_conflicting_records
+regression_duplicates:
+  aggregation: arithmetic_mean
+  record_replicate_count: true
+missing_or_invalid:
+  missing_smiles: remove
+  invalid_smiles: remove
+  missing_target: remove
+  non_numeric_target: remove
+identity:
+  fields: [config, data_hash, split_hash, seed, code_hash, prediction_hash]
+  excludes: [runtime, final_metric]

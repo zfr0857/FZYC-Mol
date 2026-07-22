@@ -1,0 +1,9 @@
+﻿reviewer_concern,added_control,evidence_location
+Equal-size evidence covered only three endpoints and K=16/32,Six prespecified endpoints; K=4/8/16/32 exact prefixes,Methods 2.14; Results 3.10; Figure 7; Figure S16; Table S32
+Modern panel was a boundary check rather than a component intervention,"Fixed-K ChemBERTa, MoLFormer, D-MPNN and full-modern ablations",Methods 2.14; Figure S17; Table S33
+Compute exposure could explain composition effects,Locked equal-downstream-budget prefix sensitivity,Figure 7D; Figure S21; Tables S33 and S36
+Anchor and normalization choices could determine direction,Three predefined anchors and raw/MAD/paired-homogeneous normalizations,Methods 2.14-2.15; Figure S18; Table S34
+Composition effects were not tested under strict structure separation,Full three-pool loop under scaffold and Tanimoto-component splits,Results 3.10; Figure S19; Table S35
+Effective diversity may not be usable by validation,"Candidate/representation/family frequencies, entropy, seed agreement and fold switches",Figure 7C; Figure S20; Table S36
+Core estimands lacked numbered mathematical definitions,Twenty-seven native Word equations with explicit aggregation and epsilon,Methods 2.15; equation notation and code-mapping workbook
+Endpoint-pool-K cells risk pseudoreplication,Outer folds averaged within seed; five seeds retained as bootstrap blocks,Methods 2.16; all expanded summary tables

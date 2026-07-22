@@ -1,0 +1,241 @@
+task,candidate_count,comparison,metric,mean_paired_difference,positive_seed_means,negative_seed_means
+clintox,4,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.024741509654477446,4,1
+clintox,4,Classical multiview - Homogeneous Morgan,selected_model_gain,-0.003145696805369425,2,3
+clintox,4,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.018027726923046793,4,1
+clintox,4,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+clintox,4,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,-0.881159420289855,0,5
+clintox,4,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.003957947346416879,3,2
+clintox,4,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.0027629057518200545,3,2
+clintox,4,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.0,0,0
+clintox,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+clintox,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.18550724637681162,0,2
+clintox,8,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.05192651044682187,5,0
+clintox,8,Classical multiview - Homogeneous Morgan,selected_model_gain,0.05332791955480688,5,0
+clintox,8,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0025683560603361037,3,2
+clintox,8,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.10666666666666666,2,1
+clintox,8,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.038704830591240316,2,3
+clintox,8,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.003810670380467257,3,2
+clintox,8,Modern-augmented - Homogeneous Morgan,selected_model_gain,-0.016075687964085955,1,4
+clintox,8,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.028736028296111236,5,0
+clintox,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.10666666666666666,2,1
+clintox,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.21876643377657573,0,5
+clintox,16,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.07200033085946851,5,0
+clintox,16,Classical multiview - Homogeneous Morgan,selected_model_gain,0.0850769009769748,5,0
+clintox,16,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0002751160155053976,2,3
+clintox,16,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.7384615384615385,5,0
+clintox,16,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.6454560791043157,5,0
+clintox,16,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.04317256363748771,5,0
+clintox,16,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.05138233171304696,5,0
+clintox,16,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,-0.008246469619596245,2,3
+clintox,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.5743589743589744,4,0
+clintox,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.3812091845876707,5,0
+clintox,32,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.06392852979635252,5,0
+clintox,32,Classical multiview - Homogeneous Morgan,selected_model_gain,0.06929303137035964,5,0
+clintox,32,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,-0.00045595361119746443,2,3
+clintox,32,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.367816091954023,3,1
+clintox,32,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.1501825039730788,3,2
+clintox,32,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.0603315930682569,5,0
+clintox,32,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.07326562617729439,5,0
+clintox,32,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,-0.004428548418132205,2,3
+clintox,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.8091954022988507,5,0
+clintox,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.6930550999472176,5,0
+bace,4,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,-0.02045379229942405,0,5
+bace,4,Classical multiview - Homogeneous Morgan,selected_model_gain,-0.036354994452102565,0,5
+bace,4,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.015463908543509888,4,0
+bace,4,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,-0.5333333333333333,0,2
+bace,4,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,-0.37101449275362325,0,4
+bace,4,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,-0.02152455684740191,0,5
+bace,4,Modern-augmented - Homogeneous Morgan,selected_model_gain,-0.031142371914735727,0,5
+bace,4,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.010077705313910073,1,0
+bace,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+bace,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.16231884057971016,1,2
+bace,8,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.0032208623591147775,5,0
+bace,8,Classical multiview - Homogeneous Morgan,selected_model_gain,0.0024077487319938305,3,2
+bace,8,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0019374867687311187,3,2
+bace,8,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,-0.10666666666666666,1,2
+bace,8,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.12621140410187065,3,2
+bace,8,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,-0.025541642084447917,0,5
+bace,8,Modern-augmented - Homogeneous Morgan,selected_model_gain,-0.035533493113992634,0,5
+bace,8,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.01025927197923331,5,0
+bace,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,-0.32,0,3
+bace,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.005048456164074821,2,3
+bace,16,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.005519126112814821,5,0
+bace,16,Classical multiview - Homogeneous Morgan,selected_model_gain,0.006804012314887127,5,0
+bace,16,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0018354353569915104,4,1
+bace,16,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.24615384615384617,2,1
+bace,16,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.384865304351864,5,0
+bace,16,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.0012398710716303644,4,1
+bace,16,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.0013036702982050102,3,2
+bace,16,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.0005054967161017537,3,2
+bace,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.49230769230769234,4,1
+bace,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.4238049618904358,4,1
+bace,32,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.005226535744181171,5,0
+bace,32,Classical multiview - Homogeneous Morgan,selected_model_gain,0.00614380473092749,5,0
+bace,32,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0024956429409511488,5,0
+bace,32,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.2206896551724138,3,1
+bace,32,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.20560287303908553,4,1
+bace,32,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.0051035110954264756,5,0
+bace,32,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.007686210924358476,5,0
+bace,32,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.0009532367475201624,4,1
+bace,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.1471264367816092,2,1
+bace,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.31694920325354053,3,2
+bbbp,4,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,-0.0023253900554752885,1,4
+bbbp,4,Classical multiview - Homogeneous Morgan,selected_model_gain,-0.020392500222576486,0,5
+bbbp,4,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.012947694095511659,4,0
+bbbp,4,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+bbbp,4,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,-0.7420289855072465,0,5
+bbbp,4,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,-0.012468161611913057,0,5
+bbbp,4,Modern-augmented - Homogeneous Morgan,selected_model_gain,-0.031629715619214016,0,5
+bbbp,4,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.005726259718876066,5,0
+bbbp,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+bbbp,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.765217391304348,0,5
+bbbp,8,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.02105929059001463,5,0
+bbbp,8,Classical multiview - Homogeneous Morgan,selected_model_gain,0.027628041727696145,5,0
+bbbp,8,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0008857810292455543,3,2
+bbbp,8,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.10666666666666666,1,0
+bbbp,8,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.31132146345128087,3,1
+bbbp,8,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,-0.022315705933094624,0,5
+bbbp,8,Modern-augmented - Homogeneous Morgan,selected_model_gain,-0.04015829708918853,0,5
+bbbp,8,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.016510430024368628,5,0
+bbbp,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,-1.28,0,5
+bbbp,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.41902186161821053,1,4
+bbbp,16,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.023519451840766377,5,0
+bbbp,16,Classical multiview - Homogeneous Morgan,selected_model_gain,0.02265213234275333,5,0
+bbbp,16,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,-0.00015878798151003348,2,3
+bbbp,16,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.6564102564102565,5,0
+bbbp,16,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.23060388420943564,4,1
+bbbp,16,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.01406224277240523,5,0
+bbbp,16,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.01639602127738924,5,0
+bbbp,16,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.0007681413492761043,4,1
+bbbp,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.6564102564102565,5,0
+bbbp,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.4700964999556715,4,0
+bbbp,32,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.023456194960308825,5,0
+bbbp,32,Classical multiview - Homogeneous Morgan,selected_model_gain,0.021754431010269377,5,0
+bbbp,32,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0007389133509739206,2,3
+bbbp,32,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.367816091954023,4,0
+bbbp,32,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.19329600459096027,3,2
+bbbp,32,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.023273128116181787,5,0
+bbbp,32,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.02265213234275333,5,0
+bbbp,32,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,-0.00015878798151003348,2,3
+bbbp,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.6620689655172414,5,0
+bbbp,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.29000597927281374,5,0
+esol,4,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.8187677937508976,5,0
+esol,4,Classical multiview - Homogeneous Morgan,selected_model_gain,0.8187677937508976,5,0
+esol,4,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0,0,0
+esol,4,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+esol,4,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.0,0,0
+esol,4,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.4741711346296772,5,0
+esol,4,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.006192410891033157,2,3
+esol,4,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.059116056199371235,3,1
+esol,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+esol,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.6956521739130436,0,5
+esol,8,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.8115578901284625,5,0
+esol,8,Classical multiview - Homogeneous Morgan,selected_model_gain,0.8545407603457399,5,0
+esol,8,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,-0.03577296659484229,0,5
+esol,8,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+esol,8,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,-0.10096912328149654,0,5
+esol,8,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.8018844304317019,5,0
+esol,8,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.7637841076998286,5,0
+esol,8,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.05498368605106899,2,3
+esol,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+esol,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.5216738036210653,5,0
+esol,16,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.832538530826741,5,0
+esol,16,Classical multiview - Homogeneous Morgan,selected_model_gain,0.866076395527991,5,0
+esol,16,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,-0.04730860177709332,0,5
+esol,16,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,-0.24615384615384617,0,3
+esol,16,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,-0.08211175397013797,1,4
+esol,16,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.8006744573180622,5,0
+esol,16,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.7407866900870924,5,0
+esol,16,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.07798110366380524,1,4
+esol,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.4102564102564103,4,0
+esol,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.2875923931944293,5,0
+esol,32,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.8408061777947442,5,0
+esol,32,Classical multiview - Homogeneous Morgan,selected_model_gain,0.8540313096301689,5,0
+esol,32,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,-0.030280598759344707,1,4
+esol,32,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,-0.2942528735632184,0,4
+esol,32,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,-0.1209916231549979,0,5
+esol,32,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.8252909408211547,5,0
+esol,32,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.866076395527991,5,0
+esol,32,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,-0.04730860177709332,0,5
+esol,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,-0.367816091954023,0,4
+esol,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.10419933109758235,0,5
+lipo,4,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.20955946444921442,5,0
+lipo,4,Classical multiview - Homogeneous Morgan,selected_model_gain,0.20955946444921442,5,0
+lipo,4,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0,0,0
+lipo,4,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+lipo,4,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.0,0,0
+lipo,4,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.17409005005547457,5,0
+lipo,4,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.13629189859036334,5,0
+lipo,4,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.037798151465111236,3,0
+lipo,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,-0.26666666666666666,0,1
+lipo,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.3130434782608696,0,3
+lipo,8,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.1983044392327987,5,0
+lipo,8,Classical multiview - Homogeneous Morgan,selected_model_gain,0.16755988282658427,5,0
+lipo,8,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.021690193697586763,5,0
+lipo,8,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+lipo,8,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,-0.1851100593494103,0,5
+lipo,8,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.16593470216003098,5,0
+lipo,8,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.1440693580597156,5,0
+lipo,8,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.008639437690842662,3,1
+lipo,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,-0.21333333333333332,0,2
+lipo,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.134625497708662,1,3
+lipo,16,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.24106174369143107,5,0
+lipo,16,Classical multiview - Homogeneous Morgan,selected_model_gain,0.24635196614108085,5,0
+lipo,16,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0,0,0
+lipo,16,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.16410256410256413,2,0
+lipo,16,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.2958438194512324,5,0
+lipo,16,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.16892380746828595,5,0
+lipo,16,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.12152958579131475,5,0
+lipo,16,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.04146411636715393,5,0
+lipo,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,-0.32820512820512826,0,3
+lipo,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.3935527815897176,0,5
+lipo,32,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.22390902628700132,5,0
+lipo,32,Classical multiview - Homogeneous Morgan,selected_model_gain,0.21986774526826366,5,0
+lipo,32,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.00036425833104771074,2,3
+lipo,32,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.6620689655172414,5,0
+lipo,32,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.5471748567525923,5,0
+lipo,32,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.21972144551713163,5,0
+lipo,32,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.22746032696110113,5,0
+lipo,32,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,-0.007228323361789743,0,5
+lipo,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.6620689655172414,5,0
+lipo,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.7762247967885609,5,0
+tdc_caco2_wang,4,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.08192423289336463,5,0
+tdc_caco2_wang,4,Classical multiview - Homogeneous Morgan,selected_model_gain,0.08192423289336463,5,0
+tdc_caco2_wang,4,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.0,0,0
+tdc_caco2_wang,4,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+tdc_caco2_wang,4,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.0,0,0
+tdc_caco2_wang,4,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,-0.009426799124584202,2,3
+tdc_caco2_wang,4,Modern-augmented - Homogeneous Morgan,selected_model_gain,-0.021353748073706453,0,5
+tdc_caco2_wang,4,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,0.0,0,0
+tdc_caco2_wang,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.0,0,0
+tdc_caco2_wang,4,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.3942028985507247,0,4
+tdc_caco2_wang,8,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.10175605611736709,5,0
+tdc_caco2_wang,8,Classical multiview - Homogeneous Morgan,selected_model_gain,0.0917096264944559,5,0
+tdc_caco2_wang,8,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,6.398136128486685e-05,2,3
+tdc_caco2_wang,8,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.21333333333333332,2,0
+tdc_caco2_wang,8,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.05889865524753962,3,2
+tdc_caco2_wang,8,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.06935386115031075,5,0
+tdc_caco2_wang,8,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.09864409934346681,5,0
+tdc_caco2_wang,8,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,-0.01671986645010218,0,5
+tdc_caco2_wang,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.7466666666666667,5,0
+tdc_caco2_wang,8,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.9339643903538425,5,0
+tdc_caco2_wang,16,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.10359053588336375,5,0
+tdc_caco2_wang,16,Classical multiview - Homogeneous Morgan,selected_model_gain,0.10594934681020118,5,0
+tdc_caco2_wang,16,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,-0.007835993212106204,0,5
+tdc_caco2_wang,16,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,0.24615384615384617,3,1
+tdc_caco2_wang,16,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.10370085149348088,3,2
+tdc_caco2_wang,16,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.087217670689588,5,0
+tdc_caco2_wang,16,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.07646742616451496,5,0
+tdc_caco2_wang,16,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,8.582426139110144e-05,3,2
+tdc_caco2_wang,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.1641025641025641,3,1
+tdc_caco2_wang,16,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,-0.07893742480039223,1,4
+tdc_caco2_wang,32,Classical multiview - Homogeneous Morgan,oracle_opportunity_gain,0.10494932720556097,5,0
+tdc_caco2_wang,32,Classical multiview - Homogeneous Morgan,selected_model_gain,0.10191480389915553,5,0
+tdc_caco2_wang,32,Classical multiview - Homogeneous Morgan,cross_fitted_selection_gap,0.005988158336856553,4,1
+tdc_caco2_wang,32,Classical multiview - Homogeneous Morgan,chance_adjusted_hit3,-0.1471264367816092,1,2
+tdc_caco2_wang,32,Classical multiview - Homogeneous Morgan,chance_adjusted_mrr,0.008102531725673262,3,2
+tdc_caco2_wang,32,Modern-augmented - Homogeneous Morgan,oracle_opportunity_gain,0.09912047908823782,5,0
+tdc_caco2_wang,32,Modern-augmented - Homogeneous Morgan,selected_model_gain,0.10566566070264127,5,0
+tdc_caco2_wang,32,Modern-augmented - Homogeneous Morgan,cross_fitted_selection_gap,-0.006067003655544956,2,3
+tdc_caco2_wang,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_hit3,0.5149425287356322,4,0
+tdc_caco2_wang,32,Modern-augmented - Homogeneous Morgan,chance_adjusted_mrr,0.3973662393423568,4,0

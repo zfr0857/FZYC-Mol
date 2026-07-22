@@ -1,0 +1,9 @@
+﻿endpoint,task_id,homogeneous_morgan_source,classical_multiview_source,three_encoder_embeddings,dmpnn_nested_source,complete_equal_size_source,required_action
+ClinTox,clintox,available,available,"ChemBERTa-MTR, ChemBERTa-MLM, MoLFormer",available,available,none
+BACE,bace,available,available,"ChemBERTa-MTR, ChemBERTa-MLM, MoLFormer",available,available,none
+BBBP,bbbp,available,available,"ChemBERTa-MTR, ChemBERTa-MLM, MoLFormer",requires new analysis,requires new analysis,one-epoch D-MPNN nested fitting; 35 lightweight nested candidates
+ESOL,esol,available,available,"ChemBERTa-MTR, ChemBERTa-MLM, MoLFormer",available,available,none
+Lipophilicity,lipo,available,available,"ChemBERTa-MTR, ChemBERTa-MLM, MoLFormer",requires new analysis,requires new analysis,one-epoch D-MPNN nested fitting; 35 lightweight nested candidates
+Caco2 Wang,tdc_caco2_wang,available,available,requires new analysis,requires new analysis,requires new analysis,frozen embedding extraction; one-epoch D-MPNN nested fitting; 35 lightweight nested candidates
+Composition × split regime,"clintox,bace,esol",available,requires new analysis,available for scaffold only,requires new analysis,requires new analysis,run classical and modern registries on locked Tanimoto-component folds
+Requested manuscript,manuscript(6)(2).docx,requires source data,n/a,n/a,n/a,requires source data,use Paper30 manuscript(6).docx as latest validated baseline

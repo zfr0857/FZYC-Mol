@@ -1,0 +1,21 @@
+﻿symbol,definition
+"u=(s,f)",outer audit unit indexed by repeat seed s and outer fold f
+e,molecular-property endpoint
+p,candidate-pool composition
+K,eligible candidate count
+"C_(p,K)",locked K-candidate prefix for pool p
+"V_(u,j)",mean inner-validation utility of candidate j in outer unit u
+"A_(u,j)",outer-audit utility of candidate j in outer unit u
+a,predefined anchor; primary analysis uses shared Morgan linear
+j_0,reference candidate fixed before outer outcomes are inspected
+r_u,rank of the outer-audit best candidate in the inner-validation ordering
+q_j,proportion of repeated audit units selecting candidate j
+S,number of repeat seeds; S=5
+F,number of outer folds per seed; F=3
+H_K,Kth harmonic number
+epsilon,numerical stabilizer; epsilon=1e-12
+T_down,measured downstream inner-plus-outer fit/predict wall time; pretrained encoder cost excluded
+S (covariance),sample covariance matrix in Eq. 16; distinct from the seed-count symbol by context
+T (shrinkage),Ledoit-Wolf scaled-identity shrinkage target
+alpha,Ledoit-Wolf shrinkage coefficient estimated analytically by scikit-learn
+lambda_i,non-negative eigenvalue of the shrinkage correlation matrix after clipping numerical negatives to zero

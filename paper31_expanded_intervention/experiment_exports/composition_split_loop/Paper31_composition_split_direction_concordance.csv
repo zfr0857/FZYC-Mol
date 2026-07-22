@@ -1,0 +1,73 @@
+pool,task,metric,contrast,scaffold_change,similarity_cluster_change,same_direction
+Classical multiview,bace,oracle_opportunity_gain_mean,K32-K4,0.048970966813541086,0.05314175439849826,True
+Classical multiview,bace,oracle_opportunity_gain_mean,K32-K16,0.0004760339080139564,0.0011467259071194502,True
+Classical multiview,bace,selected_model_gain_mean,K32-K4,0.06052728654718812,0.08382494528638611,True
+Classical multiview,bace,selected_model_gain_mean,K32-K16,-0.0015424061934309896,-0.003241949347947415,True
+Classical multiview,bace,chance_adjusted_hit3_mean,K32-K4,0.09195402298850575,-0.496551724137931,False
+Classical multiview,bace,chance_adjusted_hit3_mean,K32-K16,0.050928381962864755,-0.04526967285587975,False
+Classical multiview,bace,cross_fitted_selection_gap_mean,K32-K4,-0.012085468484779796,-0.05539450587847926,True
+Classical multiview,bace,cross_fitted_selection_gap_mean,K32-K16,0.0015424061934309857,0.0032419493479474357,True
+Classical multiview,clintox,oracle_opportunity_gain_mean,K32-K4,0.08322296896764843,0.08643839476595715,True
+Classical multiview,clintox,oracle_opportunity_gain_mean,K32-K16,0.0035969367280956344,0.0032448653639789993,True
+Classical multiview,clintox,selected_model_gain_mean,K32-K4,0.09473921184659817,0.10057491702228542,True
+Classical multiview,clintox,selected_model_gain_mean,K32-K16,-0.003972594806934765,-0.0018950737441042753,True
+Classical multiview,clintox,chance_adjusted_hit3_mean,K32-K4,-0.5885057471264368,-0.5885057471264368,True
+Classical multiview,clintox,chance_adjusted_hit3_mean,K32-K16,-0.4244031830238727,-0.3423519009725907,True
+Classical multiview,clintox,cross_fitted_selection_gap_mean,K32-K4,-0.009287121664450986,-0.012873087769209611,True
+Classical multiview,clintox,cross_fitted_selection_gap_mean,K32-K16,0.003972594806934742,0.0018950737441042775,True
+Classical multiview,esol,oracle_opportunity_gain_mean,K32-K4,0.05820408141011102,0.12035981044337785,True
+Classical multiview,esol,oracle_opportunity_gain_mean,K32-K16,0.015515236973589364,0.004574014902805068,True
+Classical multiview,esol,selected_model_gain_mean,K32-K4,-0.022578296423215072,0.1029474102597403,False
+Classical multiview,esol,selected_model_gain_mean,K32-K16,-0.012045085897822272,-0.00726711634638999,True
+Classical multiview,esol,chance_adjusted_hit3_mean,K32-K4,-0.9563218390804598,-0.2206896551724138,True
+Classical multiview,esol,chance_adjusted_hit3_mean,K32-K16,0.19239610963748893,-0.2206896551724138,False
+Classical multiview,esol,cross_fitted_selection_gap_mean,K32-K4,0.02756121354314119,0.01293981185366746,True
+Classical multiview,esol,cross_fitted_selection_gap_mean,K32-K16,0.01702800301774861,0.010930541042138954,True
+Homogeneous Morgan,bace,oracle_opportunity_gain_mean,K32-K4,0.02329063876993586,0.06650037803798516,True
+Homogeneous Morgan,bace,oracle_opportunity_gain_mean,K32-K16,0.0007686242766476031,0.005458568548063952,True
+Homogeneous Morgan,bace,selected_model_gain_mean,K32-K4,0.018028487364158047,0.055849065071534136,True
+Homogeneous Morgan,bace,selected_model_gain_mean,K32-K16,-0.000882198609471363,0.0016094205875227807,False
+Homogeneous Morgan,bace,chance_adjusted_hit3_mean,K32-K4,-0.6620689655172414,0.2574712643678161,False
+Homogeneous Morgan,bace,chance_adjusted_hit3_mean,K32-K16,0.07639257294429708,-0.07073386383731217,False
+Homogeneous Morgan,bace,cross_fitted_selection_gap_mean,K32-K4,0.000882797117778944,0.0005972862780225571,True
+Homogeneous Morgan,bace,cross_fitted_selection_gap_mean,K32-K16,0.000882198609471348,-0.0018704293696359675,False
+Homogeneous Morgan,clintox,oracle_opportunity_gain_mean,K32-K4,0.044035948825773344,0.056501376722983374,True
+Homogeneous Morgan,clintox,oracle_opportunity_gain_mean,K32-K16,0.011668737791211622,0.006008189630073296,True
+Homogeneous Morgan,clintox,selected_model_gain_mean,K32-K4,0.02230048367086912,0.02658182767254788,True
+Homogeneous Morgan,clintox,selected_model_gain_mean,K32-K16,0.01181127479968043,0.008959201583855325,True
+Homogeneous Morgan,clintox,chance_adjusted_hit3_mean,K32-K4,-0.9563218390804598,-0.9563218390804598,True
+Homogeneous Morgan,clintox,chance_adjusted_hit3_mean,K32-K16,-0.053757736516357194,0.02829354553492484,False
+Homogeneous Morgan,clintox,cross_fitted_selection_gap_mean,K32-K4,0.00919655886979327,0.013210301714456838,True
+Homogeneous Morgan,clintox,cross_fitted_selection_gap_mean,K32-K16,0.004703664433637602,0.0001754178000715409,True
+Homogeneous Morgan,esol,oracle_opportunity_gain_mean,K32-K4,0.03616569736626474,0.09126025881831934,True
+Homogeneous Morgan,esol,oracle_opportunity_gain_mean,K32-K16,0.007247590005586391,0.021139623313425115,True
+Homogeneous Morgan,esol,selected_model_gain_mean,K32-K4,-0.05784181230248575,0.07037482570794928,False
+Homogeneous Morgan,esol,selected_model_gain_mean,K32-K16,0.0,0.029710411589414676,False
+Homogeneous Morgan,esol,chance_adjusted_hit3_mean,K32-K4,-0.6620689655172414,-0.5149425287356322,True
+Homogeneous Morgan,esol,chance_adjusted_hit3_mean,K32-K16,0.24049513704686118,-0.3508399646330681,False
+Homogeneous Morgan,esol,cross_fitted_selection_gap_mean,K32-K4,0.0578418123024859,0.0017310517773825307,True
+Homogeneous Morgan,esol,cross_fitted_selection_gap_mean,K32-K16,0.0,-0.011923320121420344,False
+Modern-augmented,bace,oracle_opportunity_gain_mean,K32-K4,0.04991870671276426,0.04284987747539323,True
+Modern-augmented,bace,oracle_opportunity_gain_mean,K32-K16,0.004632264300443736,0.009284429735080313,True
+Modern-augmented,bace,selected_model_gain_mean,K32-K4,0.056857070203252286,0.08810931548792544,True
+Modern-augmented,bace,selected_model_gain_mean,K32-K16,0.005500342016682133,0.01495654738434804,True
+Modern-augmented,bace,chance_adjusted_hit3_mean,K32-K4,-0.5149425287356322,0.036781609195402284,False
+Modern-augmented,bace,chance_adjusted_hit3_mean,K32-K16,-0.2687886825817861,-0.12732095490716178,True
+Modern-augmented,bace,cross_fitted_selection_gap_mean,K32-K4,-0.008241671448610965,-0.07609513780411913,True
+Modern-augmented,bace,cross_fitted_selection_gap_mean,K32-K16,0.0013299386408897576,-0.01907235981339443,False
+Modern-augmented,clintox,oracle_opportunity_gain_mean,K32-K4,0.10040959454761336,0.09009222172310816,True
+Modern-augmented,clintox,oracle_opportunity_gain_mean,K32-K16,0.0288277672219808,0.020936223619741595,True
+Modern-augmented,clintox,selected_model_gain_mean,K32-K4,0.09280320409634346,0.08575777994060545,True
+Modern-augmented,clintox,selected_model_gain_mean,K32-K16,0.03369456926392786,0.03324333682713182,True
+Modern-augmented,clintox,chance_adjusted_hit3_mean,K32-K4,-0.1471264367816092,-0.2942528735632184,True
+Modern-augmented,clintox,chance_adjusted_hit3_mean,K32-K16,0.18107869142351896,0.03395225464190976,True
+Modern-augmented,clintox,cross_fitted_selection_gap_mean,K32-K4,0.004768010451661064,0.0019440493124703562,True
+Modern-augmented,clintox,cross_fitted_selection_gap_mean,K32-K16,0.008521585635101643,-0.008677826025471461,False
+Modern-augmented,esol,oracle_opportunity_gain_mean,K32-K4,0.38728550355774205,0.23181019950465953,True
+Modern-augmented,esol,oracle_opportunity_gain_mean,K32-K16,0.031864073508678814,0.05349028547589807,True
+Modern-augmented,esol,selected_model_gain_mean,K32-K4,0.802042172334472,0.24878050987825606,True
+Modern-augmented,esol,selected_model_gain_mean,K32-K16,0.12528970544089857,0.07070413663755093,True
+Modern-augmented,esol,chance_adjusted_hit3_mean,K32-K4,-1.0298850574712644,0.0,False
+Modern-augmented,esol,chance_adjusted_hit3_mean,K32-K16,-0.537577365163572,0.24615384615384606,False
+Modern-augmented,esol,cross_fitted_selection_gap_mean,K32-K4,-0.04858284567397866,-0.020532308496510613,True
+Modern-augmented,esol,cross_fitted_selection_gap_mean,K32-K16,-0.12528970544089854,-0.007242209280290097,True
