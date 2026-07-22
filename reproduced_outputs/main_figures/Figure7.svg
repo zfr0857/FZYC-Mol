@@ -5135,9 +5135,9 @@ L 395.071516 400.25055
    </g>
    <g id="legend_4">
     <g id="line2d_276">
-     <path d="M 286.546975 302.669013
-L 288.646975 302.669013
-L 290.746975 302.669013
+     <path d="M 246.305992 308.165745
+L 248.230992 308.165745
+L 250.155992 308.165745
 " style="fill: none"/>
      <defs>
       <path id="m1690b2f53c" d="M 0 2.44949
@@ -5153,16 +5153,16 @@ z
 " style="stroke: #666666"/>
      </defs>
      <g>
-      <use xlink:href="#m1690b2f53c" x="288.646975" y="302.669013" style="fill: #888888; stroke: #666666"/>
+      <use xlink:href="#m1690b2f53c" x="248.230992" y="308.165745" style="fill: #888888; stroke: #666666"/>
      </g>
     </g>
     <g id="text_170">
-     <text style="font-size: 7px; font-family: 'Times New Roman'; text-anchor: start" x="291.586975" y="305.119013" transform="rotate(-0 291.586975 305.119013)">K=4</text>
+     <text style="font-size: 7px; font-family: 'Times New Roman'; text-anchor: start" x="251.415992" y="310.615745" transform="rotate(-0 251.415992 310.615745)">K=4</text>
     </g>
     <g id="line2d_277">
-     <path d="M 306.049631 302.669013
-L 308.149631 302.669013
-L 310.249631 302.669013
+     <path d="M 280.365643 308.165745
+L 282.290643 308.165745
+L 284.215643 308.165745
 " style="fill: none"/>
      <defs>
       <path id="m9f35680325" d="M 0 2.915476
@@ -5178,16 +5178,16 @@ z
 " style="stroke: #666666"/>
      </defs>
      <g>
-      <use xlink:href="#m9f35680325" x="308.149631" y="302.669013" style="fill: #888888; stroke: #666666"/>
+      <use xlink:href="#m9f35680325" x="282.290643" y="308.165745" style="fill: #888888; stroke: #666666"/>
      </g>
     </g>
     <g id="text_171">
-     <text style="font-size: 7px; font-family: 'Times New Roman'; text-anchor: start" x="311.089631" y="305.119013" transform="rotate(-0 311.089631 305.119013)">K=8</text>
+     <text style="font-size: 7px; font-family: 'Times New Roman'; text-anchor: start" x="285.475643" y="310.615745" transform="rotate(-0 285.475643 310.615745)">K=8</text>
     </g>
     <g id="line2d_278">
-     <path d="M 325.552288 302.669013
-L 327.652288 302.669013
-L 329.752288 302.669013
+     <path d="M 314.425293 308.165745
+L 316.350293 308.165745
+L 318.275293 308.165745
 " style="fill: none"/>
      <defs>
       <path id="mfc1ccb2b9b" d="M 0 3.391165
@@ -5203,16 +5203,16 @@ z
 " style="stroke: #666666"/>
      </defs>
      <g>
-      <use xlink:href="#mfc1ccb2b9b" x="327.652288" y="302.669013" style="fill: #888888; stroke: #666666"/>
+      <use xlink:href="#mfc1ccb2b9b" x="316.350293" y="308.165745" style="fill: #888888; stroke: #666666"/>
      </g>
     </g>
     <g id="text_172">
-     <text style="font-size: 7px; font-family: 'Times New Roman'; text-anchor: start" x="330.592288" y="305.119013" transform="rotate(-0 330.592288 305.119013)">K=16</text>
+     <text style="font-size: 7px; font-family: 'Times New Roman'; text-anchor: start" x="319.535293" y="310.615745" transform="rotate(-0 319.535293 310.615745)">K=16</text>
     </g>
     <g id="line2d_279">
-     <path d="M 348.554944 302.669013
-L 350.654944 302.669013
-L 352.754944 302.669013
+     <path d="M 351.984944 308.165745
+L 353.909944 308.165745
+L 355.834944 308.165745
 " style="fill: none"/>
      <defs>
       <path id="m0c3358d029" d="M 0 3.872983
@@ -5228,11 +5228,11 @@ z
 " style="stroke: #666666"/>
      </defs>
      <g>
-      <use xlink:href="#m0c3358d029" x="350.654944" y="302.669013" style="fill: #888888; stroke: #666666"/>
+      <use xlink:href="#m0c3358d029" x="353.909944" y="308.165745" style="fill: #888888; stroke: #666666"/>
      </g>
     </g>
     <g id="text_173">
-     <text style="font-size: 7px; font-family: 'Times New Roman'; text-anchor: start" x="353.594944" y="305.119013" transform="rotate(-0 353.594944 305.119013)">K=32</text>
+     <text style="font-size: 7px; font-family: 'Times New Roman'; text-anchor: start" x="357.094944" y="310.615745" transform="rotate(-0 357.094944 310.615745)">K=32</text>
     </g>
    </g>
   </g>

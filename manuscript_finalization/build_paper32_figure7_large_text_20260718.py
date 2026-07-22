@@ -296,15 +296,17 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
                               bbox_to_anchor=(1.01, 0.76), handlelength=1.2,
                               labelspacing=0.25, handletextpad=0.3)
     ax.add_artist(design_legend)
-    ax.legend(handles=k_handles, ncol=4, frameon=False, loc="lower right",
-              bbox_to_anchor=(1.0, 1.045), handlelength=0.60,
-              columnspacing=0.28, handletextpad=0.12, fontsize=7.0)
+    ax.legend(handles=k_handles, ncol=4, frameon=False, mode="expand",
+              loc="lower left", bbox_to_anchor=(0.0, 1.035, 1.0, 0.05),
+              borderaxespad=0.0, handlelength=0.55,
+              columnspacing=0.70, handletextpad=0.18, fontsize=7.0)
     label(ax, "D")
 
 
 def main() -> None:
     setup()
     base = load_base()
+    base.DATA = ROOT / "paper31_expanded_intervention" / "experiment_exports"
     base.COLORS = {
         "Homogeneous Morgan": "#3B5B92",
         "Classical multiview": "#2A9D8F",
