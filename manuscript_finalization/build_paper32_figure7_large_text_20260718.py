@@ -293,7 +293,7 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     k_handles = [Line2D([0], [0], color="#666", marker="o", ms=np.sqrt(sizes[k]),
                         mfc="#888", lw=0, label=f"K={k}") for k in base.KS]
     design_legend = ax.legend(handles=design_handles, ncol=1, frameon=False, loc="upper left",
-                              bbox_to_anchor=(1.01, 0.76), handlelength=1.2,
+                              bbox_to_anchor=(1.01, 0.98), handlelength=1.2,
                               labelspacing=0.25, handletextpad=0.3)
     ax.add_artist(design_legend)
     ax.legend(handles=k_handles, ncol=4, frameon=False, mode="expand",
