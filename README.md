@@ -4,7 +4,7 @@ This repository accompanies **Candidate-pool expansion, validation-ranking
 distortion and model-selection loss in molecular property prediction: a
 retrospective nested audit**.
 
-Release: `paper-release-2026-07`
+Package version and release: `paper-release-2026-07-r2`
 
 License: MIT for software. Public molecular datasets retain their original
 licences and access conditions.
@@ -46,7 +46,7 @@ python -m pip install -e .
 
 The optional pretrained-candidate requirements are listed in
 `environment/requirements-pretrained.txt`. An equivalent quick-reproduction
-container can be built with `docker build -t fzyc-mol:paper-release-2026-07 .`.
+container can be built with `docker build -t fzyc-mol:paper-release-2026-07-r2 .`.
 
 ## Reproduction entry points
 
@@ -102,6 +102,12 @@ The Chemprop stages use the `chemprop` executable on `PATH`, or the path in
 as reported in the manuscript; it is not presented as a fully optimized deep
 learning benchmark.
 
+The supported portable entry points are `scripts/reproduce_analysis.py` and
+`scripts/reproduce_full_study.py`. Files under `scripts_current/` and the
+retained Paper 31 audit directories are historical run-specific utilities and
+provenance records; they are not all intended to run independently in a fresh
+checkout.
+
 ## Expected outputs and runtime
 
 - Quick reproduction: `reproduced_outputs/`; approximately 1–3 minutes on a
@@ -144,13 +150,13 @@ architecture-efficiency claims. Negative, missing and failed cells are retained.
 
 Run `python scripts/validate_manuscript_numbers.py` and verify `SHA256SUMS.txt`
 before reusing the checked exports. The manuscript version is fixed by release
-`paper-release-2026-07`; its immutable commit is recorded in the GitHub release
+`paper-release-2026-07-r2`; its immutable commit is recorded in the GitHub release
 and `docs/release-and-commit.md`.
 
 Please cite the associated article and the software release described in
 `CITATION.cff`:
 
 > FZYC-Mol Authors. FZYC-Mol: candidate-pool expansion audit, release
-> paper-release-2026-07. GitHub. 2026.
+> paper-release-2026-07-r2. GitHub. 2026.
 
 Repository: <https://github.com/zfr0857/FZYC-Mol>
