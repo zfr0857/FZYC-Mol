@@ -38,6 +38,7 @@ def setup() -> None:
         "legend.fontsize": 8.5,
         "axes.linewidth": 0.75,
         "svg.fonttype": "none",
+        "svg.hashsalt": "fzyc-mol-paper35",
         "pdf.fonttype": 42,
         "ps.fonttype": 42,
         "savefig.facecolor": "white",
@@ -65,7 +66,8 @@ def label(ax: plt.Axes, letter: str) -> None:
 def save(fig: plt.Figure) -> None:
     OUT.mkdir(parents=True, exist_ok=True)
     for suffix, kwargs in [
-        ("svg", {}), ("pdf", {}), ("png", {"dpi": 600}), ("png1200", {"dpi": 1200}),
+        ("svg", {"metadata": {"Date": "2026-07-18"}}),
+        ("pdf", {}), ("png", {"dpi": 600}), ("png1200", {"dpi": 1200}),
     ]:
         if suffix == "png":
             name = "Figure7_600dpi.png"
