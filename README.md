@@ -153,6 +153,11 @@ before reusing the checked exports. The manuscript version is fixed by release
 `paper-release-2026-07-r2`; its immutable commit is recorded in the GitHub release
 and `docs/release-and-commit.md`.
 
+For cross-platform verification, `scripts/build_release_inventory.py` hashes text
+files after canonicalizing line endings to LF; binary files are hashed byte for
+byte. This avoids false failures caused solely by Git's Windows line-ending
+conversion.
+
 Please cite the associated article and the software release described in
 `CITATION.cff`:
 

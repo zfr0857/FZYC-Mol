@@ -8,13 +8,18 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_PARTS = {".git", ".mypy_cache", ".pytest_cache", ".ruff_cache", "__pycache__"}
 EXCLUDED_FILES = {"CODE_AND_DATA_CONTENTS.csv", "SHA256SUMS.txt"}
+TEXT_SUFFIXES = {
+    ".cff", ".csv", ".ini", ".json", ".md", ".py", ".toml", ".tsv",
+    ".txt", ".yaml", ".yml",
+}
 
 
 def digest(path: Path) -> str:
     value = hashlib.sha256()
-    with path.open("rb") as handle:
-        for block in iter(lambda: handle.read(1024 * 1024), b""):
-            value.update(block)
+    data = path.read_bytes()
+    if path.suffix.lower() in TEXT_SUFFIXES or path.name in {"Dockerfile", "LICENSE", "VERSION"}:
+        data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    value.update(data)
     return value.hexdigest()
 
 
