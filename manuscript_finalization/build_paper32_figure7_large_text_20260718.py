@@ -35,7 +35,7 @@ def setup() -> None:
         "ytick.labelsize": 8.5,
         "legend.fontsize": 8.5,
         "axes.linewidth": 0.75,
-        "svg.fonttype": "none",
+        "svg.fonttype": "path",
         "svg.hashsalt": "fzyc-mol-paper35",
         "pdf.fonttype": 42,
         "ps.fonttype": 42,
@@ -121,7 +121,7 @@ def panel_a(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.set_yticks(range(6), [base.TASK_LABEL[t] for t in base.TASKS[::-1]])
     ax.set_ylim(-0.55, 5.55)
     ax.set_xlim(0.62, 2.78)
-    ax.set_xlabel("Homogeneous-audit-best-normalized gain")
+    ax.set_xlabel("Normalized gain")
     ax.set_title("Opportunity and realised gain", loc="left", fontweight="bold", pad=30)
     clean(ax, "x")
     outcome = [
@@ -203,12 +203,14 @@ def panel_c(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
                         fontsize=8.5, color="white" if dark else "#253047")
     centres = [1.5, 4.5, 7.5, 11.5, 14.5, 17.5]
     ax.set_yticks(centres, [base.TASK_LABEL[task] for task in base.TASKS])
+    for tick_label in ax.get_yticklabels():
+        tick_label.set_fontweight("bold")
     ax.tick_params(axis="y", length=0)
     ax.spines["left"].set_visible(False)
     for i, (_, pool) in enumerate(index):
         row_pos = rows[i]
         ax.plot([-0.63, -0.63], [row_pos + 0.18, row_pos + 0.82],
-                color=base.COLORS[pool], lw=1.7, solid_capstyle="butt",
+                color=base.COLORS[pool], lw=2.2, solid_capstyle="butt",
                 clip_on=False)
         ax.text(-0.25, row_pos + 0.5,
                 {"Homogeneous Morgan": "H", "Classical multiview": "MV", "Modern-augmented": "M"}[pool],
@@ -220,7 +222,8 @@ def panel_c(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.tick_params(axis="x", rotation=0, labelsize=8.5)
     ax.set_xlabel("Candidate-pool size, K", labelpad=4)
     ax.set_title("Ranking fidelity", loc="left", fontweight="bold", pad=30)
-    cbar = plt.colorbar(mesh, ax=ax, fraction=0.035, pad=0.025)
+    cax = ax.inset_axes([1.045, 0.12, 0.035, 0.76])
+    cbar = plt.colorbar(mesh, cax=cax)
     if cbar.solids is not None:
         cbar.solids.set_rasterized(False)
     cbar.ax.tick_params(labelsize=8.5)
@@ -264,10 +267,9 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
                 ax.scatter(row.time, row.gain, marker=marker, s=sizes[int(row.candidate_count)],
                            facecolor=face, edgecolor=base.COLORS[pool], linewidth=0.9, zorder=3)
             if design == "Equal K":
-                for _, row in group.loc[group.candidate_count.isin([4, 32])].iterrows():
-                    modern_k4 = pool == "Modern-augmented" and int(row.candidate_count) == 4
-                    modern_k32 = pool == "Modern-augmented" and int(row.candidate_count) == 32
-                    offset = (-8, -12) if modern_k4 else ((0, 12) if modern_k32 else (3, 3))
+                for _, row in group.loc[group.candidate_count.eq(32)].iterrows():
+                    modern_k32 = pool == "Modern-augmented"
+                    offset = (0, 12) if modern_k32 else (3, 3)
                     ax.annotate(f"K={int(row.candidate_count)}", (row.time, row.gain), xytext=offset,
                                 textcoords="offset points", fontsize=8.5, color=base.COLORS[pool],
                                 ha="center" if modern_k32 else "left")
@@ -282,8 +284,8 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.set_xlabel("Downstream audit time per outer unit (s, log scale)")
     ax.set_ylabel("Normalized selected gain")
     ax.set_title("Downstream budget-benefit", loc="left", fontweight="bold", pad=30)
-    ax.text(0.0, 0.995, "Downstream fitting only", transform=ax.transAxes,
-            ha="left", va="bottom", fontsize=8.0, color="#555D68")
+    ax.text(1.0, 1.035, "Downstream fitting only", transform=ax.transAxes,
+            ha="right", va="bottom", fontsize=8.0, color="#555D68")
     clean(ax, "both")
     design_handles = [
         Line2D([0], [0], color="#333", marker="o", mfc="#777", lw=1.1, label="Equal K"),
@@ -297,7 +299,7 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
                               labelspacing=0.25, handletextpad=0.3)
     ax.add_artist(design_legend)
     ax.legend(handles=k_handles, ncol=4, frameon=False, mode="expand",
-              loc="lower left", bbox_to_anchor=(0.0, 1.055, 1.0, 0.05),
+              loc="upper left", bbox_to_anchor=(0.0, -0.24, 1.0, 0.05),
               borderaxespad=0.0, handlelength=0.55,
               columnspacing=0.70, handletextpad=0.18, fontsize=7.0)
     label(ax, "D")
@@ -319,7 +321,7 @@ def main() -> None:
     panel_b(grid[0, 1], base, data)
     panel_c(fig.add_subplot(grid[1, 0]), base, data)
     panel_d(fig.add_subplot(grid[1, 1]), base, data)
-    fig.subplots_adjust(left=0.13, right=0.78, top=0.88, bottom=0.08, hspace=0.40, wspace=0.50)
+    fig.subplots_adjust(left=0.13, right=0.78, top=0.88, bottom=0.11, hspace=0.40, wspace=0.50)
     save(fig)
     print(OUT / "Figure7.svg")
 

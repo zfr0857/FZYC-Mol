@@ -1,0 +1,16 @@
+﻿task_type,metric,display_label,direction,tanimoto_bin,n_seed_summaries,median,q25,q75
+classification,selected_performance,ROC-AUC,higher_is_better,<0.5,5,0.8479324494949495,0.8193218381321672,0.8600909662747376
+classification,selected_performance,ROC-AUC,higher_is_better,0.5-0.7,5,0.9135338345864662,0.9107758620689655,0.9158653846153846
+classification,selected_performance,ROC-AUC,higher_is_better,>0.7,5,0.9244444444444444,0.921007400039872,0.9252645502645502
+regression,selected_performance,RMSE,higher_is_worse,<0.5,5,1.3590442134900418,1.3397587600058047,1.3685535148617602
+regression,selected_performance,RMSE,higher_is_worse,0.5-0.7,5,1.139580523847139,1.0937783564709056,1.1757688437478258
+regression,selected_performance,RMSE,higher_is_worse,>0.7,5,0.821474763729507,0.7471174028883831,1.0021791554485813
+classification,false_negative_rate,FNR,higher_is_worse,<0.5,5,0.7777777777777778,0.7647058823529411,0.8
+classification,false_negative_rate,FNR,higher_is_worse,0.5-0.7,5,0.3448275862068966,0.3142857142857143,0.365079365079365
+classification,false_negative_rate,FNR,higher_is_worse,>0.7,5,0.1476510067114094,0.1256830601092896,0.1538461538461538
+classification,high_error_enrichment,HE enrichment (class.),higher_is_worse,<0.5,5,1.1055934397928355,1.089277665089024,1.1088832774281083
+classification,high_error_enrichment,HE enrichment (class.),higher_is_worse,0.5-0.7,5,0.9094114905308608,0.9064935064935066,0.9316239316239316
+classification,high_error_enrichment,HE enrichment (class.),higher_is_worse,>0.7,5,0.887575255213332,0.8766339869281045,0.9008746355685132
+regression,high_error_enrichment,HE enrichment (regr.),higher_is_worse,<0.5,5,1.172370951251361,1.1553634107964172,1.1785038223907693
+regression,high_error_enrichment,HE enrichment (regr.),higher_is_worse,0.5-0.7,5,0.9103377852142209,0.8773312757201647,0.9242760825786358
+regression,high_error_enrichment,HE enrichment (regr.),higher_is_worse,>0.7,5,0.5654996677951323,0.49553895311587237,0.567675902227984

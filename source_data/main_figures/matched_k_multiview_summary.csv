@@ -1,0 +1,217 @@
+analysis_group,pool_name,pool_size,composition,task,task_type,mean_selected_utility,mean_gain_vs_morgan_k3,mean_representation_composition_effect,positive_outer_units
+incremental_ladder,ladder_K12,12,morgan512+maccs+rdkit2d+multiview,bace,classification,0.8750399297353328,0.003937283068498513,0.003937283068498513,7
+incremental_ladder,ladder_K12,12,morgan512+maccs+rdkit2d+multiview,bbbp,classification,0.9027143084874877,0.024879129882913652,0.024879129882913652,14
+incremental_ladder,ladder_K12,12,morgan512+maccs+rdkit2d+multiview,clintox,classification,0.9125229721681648,0.08732355514933454,0.08732355514933454,15
+incremental_ladder,ladder_K12,12,morgan512+maccs+rdkit2d+multiview,esol,regression,-0.7872900657969353,0.900768456550971,0.900768456550971,15
+incremental_ladder,ladder_K12,12,morgan512+maccs+rdkit2d+multiview,freesolv,regression,-1.5396105260407966,1.1949262861271943,1.1949262861271943,15
+incremental_ladder,ladder_K12,12,morgan512+maccs+rdkit2d+multiview,lipo,regression,-0.7300783425196019,0.24013713599464673,0.24013713599464673,15
+incremental_ladder,ladder_K12,12,morgan512+maccs+rdkit2d+multiview,tdc_caco2_wang,regression,-0.4727589889185634,0.1057725892309968,0.1057725892309968,15
+incremental_ladder,ladder_K12,12,morgan512+maccs+rdkit2d+multiview,tdc_hia_hou,classification,0.9641310461672278,0.08090350588366718,0.08090350588366718,15
+incremental_ladder,ladder_K12,12,morgan512+maccs+rdkit2d+multiview,tdc_pgp_broccatelli,classification,0.9309766226344843,0.022685814434151498,0.022685814434151498,14
+incremental_ladder,ladder_K3,3,morgan512,bace,classification,0.8711026466668343,0.0,0.0,0
+incremental_ladder,ladder_K3,3,morgan512,bbbp,classification,0.877835178604574,0.0,0.0,0
+incremental_ladder,ladder_K3,3,morgan512,clintox,classification,0.8251994170188302,0.0,0.0,0
+incremental_ladder,ladder_K3,3,morgan512,esol,regression,-1.6880585223479063,0.0,0.0,0
+incremental_ladder,ladder_K3,3,morgan512,freesolv,regression,-2.734536812167991,0.0,0.0,0
+incremental_ladder,ladder_K3,3,morgan512,lipo,regression,-0.9702154785142485,0.0,0.0,0
+incremental_ladder,ladder_K3,3,morgan512,tdc_caco2_wang,regression,-0.5785315781495601,0.0,0.0,0
+incremental_ladder,ladder_K3,3,morgan512,tdc_hia_hou,classification,0.8832275402835605,0.0,0.0,0
+incremental_ladder,ladder_K3,3,morgan512,tdc_pgp_broccatelli,classification,0.9082908082003328,0.0,0.0,0
+incremental_ladder,ladder_K6,6,morgan512+maccs,bace,classification,0.8693574702518035,-0.0017451764150306914,-0.0017451764150306914,0
+incremental_ladder,ladder_K6,6,morgan512+maccs,bbbp,classification,0.8896266903722752,0.011791511767701072,0.011791511767701072,11
+incremental_ladder,ladder_K6,6,morgan512+maccs,clintox,classification,0.902972915116758,0.07777349809792783,0.07777349809792783,15
+incremental_ladder,ladder_K6,6,morgan512+maccs,esol,regression,-1.4297919532917014,0.2582665690562051,0.2582665690562051,12
+incremental_ladder,ladder_K6,6,morgan512+maccs,freesolv,regression,-1.8200648734280285,0.9144719387399626,0.9144719387399626,15
+incremental_ladder,ladder_K6,6,morgan512+maccs,lipo,regression,-0.9138007241025753,0.05641475441167324,0.05641475441167324,15
+incremental_ladder,ladder_K6,6,morgan512+maccs,tdc_caco2_wang,regression,-0.5368631803583351,0.04166839779122497,0.04166839779122497,10
+incremental_ladder,ladder_K6,6,morgan512+maccs,tdc_hia_hou,classification,0.9594391247199787,0.07621158443641826,0.07621158443641826,15
+incremental_ladder,ladder_K6,6,morgan512+maccs,tdc_pgp_broccatelli,classification,0.9033631186059766,-0.004927689594356255,-0.004927689594356255,0
+incremental_ladder,ladder_K9,9,morgan512+maccs+rdkit2d,bace,classification,0.8671612362636393,-0.003941410403195059,-0.003941410403195059,1
+incremental_ladder,ladder_K9,9,morgan512+maccs+rdkit2d,bbbp,classification,0.8968578702842176,0.019022691679643575,0.019022691679643575,12
+incremental_ladder,ladder_K9,9,morgan512+maccs+rdkit2d,clintox,classification,0.898210638227613,0.07301122120878274,0.07301122120878274,15
+incremental_ladder,ladder_K9,9,morgan512+maccs+rdkit2d,esol,regression,-0.791555854675181,0.8965026676727255,0.8965026676727255,15
+incremental_ladder,ladder_K9,9,morgan512+maccs+rdkit2d,freesolv,regression,-1.5575582729552244,1.1769785392127663,1.1769785392127663,15
+incremental_ladder,ladder_K9,9,morgan512+maccs+rdkit2d,lipo,regression,-0.7428048170354397,0.22741066147880887,0.22741066147880887,15
+incremental_ladder,ladder_K9,9,morgan512+maccs+rdkit2d,tdc_caco2_wang,regression,-0.48650674725481746,0.09202483089474271,0.09202483089474271,15
+incremental_ladder,ladder_K9,9,morgan512+maccs+rdkit2d,tdc_hia_hou,classification,0.961101517547493,0.07787397726393243,0.07787397726393243,15
+incremental_ladder,ladder_K9,9,morgan512+maccs+rdkit2d,tdc_pgp_broccatelli,classification,0.9303472956648952,0.02205648746456234,0.02205648746456234,13
+matched_K3,matched_K3_alt_1,3,linear:maccs;random_forest:rdkit2d;lightgbm:multiview,bace,classification,0.8692950541834293,-0.0018075924834049554,-0.0018075924834049554,5
+matched_K3,matched_K3_alt_1,3,linear:maccs;random_forest:rdkit2d;lightgbm:multiview,bbbp,classification,0.9036327429491242,0.025797564344550095,0.025797564344550095,15
+matched_K3,matched_K3_alt_1,3,linear:maccs;random_forest:rdkit2d;lightgbm:multiview,clintox,classification,0.9172909826198258,0.09209156560099559,0.09209156560099559,15
+matched_K3,matched_K3_alt_1,3,linear:maccs;random_forest:rdkit2d;lightgbm:multiview,esol,regression,-0.7827777276302649,0.9052807947176417,0.9052807947176417,15
+matched_K3,matched_K3_alt_1,3,linear:maccs;random_forest:rdkit2d;lightgbm:multiview,freesolv,regression,-1.577652644562002,1.1568841676059887,1.1568841676059887,15
+matched_K3,matched_K3_alt_1,3,linear:maccs;random_forest:rdkit2d;lightgbm:multiview,lipo,regression,-0.7300783425196019,0.24013713599464673,0.24013713599464673,15
+matched_K3,matched_K3_alt_1,3,linear:maccs;random_forest:rdkit2d;lightgbm:multiview,tdc_caco2_wang,regression,-0.470085745385173,0.1084458327643872,0.1084458327643872,15
+matched_K3,matched_K3_alt_1,3,linear:maccs;random_forest:rdkit2d;lightgbm:multiview,tdc_hia_hou,classification,0.9645673366409363,0.08133979635737575,0.08133979635737575,15
+matched_K3,matched_K3_alt_1,3,linear:maccs;random_forest:rdkit2d;lightgbm:multiview,tdc_pgp_broccatelli,classification,0.9303660642706395,0.022075256070306654,0.022075256070306654,13
+matched_K3,matched_K3_alt_2,3,linear:maccs;random_forest:multiview;lightgbm:rdkit2d,bace,classification,0.8772119530692284,0.006109306402394147,0.006109306402394147,10
+matched_K3,matched_K3_alt_2,3,linear:maccs;random_forest:multiview;lightgbm:rdkit2d,bbbp,classification,0.9066840799541502,0.02884890134957623,0.02884890134957623,15
+matched_K3,matched_K3_alt_2,3,linear:maccs;random_forest:multiview;lightgbm:rdkit2d,clintox,classification,0.8868423583056619,0.06164294128683167,0.06164294128683167,15
+matched_K3,matched_K3_alt_2,3,linear:maccs;random_forest:multiview;lightgbm:rdkit2d,esol,regression,-0.791555854675181,0.8965026676727255,0.8965026676727255,15
+matched_K3,matched_K3_alt_2,3,linear:maccs;random_forest:multiview;lightgbm:rdkit2d,freesolv,regression,-1.5986603375767472,1.1358764745912435,1.1358764745912435,15
+matched_K3,matched_K3_alt_2,3,linear:maccs;random_forest:multiview;lightgbm:rdkit2d,lipo,regression,-0.7428048170354397,0.22741066147880887,0.22741066147880887,15
+matched_K3,matched_K3_alt_2,3,linear:maccs;random_forest:multiview;lightgbm:rdkit2d,tdc_caco2_wang,regression,-0.4771190613532436,0.10141251679631655,0.10141251679631655,15
+matched_K3,matched_K3_alt_2,3,linear:maccs;random_forest:multiview;lightgbm:rdkit2d,tdc_hia_hou,classification,0.9632120604961538,0.0799845202125932,0.0799845202125932,15
+matched_K3,matched_K3_alt_2,3,linear:maccs;random_forest:multiview;lightgbm:rdkit2d,tdc_pgp_broccatelli,classification,0.9322764288994203,0.02398562069908737,0.02398562069908737,15
+matched_K3,matched_K3_alt_3,3,linear:rdkit2d;random_forest:maccs;lightgbm:multiview,bace,classification,0.864472981714734,-0.006629664952100311,-0.006629664952100311,5
+matched_K3,matched_K3_alt_3,3,linear:rdkit2d;random_forest:maccs;lightgbm:multiview,bbbp,classification,0.8995326380086469,0.02169745940407281,0.02169745940407281,14
+matched_K3,matched_K3_alt_3,3,linear:rdkit2d;random_forest:maccs;lightgbm:multiview,clintox,classification,0.9172909826198258,0.09209156560099559,0.09209156560099559,15
+matched_K3,matched_K3_alt_3,3,linear:rdkit2d;random_forest:maccs;lightgbm:multiview,esol,regression,-0.7827777276302649,0.9052807947176417,0.9052807947176417,15
+matched_K3,matched_K3_alt_3,3,linear:rdkit2d;random_forest:maccs;lightgbm:multiview,freesolv,regression,-1.6786103180489074,1.0559264941190836,1.0559264941190836,15
+matched_K3,matched_K3_alt_3,3,linear:rdkit2d;random_forest:maccs;lightgbm:multiview,lipo,regression,-0.7300783425196019,0.24013713599464673,0.24013713599464673,15
+matched_K3,matched_K3_alt_3,3,linear:rdkit2d;random_forest:maccs;lightgbm:multiview,tdc_caco2_wang,regression,-0.470085745385173,0.1084458327643872,0.1084458327643872,15
+matched_K3,matched_K3_alt_3,3,linear:rdkit2d;random_forest:maccs;lightgbm:multiview,tdc_hia_hou,classification,0.9617428265098925,0.07851528622633198,0.07851528622633198,15
+matched_K3,matched_K3_alt_3,3,linear:rdkit2d;random_forest:maccs;lightgbm:multiview,tdc_pgp_broccatelli,classification,0.9329856868183676,0.024694878618034707,0.024694878618034707,14
+matched_K3,matched_K3_alt_4,3,linear:rdkit2d;random_forest:multiview;lightgbm:maccs,bace,classification,0.8772119530692284,0.006109306402394147,0.006109306402394147,10
+matched_K3,matched_K3_alt_4,3,linear:rdkit2d;random_forest:multiview;lightgbm:maccs,bbbp,classification,0.9041333449499778,0.026298166345403703,0.026298166345403703,14
+matched_K3,matched_K3_alt_4,3,linear:rdkit2d;random_forest:multiview;lightgbm:maccs,clintox,classification,0.8995705521803449,0.07437113516151471,0.07437113516151471,15
+matched_K3,matched_K3_alt_4,3,linear:rdkit2d;random_forest:multiview;lightgbm:maccs,esol,regression,-0.8490256422752173,0.8390328800726892,0.8390328800726892,15
+matched_K3,matched_K3_alt_4,3,linear:rdkit2d;random_forest:multiview;lightgbm:maccs,freesolv,regression,-1.6388217947749342,1.0957150173930568,1.0957150173930568,15
+matched_K3,matched_K3_alt_4,3,linear:rdkit2d;random_forest:multiview;lightgbm:maccs,lipo,regression,-0.8635126932268062,0.10670278528744231,0.10670278528744231,15
+matched_K3,matched_K3_alt_4,3,linear:rdkit2d;random_forest:multiview;lightgbm:maccs,tdc_caco2_wang,regression,-0.5124064638860002,0.06612511426355996,0.06612511426355996,10
+matched_K3,matched_K3_alt_4,3,linear:rdkit2d;random_forest:multiview;lightgbm:maccs,tdc_hia_hou,classification,0.9703994814413799,0.08717194115781933,0.08717194115781933,15
+matched_K3,matched_K3_alt_4,3,linear:rdkit2d;random_forest:multiview;lightgbm:maccs,tdc_pgp_broccatelli,classification,0.9326050075055309,0.024314199305197997,0.024314199305197997,14
+matched_K3,matched_K3_alt_5,3,linear:multiview;random_forest:maccs;lightgbm:rdkit2d,bace,classification,0.8554475101766329,-0.015655136490201494,-0.015655136490201494,2
+matched_K3,matched_K3_alt_5,3,linear:multiview;random_forest:maccs;lightgbm:rdkit2d,bbbp,classification,0.8937165126714265,0.015881334066852406,0.015881334066852406,12
+matched_K3,matched_K3_alt_5,3,linear:multiview;random_forest:maccs;lightgbm:rdkit2d,clintox,classification,0.8856970972872592,0.06049768026842901,0.06049768026842901,15
+matched_K3,matched_K3_alt_5,3,linear:multiview;random_forest:maccs;lightgbm:rdkit2d,esol,regression,-0.791555854675181,0.8965026676727255,0.8965026676727255,15
+matched_K3,matched_K3_alt_5,3,linear:multiview;random_forest:maccs;lightgbm:rdkit2d,freesolv,regression,-1.5396105260407966,1.1949262861271943,1.1949262861271943,15
+matched_K3,matched_K3_alt_5,3,linear:multiview;random_forest:maccs;lightgbm:rdkit2d,lipo,regression,-0.7428048170354397,0.22741066147880887,0.22741066147880887,15
+matched_K3,matched_K3_alt_5,3,linear:multiview;random_forest:maccs;lightgbm:rdkit2d,tdc_caco2_wang,regression,-0.47293219502978506,0.1055993831197751,0.1055993831197751,15
+matched_K3,matched_K3_alt_5,3,linear:multiview;random_forest:maccs;lightgbm:rdkit2d,tdc_hia_hou,classification,0.9614267097722359,0.07819916948867535,0.07819916948867535,14
+matched_K3,matched_K3_alt_5,3,linear:multiview;random_forest:maccs;lightgbm:rdkit2d,tdc_pgp_broccatelli,classification,0.9306145441437591,0.022323735943426175,0.022323735943426175,14
+matched_K3,matched_K3_alt_6,3,linear:multiview;random_forest:rdkit2d;lightgbm:maccs,bace,classification,0.8704371989940151,-0.0006654476728192786,-0.0006654476728192786,6
+matched_K3,matched_K3_alt_6,3,linear:multiview;random_forest:rdkit2d;lightgbm:maccs,bbbp,classification,0.89956398062514,0.021728802020565898,0.021728802020565898,14
+matched_K3,matched_K3_alt_6,3,linear:multiview;random_forest:rdkit2d;lightgbm:maccs,clintox,classification,0.8979297716148332,0.07273035459600297,0.07273035459600297,15
+matched_K3,matched_K3_alt_6,3,linear:multiview;random_forest:rdkit2d;lightgbm:maccs,esol,regression,-0.8253381389820125,0.8627203833658939,0.8627203833658939,15
+matched_K3,matched_K3_alt_6,3,linear:multiview;random_forest:rdkit2d;lightgbm:maccs,freesolv,regression,-1.6073716508263378,1.1271651613416531,1.1271651613416531,15
+matched_K3,matched_K3_alt_6,3,linear:multiview;random_forest:rdkit2d;lightgbm:maccs,lipo,regression,-0.8134366065022139,0.1567788720120345,0.1567788720120345,15
+matched_K3,matched_K3_alt_6,3,linear:multiview;random_forest:rdkit2d;lightgbm:maccs,tdc_caco2_wang,regression,-0.4898734564491195,0.08865812170044068,0.08865812170044068,15
+matched_K3,matched_K3_alt_6,3,linear:multiview;random_forest:rdkit2d;lightgbm:maccs,tdc_hia_hou,classification,0.9669728239138222,0.08374528363026161,0.08374528363026161,15
+matched_K3,matched_K3_alt_6,3,linear:multiview;random_forest:rdkit2d;lightgbm:maccs,tdc_pgp_broccatelli,classification,0.9315492461222405,0.023258437921907595,0.023258437921907595,13
+matched_K3,matched_K3_morgan,3,morgan512 across three learners,bace,classification,0.8711026466668343,0.0,0.0,0
+matched_K3,matched_K3_morgan,3,morgan512 across three learners,bbbp,classification,0.877835178604574,0.0,0.0,0
+matched_K3,matched_K3_morgan,3,morgan512 across three learners,clintox,classification,0.8251994170188302,0.0,0.0,0
+matched_K3,matched_K3_morgan,3,morgan512 across three learners,esol,regression,-1.6880585223479063,0.0,0.0,0
+matched_K3,matched_K3_morgan,3,morgan512 across three learners,freesolv,regression,-2.734536812167991,0.0,0.0,0
+matched_K3,matched_K3_morgan,3,morgan512 across three learners,lipo,regression,-0.9702154785142485,0.0,0.0,0
+matched_K3,matched_K3_morgan,3,morgan512 across three learners,tdc_caco2_wang,regression,-0.5785315781495601,0.0,0.0,0
+matched_K3,matched_K3_morgan,3,morgan512 across three learners,tdc_hia_hou,classification,0.8832275402835605,0.0,0.0,0
+matched_K3,matched_K3_morgan,3,morgan512 across three learners,tdc_pgp_broccatelli,classification,0.9082908082003328,0.0,0.0,0
+matched_K6,matched_K6_maccs_multiview,6,maccs+multiview,bace,classification,0.8772119530692284,0.006109306402394147,0.006109306402394147,10
+matched_K6,matched_K6_maccs_multiview,6,maccs+multiview,bbbp,classification,0.9008470706290819,0.023011892024507798,0.023011892024507798,13
+matched_K6,matched_K6_maccs_multiview,6,maccs+multiview,clintox,classification,0.9125229721681648,0.08732355514933454,0.08732355514933454,15
+matched_K6,matched_K6_maccs_multiview,6,maccs+multiview,esol,regression,-0.7827777276302649,0.9052807947176417,0.9052807947176417,15
+matched_K6,matched_K6_maccs_multiview,6,maccs+multiview,freesolv,regression,-1.502034141541754,1.232502670626237,1.232502670626237,15
+matched_K6,matched_K6_maccs_multiview,6,maccs+multiview,lipo,regression,-0.7300783425196019,0.24013713599464673,0.24013713599464673,15
+matched_K6,matched_K6_maccs_multiview,6,maccs+multiview,tdc_caco2_wang,regression,-0.470085745385173,0.1084458327643872,0.1084458327643872,15
+matched_K6,matched_K6_maccs_multiview,6,maccs+multiview,tdc_hia_hou,classification,0.9643503444128417,0.0811228041292812,0.0811228041292812,15
+matched_K6,matched_K6_maccs_multiview,6,maccs+multiview,tdc_pgp_broccatelli,classification,0.9327332622538781,0.02444245405354525,0.02444245405354525,15
+matched_K6,matched_K6_maccs_rdkit2d,6,maccs+rdkit2d,bace,classification,0.8692515948100739,-0.0018510518567604883,-0.0018510518567604883,5
+matched_K6,matched_K6_maccs_rdkit2d,6,maccs+rdkit2d,bbbp,classification,0.8968578702842176,0.019022691679643575,0.019022691679643575,12
+matched_K6,matched_K6_maccs_rdkit2d,6,maccs+rdkit2d,clintox,classification,0.898210638227613,0.07301122120878274,0.07301122120878274,15
+matched_K6,matched_K6_maccs_rdkit2d,6,maccs+rdkit2d,esol,regression,-0.791555854675181,0.8965026676727255,0.8965026676727255,15
+matched_K6,matched_K6_maccs_rdkit2d,6,maccs+rdkit2d,freesolv,regression,-1.5575582729552244,1.1769785392127663,1.1769785392127663,15
+matched_K6,matched_K6_maccs_rdkit2d,6,maccs+rdkit2d,lipo,regression,-0.7428048170354397,0.22741066147880887,0.22741066147880887,15
+matched_K6,matched_K6_maccs_rdkit2d,6,maccs+rdkit2d,tdc_caco2_wang,regression,-0.48650674725481746,0.09202483089474271,0.09202483089474271,15
+matched_K6,matched_K6_maccs_rdkit2d,6,maccs+rdkit2d,tdc_hia_hou,classification,0.961101517547493,0.07787397726393243,0.07787397726393243,15
+matched_K6,matched_K6_maccs_rdkit2d,6,maccs+rdkit2d,tdc_pgp_broccatelli,classification,0.9303472956648952,0.02205648746456234,0.02205648746456234,13
+matched_K6,matched_K6_morgan512_maccs,6,morgan512+maccs,bace,classification,0.8693574702518035,-0.0017451764150306914,-0.0017451764150306914,0
+matched_K6,matched_K6_morgan512_maccs,6,morgan512+maccs,bbbp,classification,0.8896266903722752,0.011791511767701072,0.011791511767701072,11
+matched_K6,matched_K6_morgan512_maccs,6,morgan512+maccs,clintox,classification,0.902972915116758,0.07777349809792783,0.07777349809792783,15
+matched_K6,matched_K6_morgan512_maccs,6,morgan512+maccs,esol,regression,-1.4297919532917014,0.2582665690562051,0.2582665690562051,12
+matched_K6,matched_K6_morgan512_maccs,6,morgan512+maccs,freesolv,regression,-1.8200648734280285,0.9144719387399626,0.9144719387399626,15
+matched_K6,matched_K6_morgan512_maccs,6,morgan512+maccs,lipo,regression,-0.9138007241025753,0.05641475441167324,0.05641475441167324,15
+matched_K6,matched_K6_morgan512_maccs,6,morgan512+maccs,tdc_caco2_wang,regression,-0.5368631803583351,0.04166839779122497,0.04166839779122497,10
+matched_K6,matched_K6_morgan512_maccs,6,morgan512+maccs,tdc_hia_hou,classification,0.9594391247199787,0.07621158443641826,0.07621158443641826,15
+matched_K6,matched_K6_morgan512_maccs,6,morgan512+maccs,tdc_pgp_broccatelli,classification,0.9033631186059766,-0.004927689594356255,-0.004927689594356255,0
+matched_K6,matched_K6_morgan512_multiview,6,morgan512+multiview,bace,classification,0.8773160090471434,0.006213362380308969,0.006213362380308969,8
+matched_K6,matched_K6_morgan512_multiview,6,morgan512+multiview,bbbp,classification,0.9055225361839109,0.027687357579336803,0.027687357579336803,15
+matched_K6,matched_K6_morgan512_multiview,6,morgan512+multiview,clintox,classification,0.9172909826198258,0.09209156560099559,0.09209156560099559,15
+matched_K6,matched_K6_morgan512_multiview,6,morgan512+multiview,esol,regression,-0.7827777276302649,0.9052807947176417,0.9052807947176417,15
+matched_K6,matched_K6_morgan512_multiview,6,morgan512+multiview,freesolv,regression,-1.502034141541754,1.232502670626237,1.232502670626237,15
+matched_K6,matched_K6_morgan512_multiview,6,morgan512+multiview,lipo,regression,-0.7300783425196019,0.24013713599464673,0.24013713599464673,15
+matched_K6,matched_K6_morgan512_multiview,6,morgan512+multiview,tdc_caco2_wang,regression,-0.470085745385173,0.1084458327643872,0.1084458327643872,15
+matched_K6,matched_K6_morgan512_multiview,6,morgan512+multiview,tdc_hia_hou,classification,0.9649300545577693,0.08170251427420876,0.08170251427420876,15
+matched_K6,matched_K6_morgan512_multiview,6,morgan512+multiview,tdc_pgp_broccatelli,classification,0.9327332622538781,0.02444245405354525,0.02444245405354525,15
+matched_K6,matched_K6_morgan512_rdkit2d,6,morgan512+rdkit2d,bace,classification,0.8671612362636393,-0.003941410403195059,-0.003941410403195059,1
+matched_K6,matched_K6_morgan512_rdkit2d,6,morgan512+rdkit2d,bbbp,classification,0.8982087762226435,0.020373597618069398,0.020373597618069398,13
+matched_K6,matched_K6_morgan512_rdkit2d,6,morgan512+rdkit2d,clintox,classification,0.8878867197643489,0.06268730274551856,0.06268730274551856,15
+matched_K6,matched_K6_morgan512_rdkit2d,6,morgan512+rdkit2d,esol,regression,-0.791555854675181,0.8965026676727255,0.8965026676727255,15
+matched_K6,matched_K6_morgan512_rdkit2d,6,morgan512+rdkit2d,freesolv,regression,-1.6750165895722247,1.059520222595766,1.059520222595766,15
+matched_K6,matched_K6_morgan512_rdkit2d,6,morgan512+rdkit2d,lipo,regression,-0.7428048170354397,0.22741066147880887,0.22741066147880887,15
+matched_K6,matched_K6_morgan512_rdkit2d,6,morgan512+rdkit2d,tdc_caco2_wang,regression,-0.48650674725481746,0.09202483089474271,0.09202483089474271,15
+matched_K6,matched_K6_morgan512_rdkit2d,6,morgan512+rdkit2d,tdc_hia_hou,classification,0.9633109029795801,0.08008336269601948,0.08008336269601948,15
+matched_K6,matched_K6_morgan512_rdkit2d,6,morgan512+rdkit2d,tdc_pgp_broccatelli,classification,0.9303472956648952,0.02205648746456234,0.02205648746456234,13
+matched_K6,matched_K6_rdkit2d_multiview,6,rdkit2d+multiview,bace,classification,0.8751294261597082,0.00402677949287397,0.00402677949287397,9
+matched_K6,matched_K6_rdkit2d_multiview,6,rdkit2d+multiview,bbbp,classification,0.9052650434916603,0.027429864887086177,0.027429864887086177,15
+matched_K6,matched_K6_rdkit2d_multiview,6,rdkit2d+multiview,clintox,classification,0.9172909826198258,0.09209156560099559,0.09209156560099559,15
+matched_K6,matched_K6_rdkit2d_multiview,6,rdkit2d+multiview,esol,regression,-0.7872900657969353,0.900768456550971,0.900768456550971,15
+matched_K6,matched_K6_rdkit2d_multiview,6,rdkit2d+multiview,freesolv,regression,-1.5396105260407966,1.1949262861271943,1.1949262861271943,15
+matched_K6,matched_K6_rdkit2d_multiview,6,rdkit2d+multiview,lipo,regression,-0.7300783425196019,0.24013713599464673,0.24013713599464673,15
+matched_K6,matched_K6_rdkit2d_multiview,6,rdkit2d+multiview,tdc_caco2_wang,regression,-0.4727589889185634,0.1057725892309968,0.1057725892309968,15
+matched_K6,matched_K6_rdkit2d_multiview,6,rdkit2d+multiview,tdc_hia_hou,classification,0.964545124842176,0.08131758455861542,0.08131758455861542,15
+matched_K6,matched_K6_rdkit2d_multiview,6,rdkit2d+multiview,tdc_pgp_broccatelli,classification,0.9309766226344843,0.022685814434151498,0.022685814434151498,14
+matched_K9,matched_K9_maccs_rdkit2d_multiview,9,maccs+rdkit2d+multiview,bace,classification,0.8751294261597082,0.00402677949287397,0.00402677949287397,9
+matched_K9,matched_K9_maccs_rdkit2d_multiview,9,maccs+rdkit2d+multiview,bbbp,classification,0.9027143084874877,0.024879129882913652,0.024879129882913652,14
+matched_K9,matched_K9_maccs_rdkit2d_multiview,9,maccs+rdkit2d+multiview,clintox,classification,0.9125229721681648,0.08732355514933454,0.08732355514933454,15
+matched_K9,matched_K9_maccs_rdkit2d_multiview,9,maccs+rdkit2d+multiview,esol,regression,-0.7872900657969353,0.900768456550971,0.900768456550971,15
+matched_K9,matched_K9_maccs_rdkit2d_multiview,9,maccs+rdkit2d+multiview,freesolv,regression,-1.5396105260407966,1.1949262861271943,1.1949262861271943,15
+matched_K9,matched_K9_maccs_rdkit2d_multiview,9,maccs+rdkit2d+multiview,lipo,regression,-0.7300783425196019,0.24013713599464673,0.24013713599464673,15
+matched_K9,matched_K9_maccs_rdkit2d_multiview,9,maccs+rdkit2d+multiview,tdc_caco2_wang,regression,-0.4727589889185634,0.1057725892309968,0.1057725892309968,15
+matched_K9,matched_K9_maccs_rdkit2d_multiview,9,maccs+rdkit2d+multiview,tdc_hia_hou,classification,0.9641310461672278,0.08090350588366718,0.08090350588366718,15
+matched_K9,matched_K9_maccs_rdkit2d_multiview,9,maccs+rdkit2d+multiview,tdc_pgp_broccatelli,classification,0.9309766226344843,0.022685814434151498,0.022685814434151498,14
+matched_K9,matched_K9_morgan512_maccs_multiview,9,morgan512+maccs+multiview,bace,classification,0.8773160090471434,0.006213362380308969,0.006213362380308969,8
+matched_K9,matched_K9_morgan512_maccs_multiview,9,morgan512+maccs+multiview,bbbp,classification,0.9008470706290819,0.023011892024507798,0.023011892024507798,13
+matched_K9,matched_K9_morgan512_maccs_multiview,9,morgan512+maccs+multiview,clintox,classification,0.9125229721681648,0.08732355514933454,0.08732355514933454,15
+matched_K9,matched_K9_morgan512_maccs_multiview,9,morgan512+maccs+multiview,esol,regression,-0.7827777276302649,0.9052807947176417,0.9052807947176417,15
+matched_K9,matched_K9_morgan512_maccs_multiview,9,morgan512+maccs+multiview,freesolv,regression,-1.502034141541754,1.232502670626237,1.232502670626237,15
+matched_K9,matched_K9_morgan512_maccs_multiview,9,morgan512+maccs+multiview,lipo,regression,-0.7300783425196019,0.24013713599464673,0.24013713599464673,15
+matched_K9,matched_K9_morgan512_maccs_multiview,9,morgan512+maccs+multiview,tdc_caco2_wang,regression,-0.470085745385173,0.1084458327643872,0.1084458327643872,15
+matched_K9,matched_K9_morgan512_maccs_multiview,9,morgan512+maccs+multiview,tdc_hia_hou,classification,0.9643503444128417,0.0811228041292812,0.0811228041292812,15
+matched_K9,matched_K9_morgan512_maccs_multiview,9,morgan512+maccs+multiview,tdc_pgp_broccatelli,classification,0.9327332622538781,0.02444245405354525,0.02444245405354525,15
+matched_K9,matched_K9_morgan512_maccs_rdkit2d,9,morgan512+maccs+rdkit2d,bace,classification,0.8671612362636393,-0.003941410403195059,-0.003941410403195059,1
+matched_K9,matched_K9_morgan512_maccs_rdkit2d,9,morgan512+maccs+rdkit2d,bbbp,classification,0.8968578702842176,0.019022691679643575,0.019022691679643575,12
+matched_K9,matched_K9_morgan512_maccs_rdkit2d,9,morgan512+maccs+rdkit2d,clintox,classification,0.898210638227613,0.07301122120878274,0.07301122120878274,15
+matched_K9,matched_K9_morgan512_maccs_rdkit2d,9,morgan512+maccs+rdkit2d,esol,regression,-0.791555854675181,0.8965026676727255,0.8965026676727255,15
+matched_K9,matched_K9_morgan512_maccs_rdkit2d,9,morgan512+maccs+rdkit2d,freesolv,regression,-1.5575582729552244,1.1769785392127663,1.1769785392127663,15
+matched_K9,matched_K9_morgan512_maccs_rdkit2d,9,morgan512+maccs+rdkit2d,lipo,regression,-0.7428048170354397,0.22741066147880887,0.22741066147880887,15
+matched_K9,matched_K9_morgan512_maccs_rdkit2d,9,morgan512+maccs+rdkit2d,tdc_caco2_wang,regression,-0.48650674725481746,0.09202483089474271,0.09202483089474271,15
+matched_K9,matched_K9_morgan512_maccs_rdkit2d,9,morgan512+maccs+rdkit2d,tdc_hia_hou,classification,0.961101517547493,0.07787397726393243,0.07787397726393243,15
+matched_K9,matched_K9_morgan512_maccs_rdkit2d,9,morgan512+maccs+rdkit2d,tdc_pgp_broccatelli,classification,0.9303472956648952,0.02205648746456234,0.02205648746456234,13
+matched_K9,matched_K9_morgan512_rdkit2d_multiview,9,morgan512+rdkit2d+multiview,bace,classification,0.8750399297353328,0.003937283068498513,0.003937283068498513,7
+matched_K9,matched_K9_morgan512_rdkit2d_multiview,9,morgan512+rdkit2d+multiview,bbbp,classification,0.9052650434916603,0.027429864887086177,0.027429864887086177,15
+matched_K9,matched_K9_morgan512_rdkit2d_multiview,9,morgan512+rdkit2d+multiview,clintox,classification,0.9172909826198258,0.09209156560099559,0.09209156560099559,15
+matched_K9,matched_K9_morgan512_rdkit2d_multiview,9,morgan512+rdkit2d+multiview,esol,regression,-0.7872900657969353,0.900768456550971,0.900768456550971,15
+matched_K9,matched_K9_morgan512_rdkit2d_multiview,9,morgan512+rdkit2d+multiview,freesolv,regression,-1.5396105260407966,1.1949262861271943,1.1949262861271943,15
+matched_K9,matched_K9_morgan512_rdkit2d_multiview,9,morgan512+rdkit2d+multiview,lipo,regression,-0.7300783425196019,0.24013713599464673,0.24013713599464673,15
+matched_K9,matched_K9_morgan512_rdkit2d_multiview,9,morgan512+rdkit2d+multiview,tdc_caco2_wang,regression,-0.4727589889185634,0.1057725892309968,0.1057725892309968,15
+matched_K9,matched_K9_morgan512_rdkit2d_multiview,9,morgan512+rdkit2d+multiview,tdc_hia_hou,classification,0.964545124842176,0.08131758455861542,0.08131758455861542,15
+matched_K9,matched_K9_morgan512_rdkit2d_multiview,9,morgan512+rdkit2d+multiview,tdc_pgp_broccatelli,classification,0.9309766226344843,0.022685814434151498,0.022685814434151498,14
+within_learner,within_lightgbm_K4,4,four representations; lightgbm,bace,classification,0.8627167538166582,-0.00838589285017605,-0.004434417905116302,2
+within_learner,within_lightgbm_K4,4,four representations; lightgbm,bbbp,classification,0.89690710173886,0.019071923134285924,0.023485483900677263,11
+within_learner,within_lightgbm_K4,4,four representations; lightgbm,clintox,classification,0.9125229721681648,0.08732355514933454,0.08503062361564467,15
+within_learner,within_lightgbm_K4,4,four representations; lightgbm,esol,regression,-0.7872900657969353,0.900768456550971,0.900768456550971,15
+within_learner,within_lightgbm_K4,4,four representations; lightgbm,freesolv,regression,-1.5575582729552244,1.1769785392127663,1.1936848284982928,15
+within_learner,within_lightgbm_K4,4,four representations; lightgbm,lipo,regression,-0.7300783425196019,0.24013713599464673,0.24013713599464673,15
+within_learner,within_lightgbm_K4,4,four representations; lightgbm,tdc_caco2_wang,regression,-0.4727589889185634,0.1057725892309968,0.1057725892309968,15
+within_learner,within_lightgbm_K4,4,four representations; lightgbm,tdc_hia_hou,classification,0.9646309841487192,0.08140344386515859,0.07252361290111722,15
+within_learner,within_lightgbm_K4,4,four representations; lightgbm,tdc_pgp_broccatelli,classification,0.9309229655911115,0.022632157390778684,0.03235623148985778,14
+within_learner,within_linear_K4,4,four representations; linear,bace,classification,0.8184705790113959,-0.05263206765543847,0.017240000464520115,0
+within_learner,within_linear_K4,4,four representations; linear,bbbp,classification,0.8415746960368771,-0.036260482567697025,0.047279039152836516,0
+within_learner,within_linear_K4,4,four representations; linear,clintox,classification,0.8138111655146318,-0.011388251504198392,0.07731158588976278,6
+within_learner,within_linear_K4,4,four representations; linear,esol,regression,-0.7767568552715428,0.9113016670763637,2.201285844343415,15
+within_learner,within_linear_K4,4,four representations; linear,freesolv,regression,-1.6860930965409076,1.0484437156270834,4.35968772349396,15
+within_learner,within_linear_K4,4,four representations; linear,lipo,regression,-0.8499778872758268,0.1202375912384217,0.24644141712644674,15
+within_learner,within_linear_K4,4,four representations; linear,tdc_caco2_wang,regression,-0.501495223519738,0.07703635462982218,0.7872938769160286,10
+within_learner,within_linear_K4,4,four representations; linear,tdc_hia_hou,classification,0.966874019473614,0.08364647919005334,0.10659260509009989,15
+within_learner,within_linear_K4,4,four representations; linear,tdc_pgp_broccatelli,classification,0.9042188222326348,-0.00407198596769794,0.03511633961722651,5
+within_learner,within_random_forest_K4,4,four representations; random_forest,bace,classification,0.8750399297353328,0.003937283068498513,0.0017060638830463566,7
+within_learner,within_random_forest_K4,4,four representations; random_forest,bbbp,classification,0.9064265872618996,0.028591408657325606,0.02692676235829555,15
+within_learner,within_random_forest_K4,4,four representations; random_forest,clintox,classification,0.8788284029042369,0.05362898588540668,0.05626340760141576,15
+within_learner,within_random_forest_K4,4,four representations; random_forest,esol,regression,-0.8253381389820125,0.8627203833658939,0.8780756531289423,15
+within_learner,within_random_forest_K4,4,four representations; random_forest,freesolv,regression,-1.8150346094462189,0.9195022027217722,1.0433185869554749,15
+within_learner,within_random_forest_K4,4,four representations; random_forest,lipo,regression,-0.8134366065022139,0.1567788720120345,0.19552399382902116,15
+within_learner,within_random_forest_K4,4,four representations; random_forest,tdc_caco2_wang,regression,-0.49140036992162395,0.08713120822793623,0.11060983955507621,15
+within_learner,within_random_forest_K4,4,four representations; random_forest,tdc_hia_hou,classification,0.9679756258811852,0.08474808559762469,0.0785208998450065,15
+within_learner,within_random_forest_K4,4,four representations; random_forest,tdc_pgp_broccatelli,classification,0.9328279244015973,0.024537116201264524,0.024123607454422442,14
