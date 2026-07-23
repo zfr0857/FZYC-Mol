@@ -282,7 +282,7 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.set_xticks([1, 10, 100], ["1", "10", "100"])
     ax.axhline(0, color="#7A8393", lw=0.7)
     ax.set_ylim(-0.36, 2.15)
-    ax.set_xlabel("Downstream fitting/prediction time per outer unit (s, log scale)")
+    ax.set_xlabel("Downstream time per outer unit (s, log scale)")
     ax.set_ylabel("Normalized selected gain")
     ax.set_title("Downstream budget-benefit", loc="left", fontweight="bold", pad=30)
     ax.text(1.0, 1.035, "Downstream fitting only", transform=ax.transAxes,
