@@ -35,6 +35,10 @@ def setup() -> None:
         "ytick.labelsize": 8.5,
         "legend.fontsize": 8.5,
         "axes.linewidth": 0.75,
+        "mathtext.fontset": "custom",
+        "mathtext.rm": "Times New Roman",
+        "mathtext.it": "Times New Roman:italic",
+        "mathtext.bf": "Times New Roman:bold",
         "svg.fonttype": "path",
         "svg.hashsalt": "fzyc-mol-paper35",
         "pdf.fonttype": 42,
@@ -284,20 +288,22 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.set_ylim(-0.36, 2.15)
     ax.set_xlabel("Downstream time per outer unit (s, log scale)")
     ax.set_ylabel("Normalized selected gain")
-    ax.set_title("Downstream budget-benefit", loc="left", fontweight="bold", pad=30)
-    ax.text(1.0, 1.035, "Downstream fitting only", transform=ax.transAxes,
-            ha="right", va="bottom", fontsize=8.0, color="#555D68")
+    ax.set_title("Budget-benefit", loc="left", fontweight="bold", pad=30)
+    ax.text(0.98, 0.96, "Downstream fitting only", transform=ax.transAxes,
+            ha="right", va="top", fontsize=8.0, color="#555D68")
     clean(ax, "both")
     design_handles = [
         Line2D([0], [0], color="#333", marker="o", mfc="#777", lw=1.1, label="Equal K"),
-        Line2D([0], [0], color="#333", marker="D", mfc="white", lw=1.1, ls="--", label="Equal budget"),
         Line2D([0], [0], color="#202632", lw=1.0, drawstyle="steps-post", label="Pareto frontier"),
+        Line2D([0], [0], color="#333", marker="D", mfc="white", lw=1.1, ls="--", label="Equal budget"),
     ]
     k_handles = [Line2D([0], [0], color="#666", marker="o", ms=np.sqrt(sizes[k]),
                         mfc="#888", lw=0, label=f"K={k}") for k in base.KS]
-    design_legend = ax.legend(handles=design_handles, ncol=1, frameon=False, loc="upper left",
-                              bbox_to_anchor=(1.01, 0.98), handlelength=1.2,
-                              labelspacing=0.25, handletextpad=0.3)
+    design_legend = ax.legend(handles=design_handles, ncol=2, frameon=False,
+                              loc="lower left", bbox_to_anchor=(0.0, 1.005),
+                              borderaxespad=0.0, handlelength=1.2,
+                              columnspacing=0.90, labelspacing=0.20,
+                              handletextpad=0.3, fontsize=7.5)
     ax.add_artist(design_legend)
     ax.legend(handles=k_handles, ncol=4, frameon=False, mode="expand",
               loc="upper left", bbox_to_anchor=(0.0, -0.24, 1.0, 0.05),
