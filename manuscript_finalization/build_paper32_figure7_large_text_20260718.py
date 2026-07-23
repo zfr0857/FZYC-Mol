@@ -106,21 +106,21 @@ def panel_a(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
                 selected, y,
                 xerr=[[selected - row.homogeneous_normalized_selected_gain_low],
                       [row.homogeneous_normalized_selected_gain_high - selected]],
-                fmt="s", ms=6.3, color=base.COLORS[pool], ecolor=base.COLORS[pool],
+                fmt="s", ms=6.8, color=base.COLORS[pool], ecolor=base.COLORS[pool],
                 elinewidth=0.7, capsize=1.6, zorder=3,
             )
             ax.errorbar(
                 opportunity, y,
                 xerr=[[opportunity - row.homogeneous_normalized_oracle_opportunity_low],
                       [row.homogeneous_normalized_oracle_opportunity_high - opportunity]],
-                fmt="o", ms=6.3, mfc="white", mec=base.COLORS[pool], mew=1.0,
+                fmt="o", ms=6.8, mfc="white", mec=base.COLORS[pool], mew=1.0,
                 ecolor=base.COLORS[pool], elinewidth=0.7, capsize=1.6, zorder=3,
             )
     ax.axvline(1, color="#7A8393", lw=0.8, ls="--")
     ax.axhline(2.5, color="#D7DBE1", lw=0.65)
     ax.set_yticks(range(6), [base.TASK_LABEL[t] for t in base.TASKS[::-1]])
     ax.set_ylim(-0.55, 5.55)
-    ax.set_xlim(0.62, 2.78)
+    ax.set_xlim(0.62, 2.90)
     ax.set_xlabel("Normalized gain")
     ax.set_title("Opportunity and realised gain", loc="left", fontweight="bold", pad=30)
     clean(ax, "x")
@@ -129,7 +129,7 @@ def panel_a(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
         Line2D([0], [0], marker="o", color="#555", mfc="white", lw=0, label="Audit-best"),
     ]
     ax.legend(handles=outcome, ncol=2, frameon=False, loc="lower center",
-              bbox_to_anchor=(0.50, 1.005), borderaxespad=0,
+              bbox_to_anchor=(0.50, 1.015), borderaxespad=0,
               columnspacing=0.9, handletextpad=0.35)
     label(ax, "A")
 
@@ -182,8 +182,9 @@ def panel_c(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
         summary.design.eq("equal_K") & summary.anchor_scheme.eq("shared_morgan_linear")
     ]
     index = pd.MultiIndex.from_product([base.TASKS, base.POOLS], names=["task", "pool"])
-    hit = primary.pivot_table(index=["task", "pool"], columns="candidate_count",
-                              values="chance_adjusted_hit3_mean").reindex(index)[base.KS]
+    hit = primary.pivot_table(
+        index=["task", "pool"], columns="candidate_count", values="chance_adjusted_hit3_mean"
+    ).reindex(index)[base.KS]
     hit_matrix = hit.to_numpy(float)
     display = np.full((19, 4), np.nan)
     rows = list(range(9)) + list(range(10, 19))
@@ -281,7 +282,7 @@ def panel_d(ax: plt.Axes, base, data: dict[str, pd.DataFrame]) -> None:
     ax.set_xticks([1, 10, 100], ["1", "10", "100"])
     ax.axhline(0, color="#7A8393", lw=0.7)
     ax.set_ylim(-0.36, 2.15)
-    ax.set_xlabel("Downstream audit time per outer unit (s, log scale)")
+    ax.set_xlabel("Downstream fitting/prediction time per outer unit (s, log scale)")
     ax.set_ylabel("Normalized selected gain")
     ax.set_title("Downstream budget-benefit", loc="left", fontweight="bold", pad=30)
     ax.text(1.0, 1.035, "Downstream fitting only", transform=ax.transAxes,
