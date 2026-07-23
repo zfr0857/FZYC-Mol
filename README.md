@@ -4,7 +4,7 @@ This repository accompanies **Candidate-pool expansion, validation-ranking
 distortion and model-selection loss in molecular property prediction: a
 retrospective nested audit**.
 
-Package version and release: `paper-release-2026-07-r7`
+Package version and release: `paper-release-2026-07-r8`
 
 License: MIT for software. Public molecular datasets retain their original
 licences and access conditions.
@@ -46,7 +46,7 @@ python -m pip install -e .
 
 The optional pretrained-candidate requirements are listed in
 `environment/requirements-pretrained.txt`. An equivalent quick-reproduction
-container can be built with `docker build -t fzyc-mol:paper-release-2026-07-r7 .`.
+container can be built with `docker build -t fzyc-mol:paper-release-2026-07-r8 .`.
 
 ## Reproduction entry points
 
@@ -154,7 +154,7 @@ architecture-efficiency claims. Negative, missing and failed cells are retained.
 
 Run `python scripts/validate_manuscript_numbers.py` and verify `SHA256SUMS.txt`
 before reusing the checked exports. The manuscript version is fixed by release
-`paper-release-2026-07-r7`; its immutable commit is recorded in the GitHub release
+`paper-release-2026-07-r8`; its immutable commit is recorded in the GitHub release
 and `docs/release-and-commit.md`.
 
 For cross-platform verification, `scripts/build_release_inventory.py` hashes text
@@ -166,6 +166,6 @@ Please cite the associated article and the software release described in
 `CITATION.cff`:
 
 > FZYC-Mol Authors. FZYC-Mol: candidate-pool expansion audit, release
-> paper-release-2026-07-r7. GitHub. 2026.
+> paper-release-2026-07-r8. GitHub. 2026.
 
 Repository: <https://github.com/zfr0857/FZYC-Mol>
