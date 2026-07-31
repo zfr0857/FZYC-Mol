@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use FZYC-Mol, please cite the software and its associated article."
 title: "FZYC-Mol"
 type: software
-version: "paper-release-2026-07-r9"
-date-released: 2026-07-22
+version: "paper-release-2026-07-r11"
+date-released: 2026-07-31
 license: MIT
 authors:
   - name: "FZYC-Mol Authors"

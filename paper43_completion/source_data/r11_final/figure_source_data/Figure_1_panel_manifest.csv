@@ -1,0 +1,13 @@
+﻿panel,title,keywords
+A,Task and Data Registration,9 endpoints · registered | curated · no overlap
+B,Candidate Pool Expansion,32 registered Morgan candidates | fixed order · no reordering | 34 560 candidate fits
+C,Repeated Nested Scaffold Audit,10 seeds · 3 outer × 3 inner | selection inside · audit outside
+D,Utility-Pattern Diversity,raw · centred · fixed reference | rank · effective diversity
+E,Chance-Adjusted Ranking,CAHit@3 · MRR · NDCG | rank correlation
+F,Reference and Gap Decomposition,completion gap · selection gap
+G,Split-Regime Transfer,scaffold · similarity component | direction transfer
+H,Equal-Size Registry Composition,Morgan · multiview · modern | K=16 · K=32
+I,Finite-Audit Winner Optimism,K ↑ · n ↓ · known-truth simulation
+J,Support-Aware Reliability,novel ↔ related | error · FN · disagreement
+K,Four-Model Error Audit,RF · GCN · CBT · MFM | overlap · disagreement
+L,Auditable Evidence Record,

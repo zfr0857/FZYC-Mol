@@ -1,0 +1,3 @@
+﻿document,text_runs_inheriting_style_or_defaults,docDefaults,banned_font_hits,math_fonts,status
+Chinese,0,"{""ascii"": ""Times New Roman"", ""hAnsi"": ""Times New Roman"", ""eastAsia"": ""宋体"", ""cs"": ""Times New Roman""}",0,Cambria Math,PASS
+English,583,"{""ascii"": ""Times New Roman"", ""hAnsi"": ""Times New Roman"", ""eastAsia"": ""宋体"", ""cs"": ""Times New Roman""}",0,Cambria Math,PASS

@@ -4,7 +4,13 @@ This repository accompanies **Candidate-pool expansion, validation-ranking
 distortion and model-selection loss in molecular property prediction: a
 retrospective nested audit**.
 
-Package version and release: `paper-release-2026-07-r9`
+Package version and release: `paper-release-2026-07-r11`.
+
+This release adds the complete `paper43_completion/` ten-seed analysis layer
+and final Figures 1–8 to the verified r9 base. The software release does not
+assert the journal article's author order, affiliations, correspondence data,
+ORCIDs, funding declarations or CRediT roles; those article metadata remain
+the responsibility of the authors and are separate from this code release.
 
 License: MIT for software. Public molecular datasets retain their original
 licences and access conditions.
@@ -46,7 +52,7 @@ python -m pip install -e .
 
 The optional pretrained-candidate requirements are listed in
 `environment/requirements-pretrained.txt`. An equivalent quick-reproduction
-container can be built with `docker build -t fzyc-mol:paper-release-2026-07-r9 .`.
+container can be built with `docker build -t fzyc-mol:paper-release-2026-07-r11 .`.
 
 ## Reproduction entry points
 
@@ -154,7 +160,7 @@ architecture-efficiency claims. Negative, missing and failed cells are retained.
 
 Run `python scripts/validate_manuscript_numbers.py` and verify `SHA256SUMS.txt`
 before reusing the checked exports. The manuscript version is fixed by release
-`paper-release-2026-07-r9`; its immutable commit is recorded in the GitHub release
+`paper-release-2026-07-r11`; its immutable commit is recorded in the GitHub release
 and `docs/release-and-commit.md`.
 
 For cross-platform verification, `scripts/build_release_inventory.py` hashes text
@@ -166,6 +172,25 @@ Please cite the associated article and the software release described in
 `CITATION.cff`:
 
 > FZYC-Mol Authors. FZYC-Mol: candidate-pool expansion audit, release
-> paper-release-2026-07-r9. GitHub. 2026.
+> paper-release-2026-07-r11. GitHub. 2026.
 
 Repository: <https://github.com/zfr0857/FZYC-Mol>
+
+## 2026-07-28 formula and tolerance synchronization
+
+The submission-facing layer separates the practical-equivalence tolerance tau from the numerical-stability constant epsilon_num=1e-12. The main manuscripts contain consecutively numbered native equations, and Figure 8 plus Table S38 use tau terminology. Journal author metadata are maintained separately from this software release and are not inferred here.
+
+
+## R11 paper-completion layer
+
+Release `paper-release-2026-07-r11` adds the locked ten-split-seed Paper 43
+completion layer without changing any recorded candidate eligibility, seed,
+threshold, candidate order, source result or negative result. It includes the
+final Figure 1–8 assets in editable SVG, embedded-font PDF and 600-dpi PNG,
+machine-readable main-table source data, probability-level classification
+outputs, split manifests, candidate/fold/seed-level outputs, equation-to-code
+mapping and manuscript-number validation records.
+
+The software release uses the existing collective software-author record in
+`CITATION.cff`; it does not assert or infer the journal article's author order,
+affiliations, correspondence information, ORCIDs or CRediT roles.

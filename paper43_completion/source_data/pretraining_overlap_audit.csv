@@ -1,0 +1,6 @@
+registry_scope,representation,checkpoint,pretraining_used,molecule_level_pretraining_manifest_available,overlap_status,interpretation
+nine-endpoint primary 32-candidate registry,Morgan-512 classical learners,not applicable,False,True,not applicable,Primary fixed-reference and metric-selection estimands do not use pretrained encoders.
+six-endpoint modern-augmented sensitivity registry,chemberta_mtr,DeepChem/ChemBERTa-77M-MTR,True,False,not auditable from released checkpoint metadata,Frozen cached embedding; exact benchmark-molecule membership in pretraining cannot be excluded.
+six-endpoint modern-augmented sensitivity registry,chemberta_mlm,DeepChem/ChemBERTa-77M-MLM,True,False,not auditable from released checkpoint metadata,Frozen cached embedding; exact benchmark-molecule membership in pretraining cannot be excluded.
+six-endpoint modern-augmented sensitivity registry,molformer,ibm/MoLFormer-XL-both-10pct,True,False,not auditable from released checkpoint metadata,Frozen cached embedding; exact benchmark-molecule membership in pretraining cannot be excluded.
+six-endpoint modern-augmented sensitivity registry,chemprop_dmpnn,none; locally fitted locked one-epoch configuration,False,True,not applicable,No external pretrained checkpoint was used for this registered candidate.

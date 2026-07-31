@@ -1,0 +1,20 @@
+{
+  "status": "TECHNICAL_REVISION_COMPLETE_WITH_EXTERNAL_HOLDS",
+  "equations": 21,
+  "tau_epsilon_separated": true,
+  "figure1_moved_to_methods_2_1": true,
+  "results_3_11_split": true,
+  "word_pdf_pages": {
+    "Chinese": 33,
+    "English": 57
+  },
+  "wps_pdf_pages": {
+    "Chinese": 33,
+    "English": 57
+  },
+  "libreoffice": "NOT_AVAILABLE",
+  "external_holds": [
+    "verified author metadata and declarations",
+    "authorized public r10 release"
+  ]
+}

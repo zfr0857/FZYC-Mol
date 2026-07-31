@@ -1,0 +1,189 @@
+{
+  "analysis": "ten-seed primary effective-diversity reconstruction",
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71,
+    83,
+    97,
+    113,
+    127,
+    149
+  ],
+  "outer_matrix_rows_per_endpoint": 30,
+  "inner_matrix_rows_per_endpoint": 90,
+  "candidate_counts": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "transformations": [
+    "raw",
+    "row_centred",
+    "fixed_reference_relative",
+    "within_unit_rank"
+  ],
+  "input_files": [
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/classification_metric_rerun/seed_11/outer_candidate_scores.csv",
+      "bytes": 88679,
+      "sha256": "f1868564fc7c81201337cf25abde7f4f9af4dd69cad7b4a290a757fce111efb7"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/regression_split_manifest_rerun/seed_11/outer_candidate_scores.csv",
+      "bytes": 77815,
+      "sha256": "8796206239c599f3a57962fa264cbcb7ed5a04388906fd31c6e0125dc2ba45c5"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/classification_metric_rerun/seed_23/outer_candidate_scores.csv",
+      "bytes": 88632,
+      "sha256": "6ad9520797f776edfb25ae84dac303e5f761d77f72f50f2ca80d4a801d55cfe9"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/regression_split_manifest_rerun/seed_23/outer_candidate_scores.csv",
+      "bytes": 77735,
+      "sha256": "f45caf945499f2e1b7054b27b2f6fc9196d9724ff6d9d2036230dc0af12afb55"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/classification_metric_rerun/seed_37/outer_candidate_scores.csv",
+      "bytes": 88645,
+      "sha256": "d2e42ef91e6af27d1d55415b460285c1f4b6fc66796191f97b4305004a7466e9"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/regression_split_manifest_rerun/seed_37/outer_candidate_scores.csv",
+      "bytes": 77743,
+      "sha256": "05da360f93abcb4354208348f69b19bfb6d72b56aa491474aa966a21fade4501"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/classification_metric_rerun/seed_53/outer_candidate_scores.csv",
+      "bytes": 88697,
+      "sha256": "bedbdce91b1863292c4aed14dd7dfa933d9779c92f14ef004a6215020f9e27c7"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/regression_split_manifest_rerun/seed_53/outer_candidate_scores.csv",
+      "bytes": 77821,
+      "sha256": "72e707b023a3465741644ae54733ef28142a2ae17ae051be4dd3c5efdb2bbf3d"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/classification_metric_rerun/seed_71/outer_candidate_scores.csv",
+      "bytes": 88667,
+      "sha256": "4591ebda0c353a46dc21a6d92b51ca612e167d0a6549d0c6dcb0190bd52f088b"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/regression_split_manifest_rerun/seed_71/outer_candidate_scores.csv",
+      "bytes": 77830,
+      "sha256": "254d642ebeddba4622a24bd91dbfa34de069d1365c149d0eba9664187427c5b7"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/additional_seeds/seed_83/outer_candidate_scores.csv",
+      "bytes": 166236,
+      "sha256": "9ba2d60bd1e0819a9786e1508453e55c1ca32a67703eb3ec75ff8c378de7b821"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/additional_seeds/seed_97/outer_candidate_scores.csv",
+      "bytes": 166178,
+      "sha256": "db1bc271b16b270cae6a93fe32a76cce40b9138fdc7017fc45574341014ae076"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/additional_seeds/seed_113/outer_candidate_scores.csv",
+      "bytes": 166268,
+      "sha256": "c1a4a581b9ee6a9b78432f2bb5585fd105bd888d9475bbe7452801d1c1f6453b"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/additional_seeds/seed_127/outer_candidate_scores.csv",
+      "bytes": 166294,
+      "sha256": "e00de9672b42e64be3e60777287e1463b6a8b3700bd650959d4dc5ac3251c59a"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/additional_seeds/seed_149/outer_candidate_scores.csv",
+      "bytes": 166160,
+      "sha256": "2ec3af04fecfd2d8e8819713405c1ec224e401f84cfdccb9b264cec19a68c59e"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/classification_metric_rerun/seed_11/inner_scores.csv",
+      "bytes": 408061,
+      "sha256": "6034e577fd05886b6c6c4e3ccf246afec979148ce8f6c52b9ace9bf0ea3ba802"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/regression_split_manifest_rerun/seed_11/inner_scores.csv",
+      "bytes": 182846,
+      "sha256": "d633c9a5d7d2312f31c8e2eeaa8c413b9c0409b259934d8868f1eb3cb4389f47"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/classification_metric_rerun/seed_23/inner_scores.csv",
+      "bytes": 409767,
+      "sha256": "c6ff9217b10159c601e606871c29ae09c1c003252d63cab75a65b87db92f463e"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/regression_split_manifest_rerun/seed_23/inner_scores.csv",
+      "bytes": 182874,
+      "sha256": "cd6ad3d8639c69c576d8955994aeb83462f63ff2aff0b0a31fc477fddffd7ba5"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/classification_metric_rerun/seed_37/inner_scores.csv",
+      "bytes": 408693,
+      "sha256": "bba6a3e6d524d53d33293ce2925de43f6557be8f34bbb3795ec635f53cacbcb1"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/regression_split_manifest_rerun/seed_37/inner_scores.csv",
+      "bytes": 182841,
+      "sha256": "e5f66433bee5fdb434d3ecb6c6b6e625e1937eb17b5c4790762c2d824bf2d71e"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/classification_metric_rerun/seed_53/inner_scores.csv",
+      "bytes": 409672,
+      "sha256": "9478bf962354d9425f89a2770dff74e0321c4e4b3f5642f306a0ceaf34daf57c"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/regression_split_manifest_rerun/seed_53/inner_scores.csv",
+      "bytes": 182858,
+      "sha256": "c40d6182ffc1326ac84c2f6ad3a820c6f873f3f989936a6924e340afd93a7e91"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/classification_metric_rerun/seed_71/inner_scores.csv",
+      "bytes": 410221,
+      "sha256": "25655ae4e1ad072f026a5f1d05ddb8a1d945bf4528bb2e2610ff66eb26b258a0"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/regression_split_manifest_rerun/seed_71/inner_scores.csv",
+      "bytes": 182900,
+      "sha256": "521eec061d1da1c6a47b5acca20d2b6f07132c769c0659933620ac5fad444367"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/additional_seeds/seed_83/inner_scores.csv",
+      "bytes": 589264,
+      "sha256": "8ddc1ea9cb604488d14d4e981b1e3c99e63dee0620fc8f7d5765e9d417c6e89b"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/additional_seeds/seed_97/inner_scores.csv",
+      "bytes": 590168,
+      "sha256": "804c0d9c78b91462c199c6a7a3b3c6bb2fbb6f312fd01ae16439ee2a7413cff3"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/additional_seeds/seed_113/inner_scores.csv",
+      "bytes": 592607,
+      "sha256": "b2a86fc6a45671c9eaddba98b16f20b5c461b29edefbf329c4f85d88750cbc79"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/additional_seeds/seed_127/inner_scores.csv",
+      "bytes": 592146,
+      "sha256": "02dc4432475bb24c2bb33f7e3bd9651ce51c905bde1857ff6b39d7daf0baf472"
+    },
+    {
+      "path": "working_additional4_r3_20260726/paper43_completion/run_records/additional_seeds/seed_149/inner_scores.csv",
+      "bytes": 594618,
+      "sha256": "4e813f9aaba4e3bee94e940fd6d2e422b38318abffe9d7ff03bfb6f9582f0fa8"
+    }
+  ],
+  "output_hashes": {
+    "effective_diversity_10seed_units.csv": "b1d877b655384299d33baf924052090728b8f4667fc0e7a8ebd035f70a744a3d",
+    "effective_diversity_10seed_summary.csv": "6a9dddfa297712a1882392937c6bf2e4562f211cef3cba0ae81f53f4558f2553",
+    "effective_diversity_10seed_leave_one_out.csv": "e8f34fb5da70b2e89fdd571159689130ce4df5f9db6fada1537f24f93d97ff7f",
+    "effective_diversity_10seed_reference_sensitivity.csv": "ecfc4c0f2db69142d77c1606a29219e724601603fefd64d5bf56d3c47efe65a5",
+    "effective_diversity_seed_audit.csv": "210e4c6882f50f00aecd68b934de5d6375805c86cc964fefb690e89a9791e9f0"
+  },
+  "no_new_model_fits": true
+}

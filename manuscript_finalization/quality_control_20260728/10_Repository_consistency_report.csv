@@ -1,0 +1,5 @@
+﻿item,observed,expected,status,notes
+Public latest release,paper-release-2026-07-r9,paper-release-2026-07-r10,CONFLICT_HOLD,Verified on GitHub Releases 2026-07-28.
+Public commit,9635a902fa3cc7bb7b71a234c1b2bbbe415193f0,immutable r10 commit,CONFLICT_HOLD,Reference 37 and availability statement remain correctly pinned to public r9 until r10 exists.
+Local r10 staging,paper-release-2026-07-r10_STAGING_CONFLICT_HOLD,complete local staging with manifests,PASS_WITH_HOLD,Must not be cited as public.
+VERSION/CITATION.cff/LICENSE/SHA256SUMS,present locally,present in final public release,PASS_WITH_HOLD,CITATION author metadata remains generic because author names were not supplied.

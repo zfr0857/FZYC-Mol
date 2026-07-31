@@ -1,0 +1,20 @@
+﻿equation,estimand_or_definition,implementation,manuscript_facing_output,verification_status
+1,Validation-selected and finite-audit-best candidates,src/fzyc_mol/analysis.py and scripts/reproduce_analysis.py,selected and finite-audit-best candidate identities,verified against supplied source and synchronized notation
+2,Finite-audit selection loss and range normalization,src/fzyc_mol/selection/regret_metrics.py,same-unit selection gap,verified against supplied source and synchronized notation
+3,CAHit@3 and reciprocal rank,src/fzyc_mol/selection/ranking_metrics.py,chance-adjusted Hit@3 inputs and MRR,verified against supplied source and synchronized notation
+4,Chance MRR expectation and normalization,src/fzyc_mol/selection/ranking_metrics.py,normalized MRR gain,verified against supplied source and synchronized notation
+5,Validation-selected candidate alias j-hat_u(K),paper43_completion/scripts/analyze_paper43_fixed_reference_and_equivalence_20260726.py,selected candidate identity,verified against supplied source and synchronized notation
+6,K-invariant full-registry reference j_ref^inv(-s),paper43_completion/scripts/analyze_paper43_fixed_reference_and_equivalence_20260726.py,fixed K=32 cross-fitted reference,verified against supplied source and synchronized notation
+7,"K-dependent within-prefix reference j_ref^dep(-s,K)",paper43_completion/scripts/analyze_paper43_fixed_reference_and_equivalence_20260726.py,K-dependent cross-fitted reference,verified against supplied source and synchronized notation
+8,K-invariant and K-dependent gaps G_inv and G_dep,paper43_completion/scripts/analyze_paper43_fixed_reference_and_equivalence_20260726.py,fixed_k32_gap and k_dependent_crossfit_gap,verified against supplied source and synchronized notation
+9,Same-fold finite-set opportunity gap G_same,paper43_completion/scripts/analyze_paper43_fixed_reference_and_equivalence_20260726.py,same_fold_gap,verified against supplied source and synchronized notation
+10,Availability component and exact decomposition G_inv = G_avail + G_dep,paper43_completion/scripts/analyze_paper43_fixed_reference_and_equivalence_20260726.py,availability_component and unit-level identity,verified against supplied source and synchronized notation
+11,Endpoint contrast Delta_inv(e),paper43_completion/scripts/analyze_paper43_fixed_reference_and_equivalence_20260726.py,fixed-reference K=32 minus K=4 contrast,verified against supplied source and synchronized notation
+12,Raw and row-centred utility matrices,scripts/analyze_paper43_effective_diversity_10seed_20260726.py,raw and row-centred effective-diversity matrices,verified against supplied source and synchronized notation
+13,Reference-relative and within-unit-rank matrices,scripts/analyze_paper43_effective_diversity_10seed_20260726.py,fixed-reference-relative and rank matrices,verified against supplied source and synchronized notation
+14,Ledoit-Wolf correlation and eigenvalue proportions,scripts/analyze_paper43_effective_diversity_10seed_20260726.py,shrinkage correlations,verified against supplied source and synchronized notation
+15,Entropy and participation-ratio effective ranks,scripts/analyze_paper43_effective_diversity_10seed_20260726.py,effective-rank estimates,verified against supplied source and synchronized notation
+16,Observed opportunity and selected gain,paper43 completion source tables,audit-best opportunity and selected gain,verified against supplied source and synchronized notation
+17,Composition normalization,paper43 completion source tables,normalized composition effects,verified against supplied source and synchronized notation
+18,Normalized cross-fitted composition gap,paper43_completion/scripts/analyze_paper43_fixed_reference_and_equivalence_20260726.py,normalized cross-fitted completion gap,verified against supplied source and synchronized notation
+19,Normalized selection entropy,src/fzyc_mol/selection/stability_metrics.py,candidate_selection_entropy_normalized,verified against supplied source and synchronized notation

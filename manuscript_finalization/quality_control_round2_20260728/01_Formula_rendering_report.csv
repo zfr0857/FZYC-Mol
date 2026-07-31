@@ -1,0 +1,33 @@
+﻿renderer,equation,label,page,number_found,red_pixels,screenshot,status
+zh_word,7,K-invariant reference (former Eq. 6),13,True,0,zh_word_Eq07.png,PASS
+zh_word,8,K-dependent reference (former Eq. 7),13,True,0,zh_word_Eq08.png,PASS
+zh_word,11,G_inv availability decomposition,13,True,0,zh_word_Eq11.png,PASS
+zh_word,12,seed-level G_inv mean,13,True,0,zh_word_Eq12.png,PASS
+zh_word,13,endpoint-level Delta_inv contrast,13,True,0,zh_word_Eq13.png,PASS
+zh_word,16,Ledoit-Wolf/eigenvalue equation,14,True,0,zh_word_Eq16.png,PASS
+zh_word,17,effective-rank equation,14,True,0,zh_word_Eq17.png,PASS
+zh_word,21,selection-entropy equation,14,True,0,zh_word_Eq21.png,PASS
+zh_wps,7,K-invariant reference (former Eq. 6),13,True,0,zh_wps_Eq07.png,PASS
+zh_wps,8,K-dependent reference (former Eq. 7),13,True,0,zh_wps_Eq08.png,PASS
+zh_wps,11,G_inv availability decomposition,13,True,0,zh_wps_Eq11.png,PASS
+zh_wps,12,seed-level G_inv mean,13,True,0,zh_wps_Eq12.png,PASS
+zh_wps,13,endpoint-level Delta_inv contrast,13,True,0,zh_wps_Eq13.png,PASS
+zh_wps,16,Ledoit-Wolf/eigenvalue equation,14,True,0,zh_wps_Eq16.png,PASS
+zh_wps,17,effective-rank equation,14,True,0,zh_wps_Eq17.png,PASS
+zh_wps,21,selection-entropy equation,14,True,0,zh_wps_Eq21.png,PASS
+en_word,7,K-invariant reference (former Eq. 6),23,True,0,en_word_Eq07.png,PASS
+en_word,8,K-dependent reference (former Eq. 7),23,True,0,en_word_Eq08.png,PASS
+en_word,11,G_inv availability decomposition,23,True,0,en_word_Eq11.png,PASS
+en_word,12,seed-level G_inv mean,23,True,0,en_word_Eq12.png,PASS
+en_word,13,endpoint-level Delta_inv contrast,14,True,0,en_word_Eq13.png,PASS
+en_word,16,Ledoit-Wolf/eigenvalue equation,24,True,0,en_word_Eq16.png,PASS
+en_word,17,effective-rank equation,22,True,0,en_word_Eq17.png,PASS
+en_word,21,selection-entropy equation,22,True,0,en_word_Eq21.png,PASS
+en_wps,7,K-invariant reference (former Eq. 6),23,True,0,en_wps_Eq07.png,PASS
+en_wps,8,K-dependent reference (former Eq. 7),24,True,0,en_wps_Eq08.png,PASS
+en_wps,11,G_inv availability decomposition,24,True,0,en_wps_Eq11.png,PASS
+en_wps,12,seed-level G_inv mean,24,True,0,en_wps_Eq12.png,PASS
+en_wps,13,endpoint-level Delta_inv contrast,14,True,0,en_wps_Eq13.png,PASS
+en_wps,16,Ledoit-Wolf/eigenvalue equation,24,True,0,en_wps_Eq16.png,PASS
+en_wps,17,effective-rank equation,23,True,0,en_wps_Eq17.png,PASS
+en_wps,21,selection-entropy equation,23,True,0,en_wps_Eq21.png,PASS

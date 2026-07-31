@@ -1,0 +1,6 @@
+﻿Audit component,Registry,Evaluation design,Recorded exposure
+Controlled prefix audit,32 Morgan candidates,"9 endpoints; K = 4, 8, 16, 32; 10 seeds; 3 outer × 3 inner folds",34 560 candidate fits; candidate-fitting time 8 130.16 s
+Calibration and resampling controls,Stored 32-candidate results,5 000 permutations; 100 resamples per mode/K/seed,No additional model fitting
+Matched multiview audit (secondary),12 multiview candidates,"9 endpoints; 5 seeds; all C(12,3) registered subsets",6 480 candidate fits
+Split-regime transfer audit (secondary),32 Morgan candidates,3 endpoints; seeded scaffold and Tanimoto-component splits,5 760 candidate fits
+Registry-composition intervention (secondary),Three locked candidate registries,"6 endpoints; K = 4, 8, 16, 32; composition and stability controls",1 080 outer units; downstream fitting/prediction time 64 616.35 s

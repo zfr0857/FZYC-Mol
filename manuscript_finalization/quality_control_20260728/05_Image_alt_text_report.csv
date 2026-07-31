@@ -1,0 +1,17 @@
+﻿document,figure,sentences,characters,alternative_text,status
+Chinese,1,1,86,图1概述从候选登记、重复嵌套骨架审计到差距分解和稳健性报告的证据层级。流程强调K不变参考、K依赖参考与同折机会界的区别，并连接实用等价、选择稳定性、计算暴露和化学支持分析。,PASS
+Chinese,2,1,76,图2比较十种子审计中四种候选效用矩阵构造得到的有效多样性。各面板展示谱熵秩、参与率秩、候选相关以及固定参照相对估计，说明名义候选数并不等同于有效多样性。,PASS
+Chinese,3,1,71,图3评估机会校正排序保真度，并给出主要K不变完整候选库完成差距对比。恢复模拟和组成对照显示结果随候选数量和登记组成变化，但端点方向具有异质性。,PASS
+Chinese,4,1,73,图4分解观测机会、验证兑现和有限审计赢家乐观偏差。C面板仅比较同折有限集合机会差距与K依赖前缀内差距，作为次要敏感性分析；主要K不变估计见图3C。,PASS
+Chinese,5,1,72,图5比较固定候选数量下不同表征组合的终点特异性收益。面板覆盖全部登记子集、互斥组成类别、候选数量阶梯及标准化森林图，显示多视图收益依赖具体端点。,PASS
+Chinese,6,1,70,图6描述化学支持边界附近的预测可靠性。相关、错误重叠、风险矩阵、新骨架变化和四模型权衡共同表明，化学分布外推会降低可靠性且不同指标并不同步。,PASS
+Chinese,7,1,88,图7比较同质Morgan、多表征经典和现代增强候选池在机会、排序保真度、选择稳定性与下游预算上的差异。A至D面板同时保留负结果，并显示等K与等预算条件下的经验Pareto前沿。,PASS
+Chinese,8,1,75,图8汇总十种子主要审计中的实用等价和指标依赖选择。四个面板分别展示K不变/K依赖/同折差距、实用等价成功率、近等价集合大小以及候选切换和外层指标变化。,PASS
+English,1,2,301,"Figure 1 maps the evidence hierarchy from candidate registration and repeated nested scaffold audit to decomposition and robustness reporting. It distinguishes K-invariant, K-dependent and same-fold quantities and links them to practical equivalence, selection stability, compute and chemical support.",PASS
+English,2,2,287,"Figure 2 compares effective candidate diversity under four utility-matrix constructions in the ten-seed audit. Entropy rank, participation-ratio rank, candidate correlation and fixed-reference-relative estimates show that nominal candidate count is not equivalent to effective diversity.",PASS
+English,3,2,255,Figure 3 evaluates chance-adjusted ranking fidelity and the primary K-invariant full-registry completion-gap contrast. Recovery simulations and composition controls show heterogeneous endpoint directions as candidate count and registry composition change.,PASS
+English,4,2,276,"Figure 4 separates observed opportunity, validation realization and finite-audit winner optimism. Panel C is a secondary sensitivity comparison of the same-fold finite-set opportunity gap and the K-dependent within-prefix gap; the primary K-invariant estimate is in Figure 3C.",PASS
+English,5,2,243,"Figure 5 compares endpoint-specific gains from representation combinations at matched candidate counts. The panels cover all registered subsets, mutually exclusive composition classes, candidate-count ladders and standardized endpoint effects.",PASS
+English,6,2,262,"Figure 6 summarizes predictive reliability near chemical-support boundaries. Correlation, error overlap, support-stratified risk and four-model trade-offs show that extrapolation reduces reliability and that performance and safety metrics need not move together.",PASS
+English,7,2,276,"Figure 7 contrasts homogeneous Morgan, classical multiview and modern-augmented registries in opportunity, ranking fidelity, selection stability and downstream compute. Equal-K and equal-budget conditions retain negative results and show the empirical budget-benefit frontier.",PASS
+English,8,2,266,"Figure 8 summarizes practical equivalence and metric-dependent selection in the ten-seed primary audit. Four panels show K-invariant, K-dependent and same-fold gaps, equivalence success, near-equivalent-set size, and candidate switching with held-out metric changes.",PASS

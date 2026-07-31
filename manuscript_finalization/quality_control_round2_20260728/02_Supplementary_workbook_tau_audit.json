@@ -1,0 +1,9 @@
+{
+  "workbook": "D:\\fzyc\\output\\paper43_jcheminform_completion_20260726\\upload_ready\\Additional_file_2_Machine_readable_Supplementary_Tables_S1-S46_TAU_REVISED.xlsx",
+  "zip_test": "PASS",
+  "sheet_S38_Tau": true,
+  "legacy_sheet_S38_Epsilon": false,
+  "formula_count": 334,
+  "formula_error_literals": [],
+  "status": "PASS"
+}

@@ -1,0 +1,23 @@
+{
+  "file": "D:\\fzyc\\output\\paper43_jcheminform_completion_20260726\\additional_files\\tables\\tau_near_equivalence_units.csv",
+  "rows": 3240,
+  "headers": [
+    "dataset",
+    "task_type",
+    "seed",
+    "outer_fold",
+    "pool_size",
+    "tau",
+    "tau_status",
+    "fixed_tau_regret",
+    "crossfit_tau_success",
+    "same_fold_tau_success",
+    "validation_near_equivalent_n",
+    "crossfit_near_equivalent_n",
+    "same_fold_near_equivalent_n",
+    "validation_crossfit_set_jaccard",
+    "selected_in_crossfit_set"
+  ],
+  "legacy_epsilon_headers": [],
+  "status": "PASS"
+}
