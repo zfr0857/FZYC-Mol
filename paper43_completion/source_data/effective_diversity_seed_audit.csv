@@ -1,0 +1,10 @@
+task,task_type,n_seeds,seed_values,outer_rows,outer_expected,inner_rows,inner_expected,outer_candidate_columns,inner_candidate_columns,status
+bace,classification,10,11;23;37;53;71;83;97;113;127;149,30,30,90,90,32,32,PASS
+bbbp,classification,10,11;23;37;53;71;83;97;113;127;149,30,30,90,90,32,32,PASS
+clintox,classification,10,11;23;37;53;71;83;97;113;127;149,30,30,90,90,32,32,PASS
+esol,regression,10,11;23;37;53;71;83;97;113;127;149,30,30,90,90,32,32,PASS
+freesolv,regression,10,11;23;37;53;71;83;97;113;127;149,30,30,90,90,32,32,PASS
+lipo,regression,10,11;23;37;53;71;83;97;113;127;149,30,30,90,90,32,32,PASS
+tdc_caco2_wang,regression,10,11;23;37;53;71;83;97;113;127;149,30,30,90,90,32,32,PASS
+tdc_hia_hou,classification,10,11;23;37;53;71;83;97;113;127;149,30,30,90,90,32,32,PASS
+tdc_pgp_broccatelli,classification,10,11;23;37;53;71;83;97;113;127;149,30,30,90,90,32,32,PASS

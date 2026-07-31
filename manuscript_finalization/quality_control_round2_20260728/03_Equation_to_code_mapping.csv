@@ -1,0 +1,24 @@
+﻿equation,estimand_or_definition,implementation_or_mapping,status
+1,validation-selected candidate,inner-validation argmax over C_K,PASS
+2,same-fold finite-audit-best candidate,outer-audit argmax over C_K,PASS
+3,finite-audit loss and range normalization,regret_metrics.py; epsilon_num only as numerical stabilizer,PASS
+4,CAHit@3 and reciprocal rank,ranking_metrics.py,PASS
+5,chance MRR expectation and normalization,ranking_metrics.py,PASS
+6,validation-selected candidate alias,analyze_paper43_fixed_reference_and_equivalence_20260726.py,PASS
+7,K-invariant reference,leave-one-seed-out mean over U_-s with N_-s denominator,PASS
+8,K-dependent reference,leave-one-seed-out eligible-prefix mean over U_-s with N_-s denominator,PASS
+9,K-invariant and K-dependent gaps,fixed_k32_gap and k_dependent_crossfit_gap,PASS
+10,same-fold finite-set opportunity gap,same_fold_gap,PASS
+11,availability component and exact decomposition,availability_component; G_inv = G_avail + G_dep,PASS
+12,seed-level G_inv mean,average three outer folds within each seed,PASS
+13,endpoint-level Delta_inv contrast,average seed-level K=32 minus K=4 contrasts over S_main seed blocks,PASS
+14,raw and row-centred utility matrices,effective-diversity script,PASS
+15,reference-relative and rank matrices,effective-diversity script,PASS
+16,Ledoit-Wolf correlation and eigenvalue proportions,effective-diversity script; S_cov is sample covariance,PASS
+17,entropy and participation-ratio ranks,effective-diversity script,PASS
+18,observed opportunity and selected gain,completion source tables,PASS
+19,composition normalization,completion source tables,PASS
+20,normalized cross-fitted composition gap,fixed-reference script,PASS
+21,normalized selection entropy,stability_metrics.py,PASS
+constant,practical-equivalence tolerance tau,tau_near_equivalence_units.csv; tau grids are reporting tolerances,PASS
+constant,numerical-stability epsilon_num,fixed at 1e-12; used only for stabilization and small-denominator missingness,PASS

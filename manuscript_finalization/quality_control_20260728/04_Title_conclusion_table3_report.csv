@@ -1,0 +1,7 @@
+﻿document,check,observed,status
+Chinese,Title style,Title,PASS
+Chinese,Formal conclusion heading,5 结论,PASS
+Chinese,Table 3 continuation,rows 12+8; first bottom=nil; final bottom=single,PASS
+English,Title style,aa,PASS
+English,Formal conclusion heading,5 Conclusions,PASS
+English,Table 3 continuation,rows 12+8; first bottom=nil; final bottom=single,PASS

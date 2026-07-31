@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-28",
+  "equations": 19,
+  "figures": 8,
+  "references": 37,
+  "chinese_pages_word_wps": [
+    32,
+    32
+  ],
+  "english_pages_word_wps": [
+    56,
+    56
+  ],
+  "status": "CONFLICT_HOLD",
+  "blocking_items": [
+    "author/declaration metadata",
+    "public r10 release"
+  ],
+  "not_available": [
+    "LibreOffice",
+    "submission-system preview"
+  ]
+}

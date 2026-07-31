@@ -1,0 +1,38 @@
+﻿reference,year_present,doi,doi_http_status,software_or_preprint_metadata,status,citation
+1,yes,10.1039/C7SC02664A,403,no,PASS,"1. Wu Z, Ramsundar B, Feinberg EN, et al. MoleculeNet: a benchmark for molecular machine learning. Chem Sci. 2018;9:513–530. doi:10.1039/C7SC02664A."
+2,yes,,n/a,yes,PASS,"2. Huang K, Fu T, Gao W, et al. Therapeutics Data Commons: machine learning datasets and tasks for drug discovery and development. NeurIPS Datasets and Benchmarks Track. 2021. arXiv:2102.09548."
+3,yes,,n/a,yes,PASS,"3. Cawley GC, Talbot NLC. On over-fitting in model selection and subsequent selection bias in performance evaluation. J Mach Learn Res. 2010;11:2079–2107."
+4,yes,10.1186/1471-2105-7-91,200,no,PASS,"4. Varma S, Simon R. Bias in error estimation when using cross-validation for model selection. BMC Bioinformatics. 2006;7:91. doi:10.1186/1471-2105-7-91."
+5,yes,10.1186/s13321-026-01217-2,200,no,PASS,"5. Zhao D, Zhu Y, Wu Z, et al. Revisiting ADMET prediction reliability under real-world challenges in the foundation model era. J Cheminform. 2026;18:95. doi:10.1186/s13321-026-01217-2."
+6,yes,10.1186/s13321-026-01244-z,200,no,PASS,"6. Zhang L, Zeng Y, Qi Y, et al. DCPM-ADMET: fusion of dual-component pre-trained model and molecular fingerprints to enhance drug ADMET properties prediction. J Cheminform. 2026. doi:10.1186/s13321-026-01244-z."
+7,yes,10.1186/s13321-025-01140-y,200,no,PASS,"7. Jang Y, Lee J, Jeong K, Kim J. Multimodal graph fusion with statistically guided parsimonious descriptor selection for molecular property prediction. J Cheminform. 2026;18:18. doi:10.1186/s13321-025-01140-y."
+8,yes,10.1016/j.isci.2026.114928,200,no,PASS,"8. Zhang Y, Liu W, Zhao H, et al. MolGramTreeNet: a multimodal molecular property prediction model via grammar tree-constrained molecular representation. iScience. 2026;29:114928. doi:10.1016/j.isci.2026.114928."
+9,yes,10.1093/bib/bbaf147,403,no,PASS,"9. Wen X, Liu H, Long W, Wei S, Zhu R. Consistent semantic representation learning for out-of-distribution molecular property prediction. Brief Bioinform. 2025;26:bbaf147. doi:10.1093/bib/bbaf147."
+10,yes,10.1039/D5RA08055J,403,no,PASS,"10. Yin T, Gao P, Panapitiya G, Saldanha EG. Out-of-distribution evaluation of active learning pipelines for molecular property prediction. RSC Adv. 2026;16:5281–5295. doi:10.1039/D5RA08055J."
+11,yes,10.1021/acs.jcim.5c03220,403,no,PASS,"11. Uchibori Y, Kaneko H. Generation of molecules near the applicability domain boundaries of property prediction models. J Chem Inf Model. 2026;66:6866–6879. doi:10.1021/acs.jcim.5c03220."
+12,yes,10.1021/acs.jcim.5c01037,403,no,PASS,"12. Kim JY, Vlachos DG. Distance-aware molecular property prediction in nonlinear structure–property space. J Chem Inf Model. 2025;65:6744–6756. doi:10.1021/acs.jcim.5c01037."
+13,yes,10.1021/acs.jcim.5c00550,403,no,PASS,"13. Tang H, Yue T, Li Y. Assessing uncertainty in machine learning for polymer property prediction: a benchmark study. J Chem Inf Model. 2025;65:6585–6598. doi:10.1021/acs.jcim.5c00550."
+14,yes,10.3389/fddsv.2026.1859068,200,no,PASS,"14. Fralish Z, Reker D. Pairwise learning for molecular property prediction and optimization. Front Drug Discov. 2026;6:1859068. doi:10.3389/fddsv.2026.1859068."
+15,yes,,n/a,yes,PASS,15. Landrum G. RDKit: open-source cheminformatics software. Version 2026.3.1. https://www.rdkit.org/. Accessed 12 July 2026.
+16,yes,10.1021/ci100050t,403,no,PASS,"16. Rogers D, Hahn M. Extended-connectivity fingerprints. J Chem Inf Model. 2010;50:742–754. doi:10.1021/ci100050t."
+17,yes,10.1023/A:1010933404324,200,no,PASS,17. Breiman L. Random forests. Mach Learn. 2001;45:5–32. doi:10.1023/A:1010933404324.
+18,yes,,n/a,yes,PASS,"18. Ke G, Meng Q, Finley T, et al. LightGBM: a highly efficient gradient boosting decision tree. Adv Neural Inf Process Syst. 2017;30."
+19,yes,10.1145/2939672.2939785,403,no,PASS,"19. Chen T, Guestrin C. XGBoost: a scalable tree boosting system. Proc ACM SIGKDD. 2016:785–794. doi:10.1145/2939672.2939785."
+20,yes,,n/a,yes,PASS,"20. Prokhorenkova L, Gusev G, Vorobev A, Dorogush AV, Gulin A. CatBoost: unbiased boosting with categorical features. Adv Neural Inf Process Syst. 2018;31:6638–6648."
+21,yes,10.1021/acs.jcim.9b00237,403,no,PASS,"21. Yang K, Swanson K, Jin W, et al. Analyzing learned molecular representations for property prediction. J Chem Inf Model. 2019;59:3370–3388. doi:10.1021/acs.jcim.9b00237."
+22,yes,,n/a,yes,PASS,"22. Chithrananda S, Grand G, Ramsundar B. ChemBERTa: large-scale self-supervised pretraining for molecular property prediction. arXiv:2010.09885. 2020."
+23,yes,10.1038/s42256-022-00580-7,200,no,PASS,"23. Ross J, Belgodere B, Chenthamarakshan V, et al. Large-scale chemical language representations capture molecular structure and properties. Nat Mach Intell. 2022;4:1256–1264. doi:10.1038/s42256-022-00580-7."
+24,yes,,n/a,yes,PASS,"24. Erickson N, Mueller J, Shirkov A, et al. AutoGluon-Tabular: robust and accurate AutoML for structured data. arXiv:2003.06505. 2020."
+25,yes,10.1002/minf.201000061,403,no,PASS,"25. Tropsha A. Best practices for QSAR model development, validation, and exploitation. Mol Inform. 2010;29:476–488. doi:10.1002/minf.201000061."
+26,yes,10.1007/b106715,200,yes,PASS,"26. Vovk V, Gammerman A, Shafer G. Algorithmic Learning in a Random World. New York: Springer; 2005. doi:10.1007/b106715."
+27,yes,,n/a,yes,PASS,"27. Shafer G, Vovk V. A tutorial on conformal prediction. J Mach Learn Res. 2008;9:371–421."
+28,yes,,n/a,yes,PASS,"28. Guo C, Pleiss G, Sun Y, Weinberger KQ. On calibration of modern neural networks. Proc ICML. 2017;70:1321–1330."
+29,yes,10.1021/acs.jcim.2c01073,403,no,PASS,"29. van Tilborg D, Alenicheva A, Grisoni F. Exposing the limitations of molecular machine learning with activity cliffs. J Chem Inf Model. 2022;62:5938–5951. doi:10.1021/acs.jcim.2c01073."
+30,yes,10.1021/ci400084k,403,no,PASS,30. Sheridan RP. Time-split cross-validation as a method for estimating the goodness of prospective prediction. J Chem Inf Model. 2013;53:783–790. doi:10.1021/ci400084k.
+31,yes,,n/a,yes,PASS,31. Demšar J. Statistical comparisons of classifiers over multiple data sets. J Mach Learn Res. 2006;7:1–30.
+32,yes,10.1186/s13321-023-00730-y,200,no,PASS,"32. Hoyt CT, Zdrazil B, Guha R, et al. Improving reproducibility and reusability in the Journal of Cheminformatics. J Cheminform. 2023;15:62. doi:10.1186/s13321-023-00730-y."
+33,yes,10.1021/acs.jcim.5c02381,403,no,PASS,"33. Parrondo-Pizarro R, Lanini J, Rodríguez-Pérez R. Uncertainty quantification in molecular machine learning for property predictions under data shifts. J Chem Inf Model. 2026;66:923–935. doi:10.1021/acs.jcim.5c02381."
+34,yes,10.1038/s41467-023-41948-6,200,no,PASS,"34. Deng J, Yang Z, Wang H, Ojima I, Samaras D, Wang F. A systematic study of key elements underlying molecular property prediction. Nat Commun. 2023;14:6395. doi:10.1038/s41467-023-41948-6."
+35,yes,,n/a,yes,PASS,"35. Li Z, Chen X, Wen H, et al. A systematic survey and benchmark of deep learning for molecular property prediction in the foundation model era. arXiv:2604.16586. 2026."
+36,yes,,n/a,yes,PASS,"36. Romano Y, Patterson E, Candès EJ. Conformalized quantile regression. Adv Neural Inf Process Syst. 2019;32."
+37,yes,,n/a,yes,CONFLICT_HOLD,37. FZYC-Mol Authors. FZYC-Mol: candidate-pool expansion audit code and reproducibility package. Version paper-release-2026-07-r9 (commit 9635a902fa3cc7bb7b71a234c1b2bbbe415193f0). GitHub; 2026. Available from: https://github.com/zfr0857/FZYC-Mol. Accessed 22 July 2026.

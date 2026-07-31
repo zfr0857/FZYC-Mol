@@ -1,0 +1,13 @@
+﻿Symbol,Definition
+,number of primary split seeds (10)
+,number of seeds in explicitly labelled secondary analyses (5)
+,outer audit unit
+,eligible registered candidate prefix at size K
+,inner-validation utility
+,outer-audit utility (negative RMSE direction for regression)
+,K-invariant full-registry reference selected without seed s
+,K-dependent eligible-prefix reference selected without seed s
+,K-invariant full-registry completion gap
+,K-dependent within-prefix selection gap
+,same-fold finite-set opportunity gap
+,endpoint-level K=32 minus K=4 contrast averaged over seed blocks

@@ -1,0 +1,10 @@
+﻿dataset,task_type,estimand,contrast,n_seeds,n_folds_per_seed,mean_natural_scale_effect,seed_block_interval_low,seed_block_interval_high,interval_interpretation,contrast_direction
+bace,classification,fixed_k32_gap,K=32 minus K=4,10,3,-0.0194626738358949,-0.023847610402704,-0.015167982367262,descriptive split-seed sensitivity interval,negative favors K=32; positive favors K=4
+bbbp,classification,fixed_k32_gap,K=32 minus K=4,10,3,-0.0262919879553842,-0.0300582048990524,-0.0225025708363618,descriptive split-seed sensitivity interval,negative favors K=32; positive favors K=4
+clintox,classification,fixed_k32_gap,K=32 minus K=4,10,3,-0.0144046669577672,-0.0241479030995425,-0.0031245171659477,descriptive split-seed sensitivity interval,negative favors K=32; positive favors K=4
+esol,regression,fixed_k32_gap,K=32 minus K=4,10,3,0.068345610585083,0.0618051125479925,0.0757480551291658,descriptive split-seed sensitivity interval,negative favors K=32; positive favors K=4
+freesolv,regression,fixed_k32_gap,K=32 minus K=4,10,3,-0.0586070615537594,-0.0912261199514667,-0.0262770581068599,descriptive split-seed sensitivity interval,negative favors K=32; positive favors K=4
+lipo,regression,fixed_k32_gap,K=32 minus K=4,10,3,-0.0946501635378202,-0.0992411044557953,-0.089941592208038,descriptive split-seed sensitivity interval,negative favors K=32; positive favors K=4
+tdc_caco2_wang,regression,fixed_k32_gap,K=32 minus K=4,10,3,-0.004918969780662,-0.0121274287789776,0.0008394298586521,descriptive split-seed sensitivity interval,negative favors K=32; positive favors K=4
+tdc_hia_hou,classification,fixed_k32_gap,K=32 minus K=4,10,3,-0.0021856044514448,-0.0074813361693021,0.0030991432883989,descriptive split-seed sensitivity interval,negative favors K=32; positive favors K=4
+tdc_pgp_broccatelli,classification,fixed_k32_gap,K=32 minus K=4,10,3,-0.0221837100906975,-0.0271241918705032,-0.0177941849129874,descriptive split-seed sensitivity interval,negative favors K=32; positive favors K=4

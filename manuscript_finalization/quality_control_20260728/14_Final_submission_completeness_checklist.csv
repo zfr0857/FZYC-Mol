@@ -1,0 +1,18 @@
+﻿item,complete,status,notes
+English clean DOCX,yes,PASS,Main_manuscript_Journal_of_Cheminformatics_FINAL_REVISED_CONFLICT_HOLD.docx
+English track changes DOCX,yes,PASS,Main_manuscript_Journal_of_Cheminformatics_FINAL_REVISED_TRACK_CHANGES_CONFLICT_HOLD.docx
+Chinese synchronized final DOCX,yes,PASS,候选池扩张_有限验证下的机会与选择稳定性_中文最终修订稿_CONFLICT_HOLD.docx
+Chinese track changes DOCX,yes,PASS,候选池扩张_有限验证下的机会与选择稳定性_中文最终修订痕迹稿_CONFLICT_HOLD.docx
+Word PDFs,yes,PASS,32/56 pages
+WPS PDFs,yes,PASS,32/56 pages
+Equations 6/7/11,yes,PASS,Word and WPS visual PASS
+All 19 equations,yes,PASS,native OMML
+Figures 1–8 SVG/PDF/PNG,yes,PASS,8/8 font audit PASS
+Figure alt text,yes,PASS,8/8 in both manuscripts
+Tables 1–4,yes,PASS,Table 3 continuation controlled
+Additional files 1–4,yes,PASS,prior integrity/formula audits PASS
+Scientific numbers,yes,PASS,locked number audit PASS; no results changed
+LibreOffice PDF,no,NOT_AVAILABLE,soffice unavailable
+Submission-system preview,no,NOT_AVAILABLE,requires journal portal upload
+Author metadata and declarations,no,CONFLICT_HOLD,not supplied; truthful placeholders retained
+Public r10 release,no,CONFLICT_HOLD,latest public release remains r9

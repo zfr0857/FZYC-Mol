@@ -1,0 +1,13 @@
+﻿reviewer_concern,response,revision_location,status
+"Equations 6, 7 and 11 corrupted across software",Rebuilt as native OMML with N₋ₛ definition and simple sum limits.,"Methods 2.15; Equations 6, 7 and 11; zoom screenshots",RESOLVED
+All 19 equations require checking,"Verified native objects, numbering and Word/WPS page positions.",01_Equation_rendering_report.csv,RESOLVED
+No formal conclusion section,Inserted Heading 1 section 5/5 Conclusions; retained two conclusion paragraphs.,Immediately after 4.11,RESOLVED
+Simple inline mathematics lost in extraction,Converted short inline objects to normal text while retaining complex numbered equations.,02_Plain_text_extraction_report.csv,RESOLVED
+Title must use Title style,Confirmed explicit Title style in both manuscripts.,04_Title_conclusion_table3_report.csv,RESOLVED
+Table 3 crosses pages ambiguously,"Split into two controlled parts with a continued caption, no interim bottom rule and a final bottom rule.",Pages 10–11 Chinese; pages 20–21 English,RESOLVED
+Figure 4C terminology too broad,Changed to Same-fold and K-dependent within-prefix effects and distinguished Figure 3C as primary.,Figure 4C and captions,RESOLVED
+Figure source fonts not verifiable,Regenerated Figure 4 and re-audited SVG/PDF/600-dpi PNG for all eight figures.,06_Figure_font_audit.csv,RESOLVED
+Figures lack alternative text,Added 2-sentence purpose/panel/finding descriptions to all eight embedded figures in both manuscripts.,05_Image_alt_text_report.csv,RESOLVED
+Repository release incomplete,Prepared local r10 staging but retained hold because no public r10 exists.,10_Repository_consistency_report.csv,CONFLICT_HOLD
+Author and declaration metadata incomplete,Retained truthful conflict-hold placeholders; no identities or declarations were inferred.,Title page and Declarations,CONFLICT_HOLD
+References require final audit,Checked 37 entries structurally and resolved DOI links; Reference 37 remains pinned to public r9.,09_Reference_audit_1-37.csv,RESOLVED

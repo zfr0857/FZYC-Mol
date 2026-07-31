@@ -1,0 +1,15 @@
+experiment_or_requirement,status,evidence_or_reason
+K-invariant K=32 seed-isolated reference,completed,10 seeds; fixed comparator identity across K
+Practical-equivalence grid and near-equivalent sets,completed,classification 0.005/0.010/0.020; regression 0.025/0.050/0.100
+PR-AUC-driven classification selection,completed,five classification endpoints; 10 seeds
+Minority-recall-constrained selection,completed,training-defined minority; inner target 0.80
+Empirical correlated heteroskedastic recovery,completed,"2,000 replicates per endpoint/K/scenario/scale"
+Exact and near-duplicate controls,completed,stored-utility construction
+Weak and complementary-strong controls,completed,non-held-seed construction
+Candidate-order sensitivity,completed,registered/best/worst/cost plus 100 random orders
+Additional split seeds,completed,five added; ten total under the current split implementation
+Legacy regression split transition,completed,historical unseeded GroupKFold outputs excluded from the current ten-seed primary matrix
+Fit-count and failure audit,completed,all expected inner/outer cells checked
+External/time/source split,not feasible,no independent cohort or timestamp/source metadata; three-endpoint structure transfer retained
+Exact pretrained-corpus overlap,unresolved,checkpoint-level identities available; molecule-level corpus manifests unavailable
+Author metadata and public repository,author action required,names/ORCIDs/declarations and persistent DOI/URL unavailable

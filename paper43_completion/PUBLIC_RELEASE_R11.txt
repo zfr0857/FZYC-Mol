@@ -1,0 +1,3 @@
+The locked Paper 43 completion layer is included in public release
+paper-release-2026-07-r11. The immutable full commit SHA is recorded in the
+GitHub release metadata. No archival DOI is claimed.

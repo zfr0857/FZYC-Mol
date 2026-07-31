@@ -1,0 +1,12 @@
+﻿Endpoint,K = 32 minus K = 4 contrast (95% sensitivity interval),Interpretation
+Classification: ROC-AUC completion-gap contrast,Classification: ROC-AUC completion-gap contrast,Classification: ROC-AUC completion-gap contrast
+BACE,"−0.0195 (−0.0238, −0.0152)",Smaller gap at K = 32; interval excludes 0
+BBBP,"−0.0263 (−0.0301, −0.0225)",Smaller gap at K = 32; interval excludes 0
+ClinTox,"−0.0144 (−0.0241, −0.0031)",Smaller gap at K = 32; interval excludes 0
+HIA,"−0.0022 (−0.0075, 0.0031)",Interval includes 0
+P-gp,"−0.0222 (−0.0271, −0.0178)",Smaller gap at K = 32; interval excludes 0
+Regression: RMSE completion-gap contrast,Regression: RMSE completion-gap contrast,Regression: RMSE completion-gap contrast
+ESOL,"0.0683 (0.0618, 0.0757)",Smaller gap at K = 4; interval excludes 0
+FreeSolv,"−0.0586 (−0.0912, −0.0263)",Smaller gap at K = 32; interval excludes 0
+Lipophilicity,"−0.0947 (−0.0992, −0.0899)",Smaller gap at K = 32; interval excludes 0
+Caco2,"−0.0049 (−0.0121, 0.0008)",Interval includes 0
