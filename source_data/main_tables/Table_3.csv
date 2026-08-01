@@ -1,13 +1,12 @@
 ﻿Symbol,Definition
-,number of primary split seeds (10)
-,number of seeds in explicitly labelled secondary analyses (5)
-,outer audit unit
-,eligible registered candidate prefix at size K
-,inner-validation utility
-,outer-audit utility (negative RMSE direction for regression)
-,K-invariant full-registry reference selected without seed s
-,K-dependent eligible-prefix reference selected without seed s
-,K-invariant full-registry completion gap
-,K-dependent within-prefix selection gap
-,same-fold finite-set opportunity gap
-,endpoint-level K=32 minus K=4 contrast averaged over seed blocks
+u,outer audit unit indexed by split seed s and outer fold f
+C_K,eligible retrospectively locked candidate prefix at size K
+"V(u,j)",inner-validation utility
+"A(u,j)",outer-audit utility (negative RMSE direction for regression)
+j_hat_u(K),validation-selected candidate at size K
+j_ref^inv(-s),K-invariant full-registry reference selected without split seed s
+"j_ref^dep(-s,K)",K-dependent within-prefix reference selected without split seed s
+"G_inv(u,K)",K-invariant full-registry completion gap
+"G_dep(u,K)",K-dependent within-prefix selection gap
+"G_avail(u,K)",candidate-availability component
+Delta_inv,endpoint-level K = 32 minus K = 4 contrast averaged over split-seed blocks

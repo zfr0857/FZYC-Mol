@@ -52,6 +52,9 @@ def four_panel_grid(fig, *, left=.105, right=.98, bottom=.12, top=.93, hspace=.5
 
 def save(fig, stem):
     FIG.mkdir(parents=True, exist_ok=True)
+    for artist in fig.findobj(match=mpl.text.Text):
+        if artist.get_fontsize() < 8.0:
+            artist.set_fontsize(8.0)
     pdf=FIG/f"{stem}.pdf"; png=FIG/f"{stem}.png"; svg=FIG/f"{stem}.svg"
     fig.savefig(pdf, bbox_inches="tight", facecolor="white")
     fig.savefig(png, dpi=600, bbox_inches="tight", facecolor="white")
