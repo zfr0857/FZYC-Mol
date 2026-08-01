@@ -1198,8 +1198,8 @@ def figure6():
         cax.tick_params(axis="x",labelsize=8.0,pad=1,length=3)
         for spine in cax.spines.values():
             spine.set_visible(True); spine.set_linewidth(.7); spine.set_color(INK)
-    explicit_colour_strip(pred_cax,"Blues","Pred. corr.")
-    explicit_colour_strip(err_cax,"Purples","Error Jaccard")
+    explicit_colour_strip(pred_cax,"Blues","")
+    explicit_colour_strip(err_cax,"Purples","")
 
     SOURCE.mkdir(parents=True,exist_ok=True); matrix_rows=[]
     for i,mi in enumerate(candidates):
