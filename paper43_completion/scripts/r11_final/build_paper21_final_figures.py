@@ -695,7 +695,7 @@ def _figure1_central_audit_map():
 
 def _figure1_r10_current_audit_map():
     """Current ten-seed schematic; visual content only, no experimental recomputation."""
-    fig, ax = plt.subplots(figsize=(7.2, 4.35))
+    fig, ax = plt.subplots(figsize=(7.2, 3.85))
     ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
     dark = "#30383F"; brick = "#A95A52"; support = "#6E9D80"
     pale = {BLUE:"#EDF3F8", ORANGE:"#FCF0E5", TEAL:"#EAF4F1",
@@ -796,31 +796,25 @@ def _figure1_r10_current_audit_map():
             ax.plot([x+.060,x+.168],[yy,yy],color=LIGHT,lw=1.3)
             ax.text(x+.185,yy,lab,ha="right",va="center",fontsize=8,color=dark)
 
-    ax.text(.5,.985,"Candidate-Pool Opportunity and Selection Stability under Finite Validation",
-            ha="center",va="top",fontsize=10.3,fontweight="bold",color=dark)
-
     # Continuous left-to-right, top-to-bottom panel order (A-D, E-H, I-L).
     specs=[
-        (.018,.700,"Task and Data\nRegistration",BLUE,"A",draw_a,["9 endpoints · registered","curated · no overlap"]),
-        (.265,.700,"Candidate Pool\nExpansion",ORANGE,"B",draw_b,["32 registered Morgan candidates","fixed order · no reordering","34 560 candidate fits"]),
-        (.512,.700,"Repeated Nested\nScaffold Audit",TEAL,"C",draw_c,["10 seeds · 3 outer × 3 inner","selection inside · audit outside"]),
-        (.759,.700,"Utility-Pattern\nDiversity",PURPLE,"D",draw_d,["raw · centred · fixed reference","rank · effective diversity"]),
-        (.018,.405,"Chance-Adjusted\nRanking",PURPLE,"E",draw_e,["CAHit@3 · MRR · NDCG","rank correlation"]),
-        (.265,.405,"Reference and Gap\nDecomposition",brick,"F",draw_f,["completion gap · selection gap"]),
-        (.512,.405,"Split-Regime\nTransfer",ORANGE,"G",draw_g,["scaffold · similarity component","direction transfer"]),
-        (.759,.405,"Equal-Size Registry\nComposition",TEAL,"H",draw_h,["Morgan · multiview · modern","K=16 · K=32"]),
-        (.018,.110,"Finite-Audit Winner\nOptimism",brick,"I",draw_i,["K ↑ · n ↓ · known-truth simulation"]),
-        (.265,.110,"Support-Aware\nReliability",support,"J",draw_j,["novel ↔ related","error · FN · disagreement"]),
-        (.512,.110,"Four-Model\nError Audit",BLUE,"K",draw_k,["RF · GCN · CBT · MFM","overlap · disagreement"]),
-        (.759,.110,"Auditable Evidence\nRecord",PURPLE,"L",draw_l,[]),
+        (.018,.720,"Task and Data\nRegistration",BLUE,"A",draw_a,["9 endpoints · registered","curated · no overlap"]),
+        (.265,.720,"Candidate Pool\nExpansion",ORANGE,"B",draw_b,["32 registered Morgan candidates","fixed order · no reordering","34 560 candidate fits"]),
+        (.512,.720,"Repeated Nested\nScaffold Audit",TEAL,"C",draw_c,["10 seeds · 3 outer × 3 inner","selection inside · audit outside"]),
+        (.759,.720,"Utility-Pattern\nDiversity",PURPLE,"D",draw_d,["raw · centred · fixed reference","rank · effective diversity"]),
+        (.018,.385,"Chance-Adjusted\nRanking",PURPLE,"E",draw_e,["CAHit@3 · MRR · NDCG","rank correlation"]),
+        (.265,.385,"Reference and Gap\nDecomposition",brick,"F",draw_f,["completion gap · selection gap"]),
+        (.512,.385,"Split-Regime\nTransfer",ORANGE,"G",draw_g,["scaffold · similarity component","direction transfer"]),
+        (.759,.385,"Equal-Size Registry\nComposition",TEAL,"H",draw_h,["Morgan · multiview · modern","K=16 · K=32"]),
+        (.018,.050,"Finite-Audit Winner\nOptimism",brick,"I",draw_i,["K ↑ · n ↓ · known-truth simulation"]),
+        (.265,.050,"Support-Aware\nReliability",support,"J",draw_j,["novel ↔ related","error · FN · disagreement"]),
+        (.512,.050,"Four-Model\nError Audit",BLUE,"K",draw_k,["RF · GCN · CBT · MFM","overlap · disagreement"]),
+        (.759,.050,"Auditable Evidence\nRecord",PURPLE,"L",draw_l,[]),
     ]
     for spec in specs: module(*spec)
-    arrow(.243,.825,.265,.825,ORANGE); arrow(.490,.825,.512,.825,TEAL)
-    arrow(.625,.700,.625,.650,TEAL); arrow(.625,.405,.625,.355,brick)
-    arrow(.737,.825,.759,.825,PURPLE)
-    ax.text(.5,.040,"Candidate-pool expansion changes available opportunity and selection stability;\n"
-                    "effects remain endpoint-, registry- and support-dependent.",
-            ha="center",va="center",fontsize=9.0,fontweight="bold",color=dark,linespacing=1.05)
+    arrow(.243,.845,.265,.845,ORANGE); arrow(.490,.845,.512,.845,TEAL)
+    arrow(.625,.720,.625,.630,TEAL); arrow(.625,.385,.625,.295,brick)
+    arrow(.737,.845,.759,.845,PURPLE)
     SOURCE.mkdir(parents=True,exist_ok=True)
     pd.DataFrame([{"panel":s[4],"title":s[2].replace("\n"," "),"keywords":" | ".join(s[6])} for s in specs]).to_csv(
         SOURCE/"Figure_1_panel_manifest.csv",index=False,encoding="utf-8-sig")

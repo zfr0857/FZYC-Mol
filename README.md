@@ -4,10 +4,12 @@ This repository accompanies **Candidate-pool expansion, validation-ranking
 distortion and model-selection loss in molecular property prediction: a
 retrospective nested audit**.
 
-Package version and release: `paper-release-2026-07-r11`.
+Package version and release: `paper-release-2026-08-r12`.
 
-This release adds the complete `paper43_completion/` ten-seed analysis layer
-and final Figures 1–8 to the verified r9 base. The software release does not
+This release retains the complete `paper43_completion/` ten-split-seed analysis
+layer and final Figures 1–8 from R11, and corrects the inconsistent Figure 1–7
+inventory wording and submission-facing Figure 1 source without changing any
+recorded result. The software release does not
 assert the journal article's author order, affiliations, correspondence data,
 ORCIDs, funding declarations or CRediT roles; those article metadata remain
 the responsibility of the authors and are separate from this code release.
@@ -52,7 +54,7 @@ python -m pip install -e .
 
 The optional pretrained-candidate requirements are listed in
 `environment/requirements-pretrained.txt`. An equivalent quick-reproduction
-container can be built with `docker build -t fzyc-mol:paper-release-2026-07-r11 .`.
+container can be built with `docker build -t fzyc-mol:paper-release-2026-08-r12 .`.
 
 ## Reproduction entry points
 
@@ -121,7 +123,7 @@ checkout.
 - Generated split manifests: `splits/generated/`.
 - Full-study results: `results/reproduced_full_study/`.
 - Figure and table source data: `source_data/` and `reproduced_outputs/`. Final
-  PDF/SVG/600-dpi PNG assets for Figures 1–7 and their checked source-data index
+  PDF/SVG/600-dpi PNG assets for Figures 1–8 and their checked source-data index
   are included under `reproduced_outputs/main_figures/` and
   `source_data/main_figures/`.
 
@@ -139,7 +141,7 @@ as stated in the manuscript.
 - `scripts/`: portable download, analysis, training and validation entry points.
 - `results/`: machine-readable reference results used by tests and audits.
 - `source_data/`: manuscript figure/table source-data index, checked inputs for
-  Figures 2–7 and the Figure 7 panel data; Figure 1 is a schematic.
+  Figures 2–8 and the Figure 7–8 panel data; Figure 1 is a schematic.
 - `tests/`: leakage, ranking, stability and reproduction regression tests.
 - `docs/`: scope, audit trail and computational-exposure documentation.
 - `paper31_expanded_intervention/experiment_exports/`: candidate-, fold- and
@@ -160,7 +162,7 @@ architecture-efficiency claims. Negative, missing and failed cells are retained.
 
 Run `python scripts/validate_manuscript_numbers.py` and verify `SHA256SUMS.txt`
 before reusing the checked exports. The manuscript version is fixed by release
-`paper-release-2026-07-r11`; its immutable commit is recorded in the GitHub release
+`paper-release-2026-08-r12`; its immutable commit is recorded in the GitHub release
 and `docs/release-and-commit.md`.
 
 For cross-platform verification, `scripts/build_release_inventory.py` hashes text
@@ -172,7 +174,7 @@ Please cite the associated article and the software release described in
 `CITATION.cff`:
 
 > FZYC-Mol Authors. FZYC-Mol: candidate-pool expansion audit, release
-> paper-release-2026-07-r11. GitHub. 2026.
+> paper-release-2026-08-r12. GitHub. 2026.
 
 Repository: <https://github.com/zfr0857/FZYC-Mol>
 
@@ -181,15 +183,17 @@ Repository: <https://github.com/zfr0857/FZYC-Mol>
 The submission-facing layer separates the practical-equivalence tolerance tau from the numerical-stability constant epsilon_num=1e-12. The main manuscripts contain consecutively numbered native equations, and Figure 8 plus Table S38 use tau terminology. Journal author metadata are maintained separately from this software release and are not inferred here.
 
 
-## R11 paper-completion layer
+## R12 submission-format refinement
 
-Release `paper-release-2026-07-r11` adds the locked ten-split-seed Paper 43
-completion layer without changing any recorded candidate eligibility, seed,
-threshold, candidate order, source result or negative result. It includes the
-final Figure 1–8 assets in editable SVG, embedded-font PDF and 600-dpi PNG,
-machine-readable main-table source data, probability-level classification
-outputs, split manifests, candidate/fold/seed-level outputs, equation-to-code
-mapping and manuscript-number validation records.
+Release `paper-release-2026-08-r12` is a metadata and submission-format
+refinement of the immutable R11 analysis layer. It corrects the R11 README
+inventory to Figures 1–8 and updates the title-free Figure 1 source and exports.
+It does not change candidate eligibility, split seeds, thresholds, candidate
+order, outer performance, machine-readable source results or retained negative
+results. The release continues to include editable SVG, embedded-font PDF and
+600-dpi PNG figures, source data, probability-level classification outputs,
+split manifests, candidate/fold/split-seed outputs, equation-to-code mapping and
+manuscript-number validation records.
 
 The software release uses the existing collective software-author record in
 `CITATION.cff`; it does not assert or infer the journal article's author order,
