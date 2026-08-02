@@ -1,0 +1,6 @@
+dataset,display_name,k,pr_auc_candidate_switch_rate_vs_roc,delta_outer_pr_auc_vs_roc_selector,recall_constrained_effect_included
+bace,BACE,32,0.5333333333333333,-0.0009359416034085435,False
+bbbp,BBBP,32,0.43333333333333335,-0.0008805089385431033,False
+clintox,ClinTox,32,0.8,0.012293383575827804,False
+tdc_hia_hou,HIA,32,0.5,-0.0016525681332954746,False
+tdc_pgp_broccatelli,P-gp,32,0.36666666666666664,0.0002174483395153013,False
