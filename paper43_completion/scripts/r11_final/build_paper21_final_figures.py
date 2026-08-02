@@ -1181,8 +1181,8 @@ def figure6():
     ax.set(xticks=np.arange(4),xticklabels=short_x,yticks=np.arange(4),yticklabels=short_y)
     ax.tick_params(axis="both",length=0,pad=2,labelsize=7.6); ax.set_xlim(-.5,3.5); ax.set_ylim(3.5,-.5)
     for spine in ax.spines.values(): spine.set_visible(False)
-    pred_cax=inset_axes(ax,width="42%",height="4.5%",loc="lower left",bbox_to_anchor=(0,-.38,1,1),bbox_transform=ax.transAxes,borderpad=0)
-    err_cax=inset_axes(ax,width="42%",height="4.5%",loc="lower right",bbox_to_anchor=(0,-.38,1,1),bbox_transform=ax.transAxes,borderpad=0)
+    pred_cax=inset_axes(ax,width="38%",height="4.5%",loc="lower left",bbox_to_anchor=(0,-.22,1,1),bbox_transform=ax.transAxes,borderpad=0)
+    err_cax=inset_axes(ax,width="38%",height="4.5%",loc="lower right",bbox_to_anchor=(0,-.22,1,1),bbox_transform=ax.transAxes,borderpad=0)
     def explicit_colour_strip(cax, cmap_name, title):
         cmap = mpl.colormaps[cmap_name]
         strips = 32

@@ -4,7 +4,7 @@ This repository accompanies **Candidate-pool expansion, validation-ranking
 distortion and model-selection loss in molecular property prediction: a
 retrospective nested audit**.
 
-Package version and release: `paper-release-2026-08-r12.3`.
+Package version and release: `paper-release-2026-08-r12.4`.
 
 This release retains the complete `paper43_completion/` ten-split-seed analysis
 layer and final Figures 1–8 from R11, and corrects the inconsistent Figure 1–7
@@ -54,7 +54,7 @@ python -m pip install -e .
 
 The optional pretrained-candidate requirements are listed in
 `environment/requirements-pretrained.txt`. An equivalent quick-reproduction
-container can be built with `docker build -t fzyc-mol:paper-release-2026-08-r12.3 .`.
+container can be built with `docker build -t fzyc-mol:paper-release-2026-08-r12.4 .`.
 
 ## Reproduction entry points
 
@@ -162,7 +162,7 @@ architecture-efficiency claims. Negative, missing and failed cells are retained.
 
 Run `python scripts/validate_manuscript_numbers.py` and verify `SHA256SUMS.txt`
 before reusing the checked exports. The manuscript version is fixed by release
-`paper-release-2026-08-r12.3`; its immutable commit is recorded in the GitHub release
+`paper-release-2026-08-r12.4`; its immutable commit is recorded in the GitHub release
 and `docs/release-and-commit.md`.
 
 For cross-platform verification, `scripts/build_release_inventory.py` hashes text
@@ -174,7 +174,7 @@ Please cite the associated article and the software release described in
 `CITATION.cff`:
 
 > FZYC-Mol Authors. FZYC-Mol: candidate-pool expansion audit, release
-> paper-release-2026-08-r12.3. GitHub. 2026.
+> paper-release-2026-08-r12.4. GitHub. 2026.
 
 Repository: <https://github.com/zfr0857/FZYC-Mol>
 
@@ -185,8 +185,8 @@ The submission-facing layer separates the practical-equivalence tolerance tau fr
 
 ## R12 submission-format refinement
 
-Release `paper-release-2026-08-r12.3` is a format-only successor to the immutable
-`paper-release-2026-08-r12.2` tag. It is a metadata and submission-format
+Release `paper-release-2026-08-r12.4` is a format-only successor to the immutable
+`paper-release-2026-08-r12.3` tag. It is a metadata and submission-format
 refinement of the immutable R11 analysis layer. It corrects the R11 README
 inventory to Figures 1–8 and updates the title-free Figure 1 source and exports.
 It additionally enforces the 8-pt minimum text size in Figures 2, 3, 5 and 6,
@@ -196,6 +196,9 @@ and Figure 6 to 0.70 while retaining non-overlapping panel titles, colour strips
 and axes. It also aligns the Figure 8 A/B heading baseline and combines the former
 D1/D2 displays into one D panel with independently normalized switch-rate and
 outer-PR-AUC columns.
+The R12.4 refinement moves the two Figure 6A colour strips from a vertical inset
+anchor of -0.38 to -0.22 and uses 38% strip widths, placing them closer to panel A
+without overlapping the model tick labels or the panel C heading.
 It does not change candidate eligibility, split seeds, thresholds, candidate
 order, outer performance, machine-readable source results or retained negative
 results. The release continues to include editable SVG, embedded-font PDF and
