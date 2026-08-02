@@ -1013,7 +1013,7 @@ def figure6():
     scaff=pd.read_csv(NEW/"scaffold_novelty_error_complementarity.csv")
     perf=pd.read_csv(HARD/"six_task_strong_endpoint_table.csv")
     diversity=pd.read_csv(NEW/"prediction_level_effective_diversity.csv")
-    fig=plt.figure(figsize=(7.2,6.25)); gs=fig.add_gridspec(2,2,left=.10,right=.98,bottom=.12,top=.94,hspace=.78,wspace=.58,width_ratios=[1.08,.92])
+    fig=plt.figure(figsize=(7.2,6.25)); gs=fig.add_gridspec(2,2,left=.10,right=.98,bottom=.12,top=.94,hspace=.70,wspace=.58,width_ratios=[1.08,.92])
 
     panel_label_x = -.16
     ax=fig.add_subplot(gs[0,0]); panel(ax,"A","Prediction and error similarity",label_x=panel_label_x)

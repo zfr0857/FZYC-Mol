@@ -108,7 +108,7 @@ def figure3() -> None:
     signal = pd.read_csv(MINOR / "mechanism_signal_recovery_summary.csv")
     controls = pd.read_csv(ANALYSIS / "candidate_composition_controls.csv")
     fig = plt.figure(figsize=(6.69, 5.62))
-    gs = fig.add_gridspec(2, 2, left=0.105, right=0.98, bottom=0.08, top=0.985, hspace=0.38, wspace=0.48)
+    gs = fig.add_gridspec(2, 2, left=0.105, right=0.98, bottom=0.08, top=0.985, hspace=0.20, wspace=0.48)
     titles = [
         "Full-registry gap: Δ_inv = Δ_avail + Δ_dep",
         "Chance-adjusted top-rank recovery",
