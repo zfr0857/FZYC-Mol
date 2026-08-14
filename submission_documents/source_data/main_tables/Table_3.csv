@@ -1,0 +1,12 @@
+﻿Symbol,Definition
+u,outer audit unit indexed by split seed s and outer fold f
+C_K,eligible retrospectively locked candidate prefix at size K
+"V(u,j)",inner-validation utility
+"A(u,j)",outer-audit utility (negative RMSE direction for regression)
+j_hat_u(K),validation-selected candidate at size K
+j_ref^inv(-s),K-invariant full-registry reference selected without split seed s
+"j_ref^dep(-s,K)",K-dependent within-prefix reference selected without split seed s
+"G_inv(u,K)",K-invariant full-registry completion gap
+"G_dep(u,K)",K-dependent within-prefix selection gap
+"G_avail(u,K)",candidate-availability component
+Delta_inv,endpoint-level K = 32 minus K = 4 contrast averaged over split-seed blocks

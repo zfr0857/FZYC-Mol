@@ -696,8 +696,137 @@ def _figure1_central_audit_map():
     save(fig,"Figure_1_retrospective_nested_audit_architecture")
 
 
+def _figure1_r10_current_audit_map():
+    """Current ten-seed schematic; visual content only, no experimental recomputation."""
+    fig, ax = plt.subplots(figsize=(7.2, 3.85))
+    ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis("off")
+    dark = "#30383F"; brick = "#A95A52"; support = "#6E9D80"
+    pale = {BLUE:"#EDF3F8", ORANGE:"#FCF0E5", TEAL:"#EAF4F1",
+            PURPLE:"#F1EEF7", brick:"#F7ECEA", support:"#EDF5EF"}
+
+    def module(x, y, title, color, letter, draw, lines):
+        w, h = .225, .245
+        ax.add_patch(FancyBboxPatch((x,y),w,h,boxstyle="round,pad=.004,rounding_size=.010",
+                                    fc=pale[color],ec=color,lw=.75))
+        ax.text(x+.012,y+h-.020,letter,ha="left",va="top",fontsize=12,fontweight="bold",color=color)
+        ax.text(x+.044,y+h-.020,title,ha="left",va="top",fontsize=9.6,fontweight="bold",
+                color=color,linespacing=1.08)
+        draw(x,y,w,h,color)
+        ax.text(x+w/2,y+.030,"\n".join(lines),ha="center",va="bottom",fontsize=8.0,
+                color=dark,linespacing=1.12)
+
+    def arrow(x1,y1,x2,y2,color=GREY,rad=0):
+        ax.add_patch(FancyArrowPatch((x1,y1),(x2,y2),arrowstyle="-|>",mutation_scale=6.5,
+                                     lw=.65,color=color,connectionstyle=f"arc3,rad={rad}",alpha=.80))
+
+    def draw_a(x,y,w,h,c):
+        cy=y+.135
+        pts=np.array([[x+.035,cy],[x+.052,cy+.022],[x+.078,cy+.022],[x+.093,cy],[x+.078,cy-.022],[x+.052,cy-.022]])
+        ax.plot(*np.vstack([pts,pts[0]]).T,color=c,lw=.9); ax.scatter(pts[:,0],pts[:,1],s=8,fc="white",ec=c,lw=.6)
+        for j in range(3): ax.add_patch(Rectangle((x+.125+j*.006,cy-.026+j*.008),.050,.052,fc="white",ec=c,lw=.65))
+
+    def draw_b(x,y,w,h,c):
+        ys=np.linspace(y+.115,y+.170,4)
+        for row,(yy,k) in enumerate(zip(ys,[4,8,16,32])):
+            xs=np.linspace(x+.050,x+.150,2+row)
+            ax.plot(xs,[yy]*len(xs),color=LIGHT,lw=.8)
+            ax.scatter(xs,[yy]*len(xs),s=12,color=[BLUE,TEAL,ORANGE,PURPLE][row],edgecolors="white",lw=.4)
+            ax.text(x+.190,yy,f"K={k}",ha="right",va="center",fontsize=8,color=PURPLE)
+
+    def draw_c(x,y,w,h,c):
+        cx=x+w/2; cy=y+.125
+        for size,lw,col in [(.080,3.4,TEAL),(.058,2.7,ORANGE),(.034,2.0,PURPLE)]:
+            ax.add_patch(Arc((cx,cy),size,size,theta1=25,theta2=150,color=col,lw=lw,capstyle="round"))
+            ax.add_patch(Arc((cx,cy),size,size,theta1=205,theta2=330,color=col,lw=lw,capstyle="round"))
+        for ang in np.linspace(25,335,10):
+            r=np.deg2rad(ang); ax.scatter(cx+.043*np.cos(r),cy+.043*np.sin(r),s=7,color=c,edgecolors="white",lw=.3)
+
+    def draw_d(x,y,w,h,c):
+        for i in range(4):
+            for rr in range(3):
+                for cc in range(3):
+                    alpha=.18+.14*(abs(rr-cc) if i==0 else ((rr+cc+i)%3))
+                    ax.add_patch(Rectangle((x+.030+i*.043+cc*.010,y+.135+rr*.010),.009,.009,
+                                           fc=mpl.colors.to_rgba(c,alpha),ec="white",lw=.25))
+
+    def draw_e(x,y,w,h,c):
+        left=np.array([.160,.145,.130,.115]); right=np.array([.150,.120,.140,.105])
+        for a,b in zip(left,right): ax.plot([x+.055,x+.150],[y+a,y+b],color=GREY,lw=.65)
+        ax.scatter([x+.055]*4,y+left,s=12,color=BLUE,edgecolors="white",lw=.35)
+        ax.scatter([x+.150]*4,y+right,s=12,color=ORANGE,edgecolors="white",lw=.35)
+
+    def draw_f(x,y,w,h,c):
+        labels=[("K-invariant full registry",TEAL),("K-dependent prefix",PURPLE),("Same-fold opportunity",ORANGE)]
+        for i,(label,col) in enumerate(labels):
+            yy=y+.142-i*.035; ax.plot([x+.038,x+.145],[yy,yy],color=LIGHT,lw=2)
+            ax.scatter([x+.078+i*.017],[yy],s=19,color=col,zorder=3)
+            ax.text(x+.202,yy,label,ha="right",va="center",fontsize=8,color=col)
+
+    def draw_g(x,y,w,h,c):
+        for yy,marker in [(y+.165,"o"),(y+.110,"s")]:
+            xs=np.linspace(x+.045,x+.135,4); ax.plot(xs,[yy]*4,color=LIGHT,lw=.9)
+            ax.scatter(xs,[yy]*4,s=14,marker=marker,color=c,edgecolors="white",lw=.4)
+        arrow(x+.162,y+.164,x+.162,y+.110,c)
+
+    def draw_h(x,y,w,h,c):
+        for i,col in enumerate([PURPLE,TEAL,ORANGE]):
+            yy=y+.135-i*.035
+            for rr in range(2):
+                for cc in range(2): ax.add_patch(Rectangle((x+.038+cc*.011,yy+rr*.011),.010,.010,fc=mpl.colors.to_rgba(col,.28),ec="white",lw=.3))
+            ax.scatter([x+.135,x+.170],[yy+.011,yy+.011],s=[14,24],color=col,edgecolors="white",lw=.4)
+
+    def draw_i(x,y,w,h,c):
+        for rr in range(4):
+            for cc in range(4):
+                ax.add_patch(Rectangle((x+.052+cc*.026,y+.075+rr*.020),.023,.017,
+                                       fc=mpl.cm.OrRd(.18+.13*(rr+cc)),ec="white",lw=.35))
+
+    def draw_j(x,y,w,h,c):
+        colors=["#F4DAD5","#ECEFD2","#D5E8D8"]
+        for i,col in enumerate(colors):
+            ax.add_patch(Rectangle((x+.035+i*.058,y+.095),.052,.105,fc=col,ec="white",lw=.5))
+            cx=x+.061+i*.058; cy=y+.128+i*.020
+            ax.add_patch(Circle((cx,cy),.012,fc="white",ec=c,lw=.7)); ax.scatter([cx-.012,cx+.012],[cy,cy],s=7,fc="white",ec=c,lw=.5)
+
+    def draw_k(x,y,w,h,c):
+        for rr in range(3):
+            for cc in range(4): ax.add_patch(Rectangle((x+.040+cc*.022,y+.082+rr*.018),.020,.016,fc=mpl.colors.to_rgba(c,.18+.12*cc),ec="white",lw=.3))
+        ax.scatter([x+.148,x+.168,x+.188],[y+.102,y+.130,y+.082],s=14,color=[BLUE,TEAL,ORANGE])
+
+    def draw_l(x,y,w,h,c):
+        for i,(lab,col) in enumerate([("eligibility",BLUE),("hashes",ORANGE),("failures",brick),("uncertainty",support)]):
+            yy=y+.150-i*.027; ax.scatter([x+.045],[yy],s=12,color=col)
+            ax.plot([x+.060,x+.168],[yy,yy],color=LIGHT,lw=1.3)
+            ax.text(x+.185,yy,lab,ha="right",va="center",fontsize=8,color=dark)
+
+    # Continuous left-to-right, top-to-bottom panel order (A-D, E-H, I-L).
+    specs=[
+        (.018,.720,"Task and Data\nRegistration",BLUE,"A",draw_a,["9 endpoints · registered","curated · no overlap"]),
+        (.265,.720,"Candidate Pool\nExpansion",ORANGE,"B",draw_b,["32 registered Morgan candidates","fixed order · no reordering","34 560 candidate fits"]),
+        (.512,.720,"Repeated Nested\nScaffold Audit",TEAL,"C",draw_c,["10 seeds · 3 outer × 3 inner","selection inside · audit outside"]),
+        (.759,.720,"Utility-Pattern\nDiversity",PURPLE,"D",draw_d,["raw · centred · fixed reference","rank · effective diversity"]),
+        (.018,.385,"Chance-Adjusted\nRanking",PURPLE,"E",draw_e,["CAHit@3 · MRR · NDCG","rank correlation"]),
+        (.265,.385,"Reference and Gap\nDecomposition",brick,"F",draw_f,["completion gap · selection gap"]),
+        (.512,.385,"Split-Regime\nTransfer",ORANGE,"G",draw_g,["scaffold · similarity component","direction transfer"]),
+        (.759,.385,"Equal-Size Registry\nComposition",TEAL,"H",draw_h,["Morgan · multiview · modern","K=16 · K=32"]),
+        (.018,.050,"Finite-Audit Winner\nOptimism",brick,"I",draw_i,["K ↑ · n ↓ · known-truth simulation"]),
+        (.265,.050,"Support-Aware\nReliability",support,"J",draw_j,["novel ↔ related","error · FN · disagreement"]),
+        (.512,.050,"Four-Model\nError Audit",BLUE,"K",draw_k,["RF · GCN · CBT · MFM","overlap · disagreement"]),
+        (.759,.050,"Auditable Evidence\nRecord",PURPLE,"L",draw_l,[]),
+    ]
+    for spec in specs: module(*spec)
+    arrow(.243,.845,.265,.845,ORANGE); arrow(.490,.845,.512,.845,TEAL)
+    arrow(.625,.720,.625,.630,TEAL); arrow(.625,.385,.625,.295,brick)
+    arrow(.737,.845,.759,.845,PURPLE)
+    SOURCE.mkdir(parents=True,exist_ok=True)
+    pd.DataFrame([{"panel":s[4],"title":s[2].replace("\n"," "),"keywords":" | ".join(s[6])} for s in specs]).to_csv(
+        SOURCE/"Figure_1_panel_manifest.csv",index=False,encoding="utf-8-sig")
+    fig.subplots_adjust(.006,.006,.994,.992)
+    save(fig,"Figure_1_retrospective_nested_audit_architecture")
+
+
 def figure1():
-    return _figure1_central_audit_map()
+    return _figure1_r10_current_audit_map()
 
 
 def figure2():
@@ -738,7 +867,7 @@ def figure2():
         ax.plot([lv.min(),lv.max()],[i,i],color=GREY,lw=1.5,ls="-"); ax.plot([fv.min(),fv.max()],[i+.10,i+.10],color=GREY,lw=1.2,ls="--"); ax.plot(r.ledoit_wolf_entropy_rank,i,"o",color=TEAL,ms=4.8)
         if len(rv):
             ax.scatter([float(rv.median())],[i],facecolors="white",edgecolors=PURPLE,s=30,lw=1.0)
-    ax.set(yticks=y,yticklabels=[DISPLAY[x] for x in q.task],xlabel="Reference-relative\nentropy rank")
+    ax.set(yticks=y,yticklabels=[DISPLAY[x] for x in q.task],xlabel="Reference-relative entropy rank")
     ax.tick_params(axis="y",labelsize=8.0)
     sensitivity_handles=[Line2D([0],[0],color=GREY,ls="-",label="Leave-one-seed"),Line2D([0],[0],color=GREY,ls="--",label="Leave-one-fold"),Line2D([0],[0],marker="o",ls="",mfc="white",mec=PURPLE,label="Predefined reference")]
     fig.legend([*legend_handles,nominal],[h.get_label() for h in [*legend_handles,nominal]],loc="upper center",bbox_to_anchor=(.52,.995),ncol=5,frameon=False)
@@ -1016,7 +1145,13 @@ def figure6():
     fig=plt.figure(figsize=(7.2,6.25)); gs=fig.add_gridspec(2,2,left=.10,right=.98,bottom=.12,top=.94,hspace=.60,wspace=.58,width_ratios=[1.08,.92])
 
     panel_label_x = -.16
-    ax=fig.add_subplot(gs[0,0]); panel(ax,"A","Prediction and error similarity",label_x=panel_label_x)
+    def panel6(ax, label, title):
+        y = 1.045
+        ax.text(panel_label_x, y, label, transform=ax.transAxes, fontsize=12.0,
+                fontweight="bold", va="baseline")
+        ax.text(0.0, y, title, transform=ax.transAxes, fontsize=10.3,
+                fontweight="bold", ha="left", va="baseline")
+    ax=fig.add_subplot(gs[0,0]); panel6(ax,"A","Prediction and error similarity")
     raw=pd.read_csv(HARD/"six_task_strong_baseline_outer_predictions.csv")
     candidates=["rdkit_rf","gnn_gcn","chemberta_mtr_linear_probe","molformer_linear_probe"]
     raw=raw[raw.candidate.isin(candidates)].copy(); corrs=[]; jacc=[]
@@ -1057,8 +1192,9 @@ def figure6():
                                     ec="none",clip_on=False))
         cax.set(xlim=(0,1),ylim=(0,1),yticks=[],xticks=[0,.5,1],xticklabels=["0.0","0.5","1.0"])
         cax.set_title("")
-        cax.text(.5,.5,title.replace("\n"," "),transform=cax.transAxes,ha="center",va="center",
-                 fontsize=7.7,fontweight="bold",bbox=dict(fc="white",ec="none",alpha=.76,pad=.4))
+        if title:
+            cax.text(.5,1.32,title.replace("\n"," "),transform=cax.transAxes,ha="center",va="bottom",
+                     fontsize=8.0,fontweight="bold",clip_on=False)
         cax.tick_params(axis="x",labelsize=8.0,pad=1,length=3)
         for spine in cax.spines.values():
             spine.set_visible(True); spine.set_linewidth(.7); spine.set_color(INK)
@@ -1081,7 +1217,7 @@ def figure6():
         "aggregation":"mean across endpoint-seed-outer-fold units",
     }])
     summary.to_csv(SOURCE/"Figure_6A_prediction_diversity_summary.csv",index=False,encoding="utf-8-sig")
-    bax=fig.add_subplot(gs[0,1]); panel(bax,"B","Chemical-support performance and risk",label_x=panel_label_x)
+    bax=fig.add_subplot(gs[0,1]); panel6(bax,"B","Chemical-support performance and risk")
     order=["<0.5","0.5-0.7",">0.7"]; support_labels=["Low","Intermediate","High"]
     support_risk_rows=[
         ("classification","selected_performance","ROC-AUC","higher_is_better"),
@@ -1103,10 +1239,12 @@ def figure6():
         for xi,value in enumerate(row_values): bax.text(xi,yi,f"{value:.3f}",ha="center",va="center",fontsize=7.5,color=INK,fontweight="semibold")
     bax.set(xticks=np.arange(3),xticklabels=support_labels,yticks=np.arange(len(support_risk_rows)),yticklabels=[x[2] for x in support_risk_rows],xlabel="Chemical support (Tanimoto strata)")
     bax.tick_params(axis="both",length=0,labelsize=8.0)
-    bax.xaxis.labelpad = 4
+    bax.text(.5,-.16,"green = more favourable · red = less favourable",transform=bax.transAxes,
+             ha="center",va="top",fontsize=8.0,color=INK)
+    bax.xaxis.labelpad = 22
     for spine in bax.spines.values(): spine.set_visible(False)
 
-    ax=fig.add_subplot(gs[1,0]); panel(ax,"C","Novel-scaffold reliability shifts",label_x=panel_label_x)
+    ax=fig.add_subplot(gs[1,0]); panel6(ax,"C","Novel-scaffold reliability shifts")
     keys=["task","task_type","seed","outer_fold"]
     metrics=[
         ("high_error_enrichment","High-error enrichment",PURPLE,None),
@@ -1125,8 +1263,9 @@ def figure6():
         ax.errorbar(r.median_ratio,yi,xerr=[[r.median_ratio-r.q025],[r.q975-r.median_ratio]],fmt="none",ecolor=GREY,capsize=2,lw=1.1); ax.scatter(r.median_ratio,yi,color=r.color,s=24,zorder=3)
         text_x=min(r.median_ratio*1.08,5.6); ax.text(text_x,yi,f"{r.median_ratio:.2f}",ha="left",va="center",fontsize=7.5,color=r.color)
     ax.axvline(1,color=INK,lw=.8); ax.set_xscale("log",base=2); ax.set(yticks=yy,yticklabels=ratio_frame.label,xlabel="Novel / seen-or-related scaffold ratio",xlim=(.5,6)); ax.set_xticks([.5,1,2,4]); ax.set_xticklabels(["0.5","1","2","4"]); ax.set_ylim(len(ratio_frame)-.5,-.48); ax.grid(axis="x",color=LIGHT,lw=.7)
+    ax.text(1.03,.98,"Reference = 1",transform=ax.get_xaxis_transform(),ha="left",va="top",fontsize=8.0,color=INK)
 
-    dax=fig.add_subplot(gs[1,1]); panel(dax,"D","ClinTox four-model trade-offs",label_x=panel_label_x)
+    dax=fig.add_subplot(gs[1,1]); panel6(dax,"D","ClinTox four-model trade-offs")
     neg=pd.read_csv(ROOT/"output"/"sci1_mechanism_uq_decision_20260707"/"clintox_minority_negative_result.csv")
     clintox_perf=perf[(perf.task.eq("clintox"))&perf.candidate.isin(candidates)][["candidate","mean_roc_auc","mean_pr_auc"]]
     clintox_rel=neg[(neg.method.eq("label_conditional_conformal"))&neg.candidate.isin(candidates)][["candidate","minority_recall","minority_false_negative_rate","mean_class_1_coverage","mean_set_size"]]
@@ -1147,9 +1286,9 @@ def figure6():
     discrimination=[Line2D([0],[0],marker=marker,ls="",color=color,label=label) for _,label,color,marker,_ in rel_metrics[:2]]
     minority=[Line2D([0],[0],marker=marker,ls="",color=color,label=label) for _,label,color,marker,_ in rel_metrics[2:]]
     dax.legend(handles=[*discrimination,*minority],loc="upper left",
-               bbox_to_anchor=(0,.99,1,0),mode="expand",ncol=2,
+               bbox_to_anchor=(0,.99,1,0),mode="expand",ncol=3,
                frameon=False,handletextpad=.22,columnspacing=.45,borderpad=0,
-               labelspacing=.25,fontsize=7.6)
+               labelspacing=.25,fontsize=8.0)
     save(fig,"Figure_6_prediction_errors_across_chemical_support")
 
 

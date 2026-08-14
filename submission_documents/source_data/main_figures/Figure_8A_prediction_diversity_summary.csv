@@ -1,0 +1,2 @@
+﻿nominal_models,prediction_lw_entropy_rank,prediction_participation_rank,error_lw_entropy_rank,error_participation_rank,utility_vs_prediction_variance_rank_spearman,aggregation
+4,2.472443443394901,1.8678795585859376,2.0343226212278864,1.4786834536647904,0.26689079737466825,mean across endpoint-seed-outer-fold units

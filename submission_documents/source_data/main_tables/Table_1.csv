@@ -1,0 +1,10 @@
+﻿Endpoint,n,Class balance / target range,Metric
+ESOL,1 117,−11.60 to 1.58,RMSE
+FreeSolv,642,−25.47 to 3.43,RMSE
+Lipophilicity,4 200,−1.50 to 4.50,RMSE
+BBBP,1 955,1494 positive (76.4%),ROC-AUC
+BACE,1 512,690 positive (45.6%),ROC-AUC
+ClinTox,1 376,58 positive (4.2%),ROC-AUC
+Caco2 Wang,904,−7.76 to −3.51,RMSE
+HIA Hou,578,500 positive (86.5%),ROC-AUC
+P-gp Broccatelli,1 212,647 positive (53.4%),ROC-AUC

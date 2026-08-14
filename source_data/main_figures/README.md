@@ -1,11 +1,11 @@
 # Main-figure source data
 
 This directory contains the checked machine-readable inputs used by the final
-publication layouts for Figures 2–6. Figure 1 is a study-design schematic and
-has no numerical source table. Figure 7 is regenerated from the locked Paper 31
-exports; its panel-specific tables remain one directory above.
+publication layouts for Figures 2–6 and 8. Figure 1 is a study-design schematic
+and has no numerical source table. Figure 7 is regenerated from the locked
+Paper 31 exports; its panel-specific tables remain one directory above.
 
-The final PDF, SVG and 600-dpi PNG assets for Figures 1–7 are stored in
+The final PDF, SVG and 600-dpi PNG assets for Figures 1–8 are stored in
 `reproduced_outputs/main_figures/`. SVG labels are outlined from Times New Roman
 to make Word and WPS rendering deterministic; the corresponding PDF and PNG
 files preserve the same typography.
@@ -19,3 +19,4 @@ files preserve the same typography.
 | 5 | `matched_k3_220_subset_units.csv`, `matched_k3_220_subset_summary.csv`, `matched_k_multiview_summary.csv`, `Figure_5D_integrated_forest_source.csv` |
 | 6 | `Figure_6A_double_triangle_matrix_source.csv`, `Figure_6A_prediction_diversity_summary.csv`, `Figure_6B_support_risk_matrix_source.csv`, `Figure_6C_scaffold_reliability_source.csv`, `Figure_6D_four_model_clintox_source.csv` |
 | 7 | `../Figure_7_Panel_A_source.csv` through `../Figure_7_Panel_D_source.csv` and locked Paper 31 experiment exports |
+| 8 | `classification_metric_selector_comparisons_final.csv`, `tau_near_equivalence_units.csv`, and fixed-reference source tables; recall-constrained effects are excluded |
