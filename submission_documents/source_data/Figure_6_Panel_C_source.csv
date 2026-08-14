@@ -1,0 +1,73 @@
+pool,task,task_type,candidate_count,chance_adjusted_hit3_mean,candidate_selection_entropy_normalized
+Classical multiview,bace,classification,4,0.4666666666666667,
+Classical multiview,bace,classification,8,0.7866666666666667,
+Classical multiview,bace,classification,16,0.5076923076923077,
+Classical multiview,bace,classification,32,0.5586206896551724,0.3476537856152929
+Classical multiview,bbbp,classification,4,1.0,
+Classical multiview,bbbp,classification,8,1.0,
+Classical multiview,bbbp,classification,16,1.0,
+Classical multiview,bbbp,classification,32,0.7057471264367816,0.2943204522819596
+Classical multiview,clintox,classification,4,1.0,
+Classical multiview,clintox,classification,8,0.6799999999999999,
+Classical multiview,clintox,classification,16,0.8358974358974359,
+Classical multiview,clintox,classification,32,0.4114942528735632,0.4211174523396521
+Classical multiview,esol,regression,4,1.0,
+Classical multiview,esol,regression,8,1.0,
+Classical multiview,esol,regression,16,-0.1487179487179487,
+Classical multiview,esol,regression,32,0.0436781609195402,0.4665829127958795
+Classical multiview,lipo,regression,4,1.0,
+Classical multiview,lipo,regression,8,1.0,
+Classical multiview,lipo,regression,16,1.0,
+Classical multiview,lipo,regression,32,1.0,0.113301901310581
+Classical multiview,tdc_caco2_wang,regression,4,1.0,
+Classical multiview,tdc_caco2_wang,regression,8,0.4666666666666666,
+Classical multiview,tdc_caco2_wang,regression,16,0.6717948717948719,
+Classical multiview,tdc_caco2_wang,regression,32,0.0436781609195402,0.419785912738187
+Homogeneous Morgan,bace,classification,4,1.0,
+Homogeneous Morgan,bace,classification,8,0.8933333333333333,
+Homogeneous Morgan,bace,classification,16,0.2615384615384615,
+Homogeneous Morgan,bace,classification,32,0.3379310344827586,0.5098510794337
+Homogeneous Morgan,bbbp,classification,4,1.0,
+Homogeneous Morgan,bbbp,classification,8,0.8933333333333333,
+Homogeneous Morgan,bbbp,classification,16,0.3435897435897436,
+Homogeneous Morgan,bbbp,classification,32,0.3379310344827586,0.2317877064700554
+Homogeneous Morgan,clintox,classification,4,1.0,
+Homogeneous Morgan,clintox,classification,8,0.5733333333333334,
+Homogeneous Morgan,clintox,classification,16,0.0974358974358974,
+Homogeneous Morgan,clintox,classification,32,0.0436781609195402,0.6646462857595241
+Homogeneous Morgan,esol,regression,4,1.0,
+Homogeneous Morgan,esol,regression,8,1.0,
+Homogeneous Morgan,esol,regression,16,0.0974358974358974,
+Homogeneous Morgan,esol,regression,32,0.3379310344827586,0.1836591668108979
+Homogeneous Morgan,lipo,regression,4,1.0,
+Homogeneous Morgan,lipo,regression,8,1.0,
+Homogeneous Morgan,lipo,regression,16,0.8358974358974359,
+Homogeneous Morgan,lipo,regression,32,0.3379310344827586,0.1673281483882334
+Homogeneous Morgan,tdc_caco2_wang,regression,4,1.0,
+Homogeneous Morgan,tdc_caco2_wang,regression,8,0.2533333333333333,
+Homogeneous Morgan,tdc_caco2_wang,regression,16,0.4256410256410256,
+Homogeneous Morgan,tdc_caco2_wang,regression,32,0.1908045977011494,0.2799162461292129
+Modern-augmented,bace,classification,4,1.0,
+Modern-augmented,bace,classification,8,0.5733333333333334,
+Modern-augmented,bace,classification,16,0.7538461538461539,
+Modern-augmented,bace,classification,32,0.4850574712643678,0.2750558731078758
+Modern-augmented,bbbp,classification,4,1.0,
+Modern-augmented,bbbp,classification,8,-0.3866666666666666,
+Modern-augmented,bbbp,classification,16,1.0,
+Modern-augmented,bbbp,classification,32,1.0,0.2461919126228021
+Modern-augmented,clintox,classification,4,1.0,
+Modern-augmented,clintox,classification,8,0.68,
+Modern-augmented,clintox,classification,16,0.6717948717948719,
+Modern-augmented,clintox,classification,32,0.8528735632183908,0.113301901310581
+Modern-augmented,esol,regression,4,1.0,
+Modern-augmented,esol,regression,8,1.0,
+Modern-augmented,esol,regression,16,0.5076923076923077,
+Modern-augmented,esol,regression,32,-0.0298850574712643,0.1836591668108979
+Modern-augmented,lipo,regression,4,0.7333333333333333,
+Modern-augmented,lipo,regression,8,0.7866666666666667,
+Modern-augmented,lipo,regression,16,0.5076923076923078,
+Modern-augmented,lipo,regression,32,1.0,-0.0
+Modern-augmented,tdc_caco2_wang,regression,4,1.0,
+Modern-augmented,tdc_caco2_wang,regression,8,1.0,
+Modern-augmented,tdc_caco2_wang,regression,16,0.5897435897435898,
+Modern-augmented,tdc_caco2_wang,regression,32,0.7057471264367816,0.2750558731078758

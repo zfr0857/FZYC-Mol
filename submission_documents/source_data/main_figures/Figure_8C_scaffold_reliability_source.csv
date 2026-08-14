@@ -1,0 +1,5 @@
+﻿metric,label,task_filter,n_units,median_ratio,q025,q975
+high_error_enrichment,High-error enrichment,all,105,1.3593420426653418,0.7325971198547285,2.2850225992173248
+false_negative_enrichment,False-negative enrichment,classification,45,1.6444356748224147,0.8640499194847022,5.241864801864801
+mean_model_disagreement,Model disagreement,all,105,1.078857357303374,0.7407027787927789,1.7977735197723268
+mean_pairwise_high_error_jaccard,Error overlap,all,105,1.1056732771129407,0.6638105158147265,1.482976288893558

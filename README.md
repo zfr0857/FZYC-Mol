@@ -4,7 +4,7 @@ This repository accompanies **Candidate-pool expansion, validation-ranking
 distortion and model-selection loss in molecular property prediction: a
 retrospective nested audit**.
 
-Package version and release: `paper-release-2026-08-r12.6`.
+Package version and release: `paper-release-2026-08-r12.9`.
 
 This release retains the complete `paper43_completion/` ten-split-seed analysis
 layer and final Figures 1–8 from R11, and corrects the inconsistent Figure 1–7
@@ -54,7 +54,7 @@ python -m pip install -e .
 
 The optional pretrained-candidate requirements are listed in
 `environment/requirements-pretrained.txt`. An equivalent quick-reproduction
-container can be built with `docker build -t fzyc-mol:paper-release-2026-08-r12.6 .`.
+container can be built with `docker build -t fzyc-mol:paper-release-2026-08-r12.9 .`.
 
 ## Reproduction entry points
 
@@ -162,7 +162,7 @@ architecture-efficiency claims. Negative, missing and failed cells are retained.
 
 Run `python scripts/validate_manuscript_numbers.py` and verify `SHA256SUMS.txt`
 before reusing the checked exports. The manuscript version is fixed by release
-`paper-release-2026-08-r12.6`; its immutable commit is recorded in the GitHub release
+`paper-release-2026-08-r12.9`; its immutable analysis commit is recorded in the GitHub release
 and `docs/release-and-commit.md`.
 
 For cross-platform verification, `scripts/build_release_inventory.py` hashes text
@@ -174,7 +174,7 @@ Please cite the associated article and the software release described in
 `CITATION.cff`:
 
 > FZYC-Mol Authors. FZYC-Mol: candidate-pool expansion audit, release
-> paper-release-2026-08-r12.6. GitHub. 2026.
+> paper-release-2026-08-r12.9. GitHub. 2026.
 
 Repository: <https://github.com/zfr0857/FZYC-Mol>
 
@@ -203,6 +203,16 @@ The R12.5 refinement stores the unchanged 600-dpi Figure 6 raster as RGB rather
 than RGBA to prevent a Microsoft Word PDF-export failure in the Chinese manuscript.
 The R12.6 refinement reduces the Figure 6 vertical inter-row spacing from 0.70
 to 0.60 while preserving non-overlapping colour strips, headings and axes.
+
+## R12.9 formula and submission synchronization
+
+R12.9 converts the nine main-text estimands and Supplementary Equations
+(1)–(22b) to editable Office Math, corrects the set-membership operator in
+Equation (1), and synchronizes the equation-to-code inventory. The release also
+adds the journal-ready manuscript, supplementary methods, supplementary tables,
+supplementary figures, and formula/table audit under `submission_documents/`.
+No outer score, prediction, split, table value, figure value, or retained
+negative result was changed.
 It does not change candidate eligibility, split seeds, thresholds, candidate
 order, outer performance, machine-readable source results or retained negative
 results. The release continues to include editable SVG, embedded-font PDF and

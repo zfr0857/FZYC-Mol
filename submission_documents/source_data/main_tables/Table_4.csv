@@ -1,0 +1,10 @@
+﻿Endpoint,Delta_inv (95% split-seed sensitivity interval),Delta_avail,Delta_dep,Dominant mechanism
+BACE,"−0.0195 (−0.0238, −0.0152)",−0.0205,+0.0010,candidate availability; opposite directions
+BBBP,"−0.0263 (−0.0301, −0.0225)",−0.0287,+0.0024,candidate availability; opposite directions
+ClinTox,"−0.0144 (−0.0241, −0.0031)",−0.0239,+0.0095,candidate availability; opposite directions
+HIA,"−0.0022 (−0.0075, +0.0031)",−0.0056,+0.0035,candidate availability; opposite directions
+P-gp,"−0.0222 (−0.0271, −0.0178)",−0.0224,+0.0002,candidate availability; opposite directions
+ESOL,"+0.0683 (+0.0618, +0.0757)",+0.0000,+0.0683,within-prefix selection; same direction
+FreeSolv,"−0.0586 (−0.0912, −0.0263)",−0.0183,−0.0403,within-prefix selection; same direction
+Lipophilicity,"−0.0947 (−0.0992, −0.0899)",−0.1044,+0.0098,candidate availability; opposite directions
+Caco2,"−0.0049 (−0.0121, +0.0008)",−0.0152,+0.0102,candidate availability; opposite directions
