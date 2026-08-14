@@ -1,10 +1,10 @@
 # Journal of Cheminformatics full submission audit
 
-Audit date: 2026-08-10
+Audit date: 2026-08-15
 
 Package: `D:\fzyc\output\Journal_of_Cheminformatics_strict_submission_20260809`
 
-Checks: 210; PASS: 206; FAIL: 0; AUTHOR ACTION: 2; NOT VERIFIED: 2; REVIEW: 0.
+Checks: 212; PASS: 208; FAIL: 0; AUTHOR ACTION: 2; NOT VERIFIED: 2; REVIEW: 0.
 
 Abstract: 254 words; Scientific Contribution: 2 sentences; keywords: 8.
 

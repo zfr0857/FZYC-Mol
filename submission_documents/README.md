@@ -31,7 +31,7 @@ as ordinary Git objects in this repository.
 `figures/` contains the eight final composite figures in embedded-font PDF,
 editable SVG, and 600-dpi PNG. `audits/` contains the complete journal-format
 audit and the formula/table/format audit. The formula audit reports 54 PASS and
-0 FAIL checks; the complete submission audit reports 206 PASS, 0 FAIL, two
+0 FAIL checks; the complete submission audit reports 208 PASS, 0 FAIL, two
 author actions and two external preview checks.
 
 `figure_sources/` contains the final plotting and rebuild scripts, and
