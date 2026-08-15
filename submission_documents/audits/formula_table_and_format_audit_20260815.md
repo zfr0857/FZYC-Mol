@@ -2,7 +2,7 @@
 
 Audit date: 2026-08-15
 
-Result: 54 PASS, 0 FAIL.
+Result: 66 PASS, 0 FAIL.
 
 The nine main-text displays and Supplementary Equations (1)–(22b) are native editable OMML. Table 3 deliberately remains formatted text rather than OMML so its symbol column survives WPS and LibreOffice conversion.
 
@@ -23,9 +23,21 @@ WPS and LibreOffice visual renders contain all equations and all Table 3 symbols
 - **PASS — Main formulas — Exact decomposition identity displayed**: G_inv = G_avail + G_dep
 - **PASS — Main formulas — Structured minus/fraction/summation operators**: minus is Unicode; summations stored as OMML n-ary objects
 - **PASS — Main formulas — No malformed or replacement glyphs in DOCX math XML**: malformed=False
+- **PASS — Main formulas — Outer-fold mean uses the defined fixed fold count F**: Gq,e,s(K) = f=1FGq((s,f),K)F,   q ∈ {inv, avail, dep}
+- **PASS — Main formulas — Endpoint contrast uses the defined primary split-seed count S_main**: Δq(e) = s=1SmainGq,e,s(32) − Gq,e,s(4)Smain
+- **PASS — Main formulas — Seed-level mean carries an explicit overbar**: Equation 8
+- **PASS — Main formulas — Operators and descriptive subscripts upright; index q italic**: upright tokens=['arg max', 'avail', 'dep', 'inv', 'main', 'ref']
+- **PASS — Main formulas — All display-math runs use explicit Cambria Math 11 pt**: runs=120; fonts=True; sizes=True
+- **PASS — Chinese formulas — Nine displays are symbol-for-symbol synchronized with the English main text**: count=9
 - **PASS — Supplement formulas — Equation inventory is exactly (1)–(22b)**: labels=['1', '2', '3', '4', '5a', '5b', '6', '7', '8', '9', '10a', '10b', '11', '12a', '12b', '13', '14', '15', '16', '17a', '17b', '18a', '18b', '19a', '19b', '20a', '20b', '21', '22a', '22b']
 - **PASS — Supplement formulas — Equation (1) contains set-membership operator**: j ∈ C_K
 - **PASS — Supplement formulas — No malformed formula glyphs in DOCX math XML**: checked all numbered displays
+- **PASS — Supplement formulas — Equations (13) and (14) use the same overbar notation as the main text**: overbars=1 and 2
+- **PASS — Supplement formulas — All numbered display-math runs use explicit Cambria Math 11 pt**: runs=433; fonts=True; sizes=True
+- **PASS — Supplement formulas — Equation bodies are centred and numbers right-aligned without text boxes**: tabbed=30/30
+- **PASS — Supplement formulas — Mixed descriptive and index subscripts follow mathematical typography**: best upright; u italic in Equation (2); same constructor used for X/G/L definitions
+- **PASS — Formula-to-data — Delta_inv = Delta_avail + Delta_dep holds for every split-seed row**: rows=90; max absolute error=1.041e-16
+- **PASS — Formula-to-code — Every displayed equation is mapped to an implementation or archived definition**: mapping rows=32; non-PASS=[]
 - **PASS — Main tables — Exactly four editable Word tables**: count=4
 - **PASS — Table 1 — Row inventory**: rows=10; expected=10
 - **PASS — Table 1 — Rows cannot split across pages**: cantSplit=10/10

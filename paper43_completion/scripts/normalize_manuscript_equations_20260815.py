@@ -15,6 +15,7 @@ ROOT = Path(r"D:\fzyc")
 PACKAGE = ROOT / "output" / "Journal_of_Cheminformatics_strict_submission_20260809"
 MAIN = PACKAGE / "01_Submission" / "manuscript_revised_submission_ready.docx"
 SUPPLEMENT = PACKAGE / "02_Additional_files" / "Additional_file_1_supplementary_methods.docx"
+CHINESE = PACKAGE / "07_Author_reference_only" / "Chinese_author_reference_topic_synchronized_R12.9.docx"
 BACKUP = ROOT / "work" / "formula_audit_20260815"
 
 W = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
@@ -68,6 +69,12 @@ def sub(base, lower, lower_plain: bool = False):
     element.append(slot("e", base))
     element.append(slot("sub", run(lower, lower_plain) if isinstance(lower, str) else lower))
     return element
+
+
+def mixed_sub(base, parts):
+    """Create a subscript whose descriptive tokens are upright and indices italic."""
+    lower = [run(text, plain=plain) for text, plain in parts]
+    return sub(base, lower)
 
 
 def sup(base, upper, upper_plain: bool = False):
@@ -147,7 +154,7 @@ def c(k="K"):
 
 
 def g(kind: str):
-    return sub("G", kind, lower_plain=True)
+    return sub("G", kind, lower_plain=kind in {"inv", "dep", "avail", "same"})
 
 
 def jhat():
@@ -159,7 +166,16 @@ def jref(kind: str):
 
 
 def bar_g(q_value="q", endpoint="e", seed="s"):
-    return sub(accent("G", "¯"), f"{q_value},{endpoint},{seed}")
+    return mixed_sub(
+        accent("G", "¯"),
+        [
+            (q_value, q_value in {"inv", "dep", "avail", "same"}),
+            (",", False),
+            (endpoint, False),
+            (",", False),
+            (seed, False),
+        ],
+    )
 
 
 def delta(kind="q"):
@@ -205,14 +221,19 @@ def identity_formula():
 
 
 def seed_mean_formula():
-    numerator = nary("∑", "f=1", sub("F", "e,s"), [g("q"), "((s,f),K)"])
-    return math([bar_g(), "(K) = ", fraction(numerator, sub("F", "e,s")), ",   q ∈ {inv, avail, dep}"])
+    numerator = nary("∑", "f=1", "F", [g("q"), "((s,f),K)"])
+    return math([
+        bar_g(), "(K) = ", fraction(numerator, "F"), ",   ", run("q"), " ∈ {",
+        run("inv", plain=True), ", ", run("avail", plain=True), ", ",
+        run("dep", plain=True), "}",
+    ])
 
 
 def endpoint_contrast_formula():
     term = delimiter("[", "]", [bar_g(), "(32) − ", bar_g(), "(4)"])
-    numerator = nary("∑", "s=1", sub("S", "e"), term)
-    return math([delta(), "(e) = ", fraction(numerator, sub("S", "e"))])
+    s_main = sub("S", "main", lower_plain=True)
+    numerator = nary("∑", "s=1", s_main, term)
+    return math([delta(), "(e) = ", fraction(numerator, s_main)])
 
 
 def simple_selected(symbol):
@@ -220,7 +241,7 @@ def simple_selected(symbol):
 
 
 def supplement_formulas():
-    j_best = sub("j", "best,u", lower_plain=True)
+    j_best = mixed_sub("j", [("best", True), (",", False), ("u", False)])
     loss = sub("L", "u")
     loss_tilde = sub(accent("L", "̃"), "u")
     rank = sub("r", "u")
@@ -242,7 +263,7 @@ def supplement_formulas():
             ),
         ]),
         "5a": math([
-            sub(run("CAHit", plain=True), "q,u"), " = ",
+            mixed_sub(run("CAHit", plain=True), [("q", False), (",", False), ("u", False)]), " = ",
             fraction([indicator, "(", rank, " ≤ q) − ", fraction("q", "K")], ["1 − ", fraction("q", "K")]),
             ",   q = 3",
         ]),
@@ -272,46 +293,52 @@ def supplement_formulas():
         "12a": availability_formula(),
         "12b": identity_formula(),
         "13": math([
-            sub(g("inv"), "e,s"), "(K) = ",
+            bar_g("inv"), "(K) = ",
             fraction(nary("∑", "f=1", "F", [g("inv"), "((s,f),K)"]), "F"),
         ]),
         "14": math([
             delta("inv"), "(e) = ",
             fraction(
                 nary("∑", "s=1", sub("S", "main", lower_plain=True),
-                     delimiter("[", "]", [sub(g("inv"), "e,s"), "(32) − ", sub(g("inv"), "e,s"), "(4)"])),
+                     delimiter("[", "]", [bar_g("inv"), "(32) − ", bar_g("inv"), "(4)"])),
                 sub("S", "main", lower_plain=True),
             ),
         ]),
         "15": math([
-            sub("X", "raw,u,j", lower_plain=True), " = A(u,j);   ",
-            sub("X", "ctr,u,j", lower_plain=True), " = A(u,j) − ",
+            mixed_sub("X", [("raw", True), (",", False), ("u", False), (",", False), ("j", False)]), " = A(u,j);   ",
+            mixed_sub("X", [("ctr", True), (",", False), ("u", False), (",", False), ("j", False)]), " = A(u,j) − ",
             fraction(nary("∑", "l=1", "K", "A(u,l)"), "K"),
         ]),
         "16": math([
-            sub("X", "ref,u,j", lower_plain=True), " = A(u,j) − A(u,", sub("j", "0"), ");   ",
-            sub("X", "rank,u,j", lower_plain=True), " = ", sub(run("rank", plain=True), "j"), "{A(u,j)}",
+            mixed_sub("X", [("ref", True), (",", False), ("u", False), (",", False), ("j", False)]), " = A(u,j) − A(u,", sub("j", "0"), ");   ",
+            mixed_sub("X", [("rank", True), (",", False), ("u", False), (",", False), ("j", False)]), " = ", sub(run("rank", plain=True), "j"), "{A(u,j)}",
         ]),
         "17a": math([sub("Σ", "LW", lower_plain=True), " = (1 − α)", sub("S", "cov", lower_plain=True), " + αT"]),
         "17b": math([sub("p", "i"), " = ", fraction(sub("λ", "i"), nary("∑", "l", None, sub("λ", "l")))]),
         "18a": math([sub("r", "ent", lower_plain=True), " = ", run("exp", plain=True), "(", "−", nary("∑", "i", None, [sub("p", "i"), run("ln", plain=True), sub("p", "i")]), ")"]),
         "18b": math([sub("r", "PR", lower_plain=True), " = ", fraction(sup(delimiter("(", ")", nary("∑", "i", None, sub("λ", "i"))), "2"), nary("∑", "i", None, sup(sub("λ", "i"), "2"))), " = ", fraction("1", nary("∑", "i", None, sup(sub("p", "i"), "2")))]),
-        "19a": math([sub("G", "best,u,p,K", lower_plain=True), " = ", limit("max", ["j ∈ ", sub("C", "p,K")], "A(u,j)"), " − A(u,a)"]),
-        "19b": math([sub("G", "sel,u,p,K", lower_plain=True), " = A(u,", sub("j", "u,p,K"), ") − A(u,a)"]),
+        "19a": math([mixed_sub("G", [("best", True), (",", False), ("u", False), (",", False), ("p", False), (",", False), ("K", False)]), " = ", limit("max", ["j ∈ ", sub("C", "p,K")], "A(u,j)"), " − A(u,a)"]),
+        "19b": math([mixed_sub("G", [("sel", True), (",", False), ("u", False), (",", False), ("p", False), (",", False), ("K", False)]), " = A(u,", sub("j", "u,p,K"), ") − A(u,a)"]),
         "20a": math([
-            sub(accent("G", "¯"), "sel,e,p,K", lower_plain=True), " = ",
+            mixed_sub(accent("G", "¯"), [("sel", True), (",", False), ("e", False), (",", False), ("p", False), (",", False), ("K", False)]), " = ",
             fraction(
                 nary("∑", "s,f", None,
-                     fraction(sub("G", "sel,s,f,p,K", lower_plain=True), sub("G", "best,s,f,hom,K", lower_plain=True))),
+                     fraction(
+                         mixed_sub("G", [("sel", True), (",", False), ("s", False), (",", False), ("f", False), (",", False), ("p", False), (",", False), ("K", False)]),
+                         mixed_sub("G", [("best", True), (",", False), ("s", False), (",", False), ("f", False), (",", False), ("hom", True), (",", False), ("K", False)]),
+                     )),
                 "SF",
             ),
         ]),
-        "20b": math([sub("d", "rel,e,p,K", lower_plain=True), " = ", fraction([sub("r", "ent", lower_plain=True), "(", sub("X", "e,p,K"), ")"], "K")]),
+        "20b": math([mixed_sub("d", [("rel", True), (",", False), ("e", False), (",", False), ("p", False), (",", False), ("K", False)]), " = ", fraction([sub("r", "ent", lower_plain=True), "(", sub("X", "e,p,K"), ")"], "K")]),
         "21": math([
-            sub("L", "CF,e,p,K", lower_plain=True), " = ",
+            mixed_sub("L", [("CF", True), (",", False), ("e", False), (",", False), ("p", False), (",", False), ("K", False)]), " = ",
             fraction(
                 nary("∑", "s,f", None,
-                     fraction(["A(s,f,", jref("inv"), "(−s)) − A(s,f,", sub("j", "s,f"), ")"], sub("G", "best,s,f,hom,K", lower_plain=True))),
+                     fraction(
+                         ["A(s,f,", jref("inv"), "(−s)) − A(s,f,", sub("j", "s,f"), ")"],
+                         mixed_sub("G", [("best", True), (",", False), ("s", False), (",", False), ("f", False), (",", False), ("hom", True), (",", False), ("K", False)]),
+                     )),
                 "SF",
             ),
         ]),
@@ -373,32 +400,37 @@ def replace_zip_member(path: Path, member: str, data: bytes):
         temporary.unlink(missing_ok=True)
 
 
-def patch_main():
-    with zipfile.ZipFile(MAIN) as archive:
+def patch_primary_document(path: Path):
+    with zipfile.ZipFile(path) as archive:
         root = etree.fromstring(archive.read("word/document.xml"))
     body = root.find("w:body", NS)
-    replacements = {
-        "ĵu(K) =": selected_formula(),
-        "jrefinv(−s) =": reference_formula("inv"),
-        "jrefdep(−s, K) =": reference_formula("dep"),
-        "Ginv(u, K) = A": gap_formula("inv"),
-        "Gdep(u, K) = A": gap_formula("dep"),
-        "Gavail(u, K) = A": availability_formula(),
-        "Ginv(u, K) = Gavail": identity_formula(),
-        "Ḡq,e,s(K) =": seed_mean_formula(),
-        "Δq(e) =": endpoint_contrast_formula(),
-    }
-    found = set()
-    for paragraph in body.xpath("./w:p", namespaces=NS):
-        text = paragraph_text(paragraph).strip()
-        for prefix, formula in replacements.items():
-            if text.startswith(prefix):
-                set_formula_paragraph(paragraph, formula)
-                found.add(prefix)
-                break
-    if found != set(replacements):
-        raise RuntimeError(f"Main formula targets missing: {sorted(set(replacements) - found)}")
-    replace_zip_member(MAIN, "word/document.xml", etree.tostring(root, xml_declaration=True, encoding="UTF-8", standalone="yes"))
+    formulas = [
+        selected_formula(),
+        reference_formula("inv"),
+        reference_formula("dep"),
+        gap_formula("inv"),
+        gap_formula("dep"),
+        availability_formula(),
+        identity_formula(),
+        seed_mean_formula(),
+        endpoint_contrast_formula(),
+    ]
+    paragraphs = body.xpath("./w:p", namespaces=NS)
+    heading_index = next(
+        (i for i, paragraph in enumerate(paragraphs) if paragraph_text(paragraph).strip().startswith("2.5 ")),
+        None,
+    )
+    if heading_index is None:
+        raise RuntimeError(f"Methods 2.5 heading missing in {path.name}")
+    targets = [
+        paragraph for paragraph in paragraphs[heading_index + 1 :]
+        if paragraph.xpath(".//m:oMath", namespaces=NS)
+    ][:9]
+    if len(targets) != len(formulas):
+        raise RuntimeError(f"Expected nine Methods 2.5 equations in {path.name}; found {len(targets)}")
+    for paragraph, formula in zip(targets, formulas):
+        set_formula_paragraph(paragraph, formula)
+    replace_zip_member(path, "word/document.xml", etree.tostring(root, xml_declaration=True, encoding="UTF-8", standalone="yes"))
 
 
 def patch_supplement():
@@ -432,22 +464,27 @@ def patch_supplement():
 
 
 def main():
-    global MAIN, SUPPLEMENT, BACKUP
+    global MAIN, SUPPLEMENT, CHINESE, BACKUP
     parser = argparse.ArgumentParser(description="Normalize manuscript and supplementary display equations to editable OMML.")
     parser.add_argument("main_docx", nargs="?", type=Path, default=MAIN)
     parser.add_argument("supplement_docx", nargs="?", type=Path, default=SUPPLEMENT)
+    parser.add_argument("--chinese-docx", type=Path, default=CHINESE)
     parser.add_argument("--backup-dir", type=Path, default=BACKUP)
     args = parser.parse_args()
     MAIN = args.main_docx
     SUPPLEMENT = args.supplement_docx
+    CHINESE = args.chinese_docx
     BACKUP = args.backup_dir
     BACKUP.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(MAIN, BACKUP / "manuscript_before_formula_normalization.docx")
-    shutil.copy2(SUPPLEMENT, BACKUP / "additional_file_1_before_formula_normalization.docx")
-    patch_main()
+    shutil.copy2(MAIN, BACKUP / "manuscript_before_formula_reaudit_20260815.docx")
+    shutil.copy2(SUPPLEMENT, BACKUP / "additional_file_1_before_formula_reaudit_20260815.docx")
+    shutil.copy2(CHINESE, BACKUP / "chinese_before_formula_reaudit_20260815.docx")
+    patch_primary_document(MAIN)
+    patch_primary_document(CHINESE)
     patch_supplement()
     print(MAIN)
     print(SUPPLEMENT)
+    print(CHINESE)
 
 
 if __name__ == "__main__":

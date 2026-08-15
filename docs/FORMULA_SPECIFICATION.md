@@ -25,10 +25,12 @@ The three primary gaps are
 - `G_avail(u,K) = A(u,j_ref^inv(-s)) - A(u,j_ref^dep(-s,K))`.
 
 The identity `G_inv = G_avail + G_dep` holds at unrounded machine precision.
-The split-seed mean first averages outer folds within a split seed. The endpoint
-contrast then averages the split-seed-level differences between `K = 32` and
-`K = 4`; it does not pool classification ROC-AUC and regression RMSE values on a
-single numerical scale.
+The split-seed mean first averages the fixed `F = 3` outer folds within a split
+seed. The endpoint contrast then averages the split-seed-level differences
+between `K = 32` and `K = 4` over `S_main = 10` primary split seeds; it does not
+pool classification ROC-AUC and regression RMSE values on a single numerical
+scale. The mean symbol carries an explicit overbar in the main text and in
+Supplementary Equations (13)–(14).
 
 ## Supplementary numbering
 
