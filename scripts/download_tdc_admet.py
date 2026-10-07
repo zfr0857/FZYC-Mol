@@ -63,6 +63,7 @@ def main() -> None:
     parser.add_argument("--datasets", nargs="*", default=list(TDC_ADMET_TASKS))
     parser.add_argument("--data-dir", default=str(ROOT / "data"))
     parser.add_argument("--tdc-cache-dir", default=str(ROOT / "data" / "tdc"))
+    parser.add_argument("--registry", default=str(ROOT / "manifests" / "dataset_registry.json"))
     args = parser.parse_args()
 
     try:
@@ -98,7 +99,7 @@ def main() -> None:
             }
         )
 
-    update_registry(data_dir / "dataset_registry.json")
+    update_registry(Path(args.registry))
     summary = pd.DataFrame(rows)
     summary.to_csv(data_dir / "tdc_admet_summary.csv", index=False)
     print(summary.to_string(index=False))

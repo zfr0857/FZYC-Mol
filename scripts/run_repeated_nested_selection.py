@@ -12,7 +12,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = ROOT / "results" / "nested_selection" / "repeated_nested"
-NESTED_SCRIPT = ROOT / "scripts" / "run_expanded_nested_candidate_pool_20260621.py"
+NESTED_SCRIPT = ROOT / "scripts" / "run_expanded_candidate_pool.py"
 
 
 @dataclass(frozen=True)

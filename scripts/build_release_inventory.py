@@ -8,21 +8,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_PARTS = {".git", ".mypy_cache", ".pytest_cache", ".ruff_cache", "__pycache__"}
-EXCLUDED_FILES = {"CODE_AND_DATA_CONTENTS.csv", "SHA256SUMS.txt"}
+EXCLUDED_FILES = {"FILE_INVENTORY.csv", "SHA256SUMS.txt"}
 TEXT_SUFFIXES = {
     ".cff", ".csv", ".ini", ".json", ".md", ".ps1", ".py", ".toml", ".tsv",
     ".txt", ".yaml", ".yml",
 }
-TEXT_NAMES = {".dockerignore", ".gitignore", "Dockerfile", "LICENSE", "PKG-INFO", "VERSION", "wslconfig.autogluon"}
+TEXT_NAMES = {".dockerignore", ".gitignore", "Dockerfile", "LICENSE", "VERSION"}
 
 
-def digest(path: Path) -> str:
-    value = hashlib.sha256()
+def canonical_bytes(path: Path) -> bytes:
     data = path.read_bytes()
     if path.suffix.lower() in TEXT_SUFFIXES or path.name in TEXT_NAMES:
-        data = data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
-    value.update(data)
-    return value.hexdigest()
+        return data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+    return data
 
 
 def main() -> None:
@@ -34,15 +32,17 @@ def main() -> None:
         and not EXCLUDED_PARTS.intersection(Path(relative).parts)
         and Path(relative).suffix.lower() != ".pyc"
     ]
-    rows = [
-        {
-            "path": path.relative_to(ROOT).as_posix(),
-            "size_bytes": path.stat().st_size,
-            "sha256": digest(path),
-        }
-        for path in sorted(files, key=lambda item: item.relative_to(ROOT).as_posix())
-    ]
-    with (ROOT / "CODE_AND_DATA_CONTENTS.csv").open("w", encoding="utf-8", newline="") as handle:
+    rows = []
+    for path in sorted(files, key=lambda item: item.relative_to(ROOT).as_posix()):
+        data = canonical_bytes(path)
+        rows.append(
+            {
+                "path": path.relative_to(ROOT).as_posix(),
+                "size_bytes": len(data),
+                "sha256": hashlib.sha256(data).hexdigest(),
+            }
+        )
+    with (ROOT / "FILE_INVENTORY.csv").open("w", encoding="utf-8", newline="") as handle:
         writer = csv.DictWriter(handle, fieldnames=["path", "size_bytes", "sha256"])
         writer.writeheader()
         writer.writerows(rows)

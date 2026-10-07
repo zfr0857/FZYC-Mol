@@ -29,6 +29,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Download public molecular benchmark datasets.")
     parser.add_argument("--dataset", default="all", help=f"One of: all, {', '.join(available_datasets())}")
     parser.add_argument("--data-dir", default=str(ROOT / "data"))
+    parser.add_argument("--registry", default=str(ROOT / "manifests" / "dataset_registry.json"))
     args = parser.parse_args()
 
     names = available_datasets() if args.dataset == "all" else [args.dataset]
@@ -51,8 +52,10 @@ def main() -> None:
         }
         for name, spec in DATASETS.items()
     }
-    (data_dir / "dataset_registry.json").write_text(json.dumps(registry, indent=2), encoding="utf-8")
-    print(f"registry {data_dir / 'dataset_registry.json'}")
+    registry_path = Path(args.registry)
+    registry_path.parent.mkdir(parents=True, exist_ok=True)
+    registry_path.write_text(json.dumps(registry, indent=2) + "\n", encoding="utf-8")
+    print(f"registry {registry_path}")
 
 
 if __name__ == "__main__":

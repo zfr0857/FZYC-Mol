@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -17,11 +16,14 @@ def run(command: list[str]) -> None:
     subprocess.run(command, cwd=ROOT, check=True)
 
 
-def materialize_splits(output: Path) -> None:
-    source = ROOT / "paper34_audit_sources" / "split_manifests"
-    output.mkdir(parents=True, exist_ok=True)
-    for path in source.glob("*.csv"):
-        shutil.copy2(path, output / path.name)
+def validate_splits(directory: Path) -> None:
+    required = {"composition_split_units.csv", "similarity_split_manifest.csv"}
+    missing = sorted(name for name in required if not (directory / name).is_file())
+    if missing:
+        raise FileNotFoundError(f"Missing locked split manifests in {directory}: {missing}")
+    nested = list((directory / "ten_seed_audit").rglob("split_manifest.csv"))
+    if len(nested) != 105:
+        raise RuntimeError(f"Expected 105 locked nested-CV split manifests, found {len(nested)}")
 
 
 def main() -> None:
@@ -37,15 +39,15 @@ def main() -> None:
 
     for stage in stages:
         if stage == "splits":
-            materialize_splits(ROOT / config["outputs"]["splits"])
+            validate_splits(ROOT / config["outputs"]["splits"])
         elif stage == "main-audit":
             command = [
                 python,
-                str(ROOT / "scripts" / "run_shared_split_multiview_nested_20260624.py"),
+                str(ROOT / "scripts" / "run_nested_multiview_audit.py"),
                 "--tasks",
                 *config["primary_endpoints"],
                 "--seeds",
-                *map(str, config["seeds"]),
+                *map(str, config["primary_seeds"]),
                 "--outer-folds",
                 str(config["outer_folds"]),
                 "--inner-folds",
@@ -57,13 +59,13 @@ def main() -> None:
         elif stage == "composition":
             initial = [
                 python,
-                str(ROOT / "scripts_current" / "run_equal_size_registry_composition_20260716.py"),
+                str(ROOT / "scripts" / "run_equal_size_registry_composition.py"),
                 "--tasks",
                 "clintox",
                 "bace",
                 "esol",
                 "--seeds",
-                *map(str, config["seeds"]),
+                *map(str, config["composition_seeds"]),
                 "--outer-folds",
                 str(config["outer_folds"]),
                 "--inner-folds",
@@ -72,14 +74,12 @@ def main() -> None:
             if args.force:
                 initial.append("--force")
             run(initial)
-            command = [python, str(ROOT / "entrypoints" / "full_training_entry.py"),
-                       "new-candidates", "--workspace", str(args.workspace)]
+            command = [python, str(ROOT / "scripts" / "run_expanded_intervention.py"), "new-candidates"]
             if args.force:
                 command.append("--force")
             run(command)
         else:
-            command = [python, str(ROOT / "entrypoints" / "full_training_entry.py"),
-                       stage, "--workspace", str(args.workspace)]
+            command = [python, str(ROOT / "scripts" / "run_expanded_intervention.py"), stage]
             if args.force:
                 command.append("--force")
             run(command)

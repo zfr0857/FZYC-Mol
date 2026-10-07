@@ -1,5 +1,6 @@
-release: paper-release-2026-07-r9
-seeds: [11, 23, 37, 53, 71]
+release: paper-release-2026-08-r12.9
+primary_seeds: [11, 23, 37, 53, 71, 83, 97, 113, 127, 149]
+composition_seeds: [11, 23, 37, 53, 71]
 outer_folds: 3
 inner_folds: 3
 candidate_pool_sizes: [4, 8, 16, 32]
@@ -21,9 +22,10 @@ composition_endpoints:
   - lipo
   - tdc_caco2_wang
 outputs:
-  quick: reproduced_outputs
+  reference: results/final
+  quick: results/reproduced_analysis
   full: results/reproduced_full_study
-  splits: splits/generated
+  splits: splits/final
 locked_claims:
   positive_cross_fitted_endpoints: 6
   negative_cross_fitted_endpoints: 3

@@ -11,3 +11,7 @@ dist/
 *.egg-info/
 .DS_Store
 Thumbs.db
+data/processed/
+data/tdc/
+results/reproduced_analysis/
+results/reproduced_full_study/

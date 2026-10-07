@@ -1,1 +1,1 @@
-"""Executable FZYC-Mol workflow entry points."""
+"""Supported repository scripts and testable command helpers."""

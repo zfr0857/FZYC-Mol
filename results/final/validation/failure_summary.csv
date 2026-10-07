@@ -1,0 +1,4 @@
+stage,dataset,model,status,failure_reason,disposition
+external_or_temporal_validation,all,not_applicable,not_feasible,"No independent cohort or timestamp/source metadata were available; three-endpoint structure transfer was retained.",excluded
+pretraining_overlap_audit,all,pretrained_encoders,unresolved,"Checkpoint identities were available, but molecule-level pretraining-corpus manifests were unavailable.",retained_as_limitation
+legacy_regression_split,regression_endpoints,legacy_unseeded_GroupKFold,excluded,"Historical unseeded GroupKFold outputs were excluded from the current ten-seed primary matrix.",excluded

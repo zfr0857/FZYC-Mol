@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import subprocess
 import time
 from dataclasses import dataclass
@@ -31,8 +32,8 @@ class BudgetRun:
 
 
 def build_budget_plan(output_root: Path = DEFAULT_OUTPUT, *, budgets: tuple[int, ...] = (30, 300, 1800)) -> list[BudgetRun]:
-    python = "/mnt/d/fzyc/.venv-autogluon/bin/python"
-    script = "/mnt/d/fzyc/scripts/run_autogluon_nested_wsl_20260621.py"
+    python = os.environ.get("FZYC_AUTOGLUON_PYTHON", "python")
+    script = _wsl_path(ROOT / "scripts" / "run_autogluon_nested.py")
     return [
         BudgetRun(
             budget=budget,

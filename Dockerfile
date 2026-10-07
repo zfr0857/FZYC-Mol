@@ -6,10 +6,10 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
 
 WORKDIR /audit
 
-COPY environment/requirements.lock /tmp/requirements.lock
+COPY requirements-lock.txt /tmp/requirements-lock.txt
 RUN python -m pip install --no-cache-dir --upgrade pip \
-    && python -m pip install --no-cache-dir -r /tmp/requirements.lock
+    && python -m pip install --no-cache-dir -r /tmp/requirements-lock.txt
 
 COPY . /audit
 
-CMD ["python", "entrypoints/quick_reproduce.py"]
+CMD ["python", "scripts/reproduce_analysis.py", "--config", "configs/paper.yaml"]

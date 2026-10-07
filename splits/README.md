@@ -1,6 +1,5 @@
-# Split manifests
+# Locked split manifests
 
-The submission-version split manifests are mirrored from
-`paper34_audit_sources/split_manifests/`. Generated manifests are written to
-`splits/generated/` by the full-study entry point and must not be selected or
-modified using outer-audit outcomes.
+`final/` is the only canonical location for manuscript split manifests. It contains the composition/similarity split audit and the preserved nested-CV manifests for the ten-seed audit.
+
+These files were moved byte-for-byte from the fixed manuscript release. Do not regenerate or select them using outer-test outcomes. New experimental runs should write their outputs under `results/reproduced_full_study/`, leaving `splits/final/` unchanged.

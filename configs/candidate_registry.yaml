@@ -1,5 +1,5 @@
 schema_version: 1
-source_table: reports/draft10_core_experiments_20260621/expanded_nested/candidate_registry.csv
+source_table: results/final/composition_intervention/candidate_registry.csv
 representation: Morgan-512
 candidate_count_per_task_type: 32
 required_fields:

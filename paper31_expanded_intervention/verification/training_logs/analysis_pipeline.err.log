@@ -1,6 +1,0 @@
-python.exe : Traceback (most recent call last):
-At <PROJECT_ROOT>\scripts\continue_paper31_analysis_pipeline_20260717.ps1: line 12, character 1
-+ & $python "<PROJECT_ROOT>\scripts\analyze_paper31_expanded_intervention_2026 ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
-    + FullyQualifiedErrorId : NativeCommandError
